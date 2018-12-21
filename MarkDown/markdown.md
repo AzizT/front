@@ -10,7 +10,7 @@ utilisé sur GitHub, le MarkDown avec une prévisualisation en direct du résult
 ## '##' titre de niveau 2
 etc...jusqu' a <h6></h6>
 
-Pour queles balises ne soient pas interprétées, je les entoure de 2 guillemets inversés (Touche alt gr + 7)
+Pour que les balises ne soient pas interprétées, je les entoure de 2 guillemets inversés (Touche alt gr + 7)
 On ecrit en italique avec des astérisques ou des tirets du bas _underscore_
 En gras avec deux **astérisques** ou des tierts du bas _underscore_
 Pour avoir un effet encadré avec du background gris clair, mettre 4 espaces ou tab
