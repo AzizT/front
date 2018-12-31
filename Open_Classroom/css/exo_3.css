@@ -1,0 +1,19 @@
+p
+{
+    color: rgb(41, 41, 197);
+}
+h1, em
+{
+    color: rgb(30, 156, 37);
+}
+h2
+{
+    color: rgb(165, 45, 45);
+}
+strong
+{
+    color: blueviolet;
+}
+/*em{
+    color: coral;
+}*/
