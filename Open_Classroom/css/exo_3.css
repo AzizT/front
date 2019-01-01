@@ -9,6 +9,9 @@ h1, em
 h2
 {
     color: rgb(165, 45, 45);
+    font-family: Pacifico;
+    font-size: 2.1em;
+    text-decoration: underline;
 }
 strong
 {
@@ -17,3 +20,28 @@ strong
 /*em{
     color: coral;
 }*/
+.xp
+{
+    color: aquamarine;
+}
+.spécialité
+{
+    color: blueviolet;
+}
+#titre
+{
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 3.1em
+}
+/*
+Testé, mais non conservé car pas l' effet voulu.
+.portraitflottant
+{
+    float: right;
+}
+*/
+.hautdepage
+{
+    text-align: center;
+}

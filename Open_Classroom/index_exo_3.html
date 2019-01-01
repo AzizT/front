@@ -7,23 +7,36 @@
     <meta name="description" content="Travaux Pratiques autour de la première semaine des tutoriels d' OCR">
     <meta name="author" content="Aziz">
     <link rel="stylesheet" href="css/exo_3.css">
-    <!--Pour une font inconnue du navigateur, changer le lien, bien évidemment selon la font <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower"> -->
+    <!--Pour une font inconnue du navigateur, changer le lien, bien évidemment selon la font --> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <!--Autre technique pour ajouter une font inconnue, ajouter dans le dossier css (ou un sous dossier) le fichier de la police téléchargée, et indiquer au navigateur le chemin pour cette font, ainsi:
+    @font-face {
+
+    font-family: 'MaSuperPolice';
+
+    src: url('MaSuperPolice.eot');
+
+    }
+    Attention a bien indiquer le bon format, car il peut changer assez fréquemment
+Astuce trouvée dans OCR, ici: https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1605329-formatage-du-texte -->
     <title>TP OCR semaine 1</title>
 </head>
 <body>
     
-    <h1>Aziz Tobbal</h1>
+    <h1 id="titre">CV d' Aziz Tobbal</h1>
     
-    <p>Branquignole en chef, premier du nom</p>
-    <p><a href="images/zappa.jpg" target="_blank"><img src="images/zappa_mini.jpg" alt="mon portrait" title="Cliquez sur mon portrait pour l' agrandir"/></a></p>
+    <p class="hautdepage">Branquignole en chef, premier du nom</p>
+    <p class="hautdepage"><a href="images/zappa.jpg" target="_blank"><img src="images/zappa_mini.jpg" class="portraitflottant" alt="mon portrait" title="Cliquez sur mon portrait pour l' agrandir"/></a></p>
     
-    <h2>Mon expérience</h2>
+    <h2 class="xp">Mon expérience</h2>
 
     <p>
     <ul>
-        <li><strong>1990-1997:</strong> Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret.<br />et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi luce palam egrediens ad agenda quae putabat seria cernebatur. et haec quidem medullitus multis gementibus agebantur.</li>
-        <li><strong>1998-2009:</strong> Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi luce palam egrediens ad agenda quae putabat seria cernebatur.<br />et haec quidem medullitus multis gementibus agebantur.</li>
-        <li><strong>2010-2018:</strong> Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. <br />postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi luce palam egrediens ad agenda quae putabat seria cernebatur. et haec quidem medullitus multis gementibus agebantur.</li>
+        <li><strong>1990-1997:</strong> Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret.<br />
+            et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi luce palam egrediens ad agenda quae putabat seria cernebatur. et haec quidem medullitus multis gementibus agebantur.</li>
+        <li><strong>1998-2009:</strong> Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi luce palam egrediens ad agenda quae putabat seria cernebatur.<br />
+            et haec quidem medullitus multis gementibus agebantur.</li>
+        <li><strong>2010-2018:</strong> Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem.<br />
+            postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi luce palam egrediens ad agenda quae putabat seria cernebatur. et haec quidem medullitus multis gementibus agebantur.</li>
     </ul>
     </p>
 
@@ -31,7 +44,7 @@
         <ul>
             <p>
             <li>Expert en blabla et néant</li>
-            <li>Dr es. Walou</li>
+            <li>Dr es.<span class="spécialité"> Walou</span></li>
             <li>Explose tout le monde sur <em>Gran Turismo</em></li>
             <li>Refait ses matchs sur <em>Football Manager</em> et <em>Fifa Manager</em></li>
             </p>

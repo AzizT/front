@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    margin: 0%;
+}
+#accueil{
+    background-image: url(../images/lz2.jpg);
+    /* image ne s' applique qu' au menu zappa, pas aux autres pages*/
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#lyrics{
+    background-image: url(../images/lz.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    text-align: center ;
+    margin-top: 20px;
+}
+audio{
+    width: 150px;
+    margin: 0 50px 0 50px;
+}
+p1{
+    font: 12pt kurt ;
+    color: #993300 ;
+}
+p1 a{
+    font: 12pt kurt ;
+    color: #993300 ;
+    text-decoration: none
+}
+p2{
+    font: 12pt kurt ;
+    color: #c75217 ;
+}
+p3{
+    font: 10pt kurt ;
+    color: #9a4115 ;
+}
+h1 {
+    font: bold 50pt carton ;
+    color: #993300 ;
+    margin-top: 10px;
+    text-align: center;
+}
+nav{
+    margin: 50px 0 50px 0;
+    font: 8pt kurt ;
+    color: #993300 ;
+    text-align: center;
+}
+nav a{
+    font: 8pt kurt ;
+    color: #993300 ;
+    text-decoration: none;
+}
