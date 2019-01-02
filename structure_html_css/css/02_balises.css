@@ -33,6 +33,48 @@ time, mark, audio, video {
 {
     text-align: right;
 }
-body{
+body
+{
     background: rgb(190, 134, 243);
+}
+header
+{
+    background-color: rgb(19, 103, 160);
+    color: rgb(223, 223, 51);
+    height: 100px;
+}
+nav
+{
+    background-color: rgb(139, 89, 27);
+    height:60px;
+}
+section
+{
+    background-color: azure;
+    height: 550px;
+}
+article
+{
+    background-color: blanchedalmond;
+    height: 66px;
+}
+.jaune
+{
+    background-color: yellowgreen;
+}
+#noir
+{
+    background-color: rgb(56, 143, 219);
+    color: aliceblue;
+    text-align: justify;
+    font-size: 25px;
+}
+footer
+{
+    background-color: brown;
+    height: 100px;
+}
+nav, footer
+{
+    color: rgb(238, 155, 155);
 }
