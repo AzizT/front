@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/03_formulaire.css">
+    <title>Formulaires</title>
+</head>
+<body>
+    <!-- On declare son formulaire avec la balise Form -->
+    <form>
+        <label for="pseudo">Pseudo *</label>
+        <input id="pseudo" type="text" name="pseudo" placeholder="TitiVitry" required><br />
+        <!-- Le required indique que le champ est obligatoire
+        Le placeholder est l' emplacement a remplir -->
+        <label for="mdp">Mot de passe *</label>
+        <input type="password" name="mdp" placeholder="Mot de passe" required><br />
+        <label for="email">Email *</label>
+        <input type="email" name="email" placeholder="email" required><br/>
+        <!-- le fichier -->
+        <label for="photo">Photo</label>
+        <input type="file" name="photo"><br />
+        <!-- les cases a cocher -->
+        <label for="question">Quelle destination choisissez-vous ? *</label>
+        <p>
+        <input type="checkbox" name="question">Chine
+        <input type="checkbox" name="question" checked>Australie
+        <input type="checkbox" name="question">Mars
+        </p>
+        <!-- zone de commentaire
+        rows = nombre de lignes
+        cols = nombre de colonnes/ caractères -->
+        <label for="Commentaire">Commentaires</label>
+        <textarea name="commentaire" cols="80" rows="8"></textarea><br/>
+        <!-- bouton envoi de formulaire -->
+        <input type="submit" name="inscription" value="Envoyer">
+        <!-- bouton pour vider le formulaire -->
+        <input type="reset" name="annuler" value="Annuler">
+        <p><strong><em>* Champs obligatoires</em></strong></p>
+
+    </form>
+</body>
+</html>
