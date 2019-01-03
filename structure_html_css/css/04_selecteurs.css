@@ -1,0 +1,64 @@
+body{
+    font-size: 25px;
+}
+h1{
+    background-color: yellow;
+    color: black;
+}
+section p{
+    color: red;
+}
+section p:first-child{
+    color: blue;
+}
+section p:last-child{
+    color: aqua;
+}
+section p:nth-child(even){
+    color: blueviolet;
+}/* nth-child(even) cible de manières aléatoires les chiffres pairs */
+section p:nth-child(odd){
+    color: brown;
+}
+/* odd cible les impairs */
+section p:nth-child(3),section p:nth-child(10){
+    color: rgb(9, 219, 26);
+}
+/* pour les cibler individuellement */
+.zone1{
+    color: rgb(134, 79, 12);
+}.zone2{
+    color: rgb(8, 110, 168);
+}
+.lime{
+    color: aquamarine;
+    font-size: 45px;
+}
+#zone3{
+    background-color: azure;
+    color: rgb(212, 24, 118);
+}
+#zone3:after{
+    content:" rajouter après";
+    color: blueviolet;
+}
+/* le after permet d' ajouter a la suite du contenu via le css, le before étant pour ajouter avant */
+#zone3:before{
+    content:"Moi même ";
+    background-color: aqua;
+}
+.zone4{
+    color: rgb(212, 99, 7);
+}
+.zone5{
+    color: rgb(99, 5, 122);
+}
+li:first-child{
+    background-color: antiquewhite;
+    color: blue;
+}
+li:nth-child(2){
+    background-color: beige;
+    text-decoration: underline;
+    color: brown;
+}
