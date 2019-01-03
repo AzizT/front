@@ -1,0 +1,49 @@
+*{
+    font-family: fantasy;
+}
+body{
+    width: 50%;
+    margin: auto;
+}
+table{
+    border-top: 1px solid #bdbdbd;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 25px;
+}
+thead{
+    border-top: 1px solid #0b6e02;
+}
+th{
+    border: 1px solid #bdbdbd;
+    padding: 4px;
+    background-color: white;
+    width: 25%;
+}
+.haut{
+    font-size: 75%;
+    font-weight: lighter;
+    border-top: 1px solid;
+}
+.première{
+    border-right: none;
+}
+td{
+    font-size: 100%;
+    border-right: 1px dotted #bdbdbd;
+    text-align: center;
+    padding: 5px;
+}
+td:first-child{
+    text-align: center;
+    font-weight: bold;
+}
+tr:nth-child(odd){
+    background-color: rgb(226, 226, 223);
+}
+th:nth-child(8), th:nth-child(9){
+    background-color: rgb(168, 245, 166);
+}
+td:nth-child(8), td:nth-child(9){
+    background-color: rgb(168, 245, 166);
+}
