@@ -6,7 +6,6 @@ body{
     margin: auto;
 }
 table{
-    border-top: 1px solid #bdbdbd;
     border-collapse: collapse;
     width: 90%;
     margin: 25px;
@@ -15,7 +14,7 @@ thead{
     border-top: 1px solid #0b6e02;
 }
 th{
-    border: 1px solid #bdbdbd;
+    border-right: 1px solid #bdbdbd;
     padding: 4px;
     background-color: white;
     width: 25%;
@@ -23,7 +22,6 @@ th{
 .haut{
     font-size: 75%;
     font-weight: lighter;
-    border-top: 1px solid;
 }
 .première{
     border-right: none;

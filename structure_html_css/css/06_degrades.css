@@ -1,0 +1,25 @@
+.contenu{
+    background: linear-gradient(to left, #40a497,#6840a4);
+    /* degradé qui demarre avec la premiere couleur et finit avec la seconde, de haut en bas par defaut, mais ici on ajoute "to left"pour preciser de gauche a droite */
+    width: 45em;
+    /* autre unité (pixel, cm etc...), pour mieux respecter le responsive */
+    height: 45em;
+    margin: 0 auto;
+    border-radius: 50%;
+    /* propriété qui permet d' arrondir les angles et donc obtenir le cercle*/
+}
+.second{
+    background: linear-gradient(to right, red,yellow,green,blue,pink);
+    width: 35em;
+    height: 15em;
+    margin: 0 auto;
+    border-radius: 70%;
+}
+.troisième{
+    background: linear-gradient(10deg, red,yellow,green,blue,rgb(231, 40, 72));
+    width: 35em;
+    height: 15em;
+    /* margin: 0 10em; */
+    /* margin-left: 50em; */
+    margin-right: 10em;
+}
