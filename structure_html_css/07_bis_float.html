@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/07_bis_float.css">
+    <title>Explication des floats</title>
+</head>
+<body>
+    <p>=> Le float
+        => Notion de flux
+        <hr>
+        Le flux d' un document pourrait se définir comme étant le comportement naturel d' affichage des éléments d' unepage Web. Autrement dit, les éléments se succèdent dans l' ordre ou ils sont declarés dans le code HTML.
+        De façon simpliste, les éléments de séquençage tels que "h1", "p" ou "ul", s' affichent logiquement par défaut les uns en dessous des autres, tandis que les éléments délimitant pourla plupart des portions de textes ( mise en italique d' un ou plusieurs mots par exemple) s' affichent cote a cote.
+        Maintenant que nous avons évoqué ce point, il faut comprendre que les balises HTML ont toutes par defaut des propriétés de rendu CSS particulières. En fait, il existe initialement deux grands groupes principaux de balises: <mark> les balises de rendu CSS "bloc"(bloc)</mark> et <mark> les balises de rendu CSS "en-ligne" ("inline") </mark>.
+        Ces valeurs de rendu visuel coincident généralement par défaut avec le groupe d' appartenance HTML <br>
+        <br />
+        Des propriétés CSS d' un élément (display: bloc, inline, list-item, inline-bloc, table, table-cell) découlent des spécificités d' affichage, son positionnement dans le flux.<br />
+        <br />
+        Il est possible de sortir du flux naturel un ou plusieurs élément pour modifier leur affichage avec du CSS <br />
+        <br />
+        Nos deux groupes d' éléments peuvent etre classés en deux familles:
+        <mark><strong>Les éléments de type block (h1, p, ul, ol, dl, table, blockquote, etc...)</strong></mark>
+        <mark><strong>Les éléments de type in-line (a, img, strong, abbr, etc...)</strong></mark>
+        <br />
+        <hr>
+
+
+    </p>
+    <p>
+        => Le type "block"
+        <hr>
+        Les éléments de rendu CSS block se placent toujours l' un en dessous de l' autre par défaut ( comme un retour a la ligne) par exemple, une suite de paragraphes (balises <p>).
+            Par ailleurs, un élément "bloc" occupe automatiquement, par défaut, toute la largeur disponible dans son conteneur et peut-etre dimensionné a l' aide des propriétés telles que "width", "height", "min-width", ou "min-height" etc...<br />
+            De plus, un élément de type "block" peut contenir d' autres éléments de type block ainsi que des éléments de type inline.
+            <mark><strong>A Retenir
+            Un élément de type block se différencie des éléments de type inline (en ligne) sur différents points, dont ceux ci:
+            <ul>
+                <li>Il occupe l' entiereté de la largeur de son contenu</li>
+                <li>Il permet l' attribution des marges verticales</li>
+                <li>Il mermet la modification de sa hauteur et de sa largeur</li>
+            </ul>
+            Le premier point est primordial. Nous utiliserons abondamment ce comportement par défaut bien pratique dans la création de mise en page.
+            Notons également que tout élément peut-etre "reclassé" dans la famille opposée grace a la propriété display ( que nous verrons plus tard)
+            </strong></mark>
+    </p>
+    <p>
+        => Le type "inline" <br/>
+        Les éléments de rendu "inline" se placent toujours l' un a coté de l' autre afin de reste dans le texte (par exemple la balise "strong", "img", "a", "span")
+        Par défaut, il n' est pas prévu, qu' ils puissent se positionner sur la page (même si cela est possible), ni de leur donner des dimensions ( hauteur, largeur, profondeur). Leur taille va etre determinée par le texte ou l' élément image qu' ils contiennent.
+        Référence: "http://fr.learnlayout.com/toc.html" ( en français). <br />
+        <br />
+        La propriété CSS FLOAT permet de faire flotter des éléments cote a cote, donc de modifier le comportement naturellement de type block en comportement inline. A l' origine, le float est prévu pour entourer une image avec du texte (paragraphe)
+    </p>
+    
+</body>
+</html>
