@@ -1,0 +1,60 @@
+body{
+    margin: 0 auto;
+    background-color: white;
+}
+div{
+    width: 99%;
+    margin: 0 auto;
+    background-color: white;
+}
+.clear{
+    clear: both;
+}
+.casesW{
+    height: 3em;
+    width: 3em;
+    padding: 0.1px;
+    background-color: white;
+    border: 0.1px solid white;
+    margin: 0.1px;
+    float: left;
+}
+.casesJ{
+    height: 3em;
+    width: 3em;
+    padding: 0.1px;
+    background-color: yellow;
+    border: 0.1px solid white;
+    margin: 0.1px;
+    float: left;
+}
+.casesG{
+    height: 3em;
+    width: 3em;
+    padding: 0.1px;
+    background-color:grey;
+    border: 0.1px solid white;
+    margin: 0.1px;
+    float: left;
+}
+.casesN{
+    height: 3em;
+    width: 3em;
+    padding: 0.1px;
+    background-color: black;
+    border: 0.1px solid white;
+    margin: 0.1px;
+    float: left;
+}
+.casesB{
+    height: 3em;
+    width: 3em;
+    padding: 0.1px;
+    background-color: blue;
+    border: 0.1px solid white;
+    margin: 0.1px;
+    float: left;
+}
+.bas{
+    border-bottom: 3px solid black
+}
