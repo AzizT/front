@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/exo_4.css">
+    <title>Formulaire & autres</title>
+</head>
+<body>
+    <h1>Formulaire d' inscription</h1>
+
+    <h2>Qui etes-vous ?</h2>
+    <p>
+        Si vous désirez vous inscrire a notre programmme d' entraide, veuillez remplir les champs ci dessous ( <strong><em>* obligatoires</em></strong>).
+    </p>
+
+    <form>
+
+        <label for="prenom">Votre prénom *</label>
+        <input id="prenom" type="text" name="prenom" placeholder="***" required><br/>
+        <label for="nom">Votre nom *</label>
+        <input id="nom" type="text" name="nom" placeholder="***" required><br/>
+        <label for="pseudo">Votre pseudo </label>
+        <input id="pseudo" type="text" name="pseudo" placeholder="" required><br/>
+        <label for="mdp">Votre mot de passe *</label>
+        <input type="password" name="mdp" placeholder="***" required><br/>
+        <label for="email">Votre email *</label>
+        <input type="email" name="email" placeholder="***" required><br/>
+        <label for="photo">Photo, si vousle désirez</label>
+        <input type="file" name="photo"><br />
+        <label for="question">Quelle catégorie de personnes souhaitez vous aider ?</label>
+        <p> 
+            <input type="checkbox" name="question">enfants ( moins de 10ans )
+            <input type="checkbox" name="question">adolescents
+            <input type="checkbox" name="question" checked>séniors
+        </p><br />
+    </form>
+    <form>
+        <p>
+            Pour vous connaitre un peu mieux, dites nous comment vous nous avez connu, et qu' est-ce qui vous motive dans votre démarche ? (<mark>souhaitable, mais pas obligatoire</mark>)
+        </p>
+        <label for="commentaire">Votre réponse</label>
+        <textarea name="commentaire" cols="80" rows="4"></textarea><br /><br />
+        <input type="submit" name="inscription" value="Envoyer">
+        <input type="reset" name="annulation" value="Annuler">
+    </form>
+    <hr>
+    <h2>Vos disponibilités</h2>
+    <p>
+        A l' aide du planning ci dessous, faites nous part des demies-journées durant lesquelles vous pourrez contribuer a notre programme ( si possible choisir les demies-journées libres)
+    </p>
+    
+</body>
+</html>
