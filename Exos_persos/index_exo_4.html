@@ -27,7 +27,7 @@
         <input type="password" name="mdp" placeholder="***" required><br/>
         <label for="email">Votre email *</label>
         <input type="email" name="email" placeholder="***" required><br/>
-        <label for="photo">Photo, si vousle désirez</label>
+        <label for="photo">Photo, si vous le désirez</label>
         <input type="file" name="photo"><br />
         <label for="question">Quelle catégorie de personnes souhaitez vous aider ?</label>
         <p> 
@@ -38,7 +38,7 @@
     </form>
     <form>
         <p>
-            Pour vous connaitre un peu mieux, dites nous comment vous nous avez connu, et qu' est-ce qui vous motive dans votre démarche ? (<mark>souhaitable, mais pas obligatoire</mark>)
+            Pour vous connaitre un peu mieux, dites nous comment vous nous avez connu, et ce qui vous motive dans votre démarche ? (<mark>souhaitable, mais pas obligatoire</mark>)
         </p>
         <label for="commentaire">Votre réponse</label>
         <textarea name="commentaire" cols="80" rows="4"></textarea><br /><br />
@@ -48,8 +48,76 @@
     <hr>
     <h2>Vos disponibilités</h2>
     <p>
-        A l' aide du planning ci dessous, faites nous part des demies-journées durant lesquelles vous pourrez contribuer a notre programme ( si possible choisir les demies-journées libres)
+        A l' aide du planning ci dessous, faites nous part des plages horaires durant lesquelles vous pourrez contribuer a notre programme ( si possible choisir les libres)
     </p>
+    <table>
+        <caption>Planning Hebdomadaire</caption>
+        <thead>
+            <th></th>
+            <th>06h/ 12h</th>
+            <th>12h/ 18h</th>
+            <th>18h/ 00h</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lundi</td>
+                <td class="dispo"></td>
+                <td class="pris">Aziz</td>
+                <td class="dispo"></td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td class="pris">Nassim</td>
+                <td class="dispo"></td>
+                <td class="dispo"></td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td class="dispo"></td>
+                <td class="dispo"></td>
+                <td class="pris">August</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td class="pris">Touhami</td>
+                <td class="dispo"></td>
+                <td class="pris">Sylvain</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td class="pris">Sylvain</td>
+                <td class="dispo"></td>
+                <td class="dispo"></td>
+            </tr>
+            <tr>
+                <td>Samedi</td>
+                <td class="pris">Bahaedinne</td>
+                <td class="dispo"></td>
+                <td class="dispo"></td>
+            </tr>
+            <tr>
+                <td>Dimanche</td>
+                <td class="pris">Sarah</td>
+                <td class="pris">Iullia</td>
+                <td class="dispo"></td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td id="pris2">Occupé</td>
+        </tr>
+
+        <tr>
+            <td id="dispo2">Libre</td>
+        </tr>
+    </table>
+        <form>
+            <label for="commentaire">Votre réponse</label>
+            <textarea name="commentaire" cols="40" rows="4"></textarea><br /><br />
+            <input type="submit" name="inscription" value="Envoyer">
+            <input type="reset" name="annulation" value="Annuler">
+        </form>
     
 </body>
 </html>
