@@ -7,115 +7,89 @@ table{
     border-collapse: collapse;
     background-color: rgb(231, 230, 230);
 }
-.caseBlanche{
+td{
     width: 2em;
     height: 2em;
     margin: 0;
     padding: 0;
+}
+.caseBlanche{
+    /* margin: 0;
+    padding: 0; */
     background-color: white;
 }
 .caseNoire{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: black;
 }
 .caseMarronF{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(49, 11, 11);
 }
 .caseMarron{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(87, 23, 23);
 }
 .caseBeige{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(247, 205, 154);
 }
 .caseSaumon{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(250, 193, 123);
 }
 .caseVertF{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(1, 63, 1);
 }
 .caseVertF2{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(1, 43, 1);
 }
 .caseVert{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(2, 97, 2);
 }
 .caseVertC{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(3, 145, 3);
 }
 .casePale{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(252, 216, 172);
 }
 .casePale2{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: bisque;
 }
 .caseMarron2{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(116, 32, 32);
 }
 .caseMarron3{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(163, 47, 47);
 }
 .caseMarron4{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(197, 58, 58);
 }
 .caseJaune{
-    width: 2em;
-    height: 2em;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: rgb(252, 252, 84);
 }
