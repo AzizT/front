@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explication du colspan</title>
+</head>
+<body>
+    <h1><mark>Fusionner des cellules d' un tableau ( attributs <em>colspan/rowspank</em>)</mark></h1>
+
+        <p>Les deux attributs colspan et rowspan permettent respectivement de fusionner horizontalement et verticalement les cellules d' un tableau:
+        </p>
+        <ul>
+            <li>
+                <mark>L' attribut colspan:</mark> pour vous faciliter la mémorisation de cet attribut, on va le décortiquer: column (col) veut dire colonne en anglais, et "span" signifie étendre. En bref, l'attribut rowspan permet d' étendre horizontalement une cellule en fusionnnant une ou plusieurs colonnes. La fuision commence de la cellule 'td' ou ('th') qui a reçu l' attribut colspan et s' étend horizontalement vers la gauche (fusion horizontale). Exemple:</li><br />
+            <li>
+                <mark>"td colspan=3"</mark> données sur trois cases fusionnées horizontalement <mark>"/td</mark><br />
+                Dans ce cas on va relier la case courante (la case qui a reçu l' attribut colspan) avec les deux cases qui la suivent, c' est a dire celles qui se trouvent a gauche. Dans cet exemple, la fusion s' effectue horizontalement et concerne trois cases juxtaposées
+            </li><br />
+            <li>
+                <mark>l' attribut rowspan</mark> row signifie ligne. Cet attribut permet d' étendre une cellule verticalement en fusionnant deux ou plusieurs lignes. La fusion commence de la cellule 'td' (ou 'th') qui a reçu l' attribut rowspan et s' étend verticalement vers le bas (fusion verticale). Exemple: <br />
+                <mark>"td rowspan=3"</mark> données sur trois cases fusionnées verticalement <mark>"/td"</mark><br />
+                Dans ce cas on va relier la case courante (la case qui a reçu l' attribut rowspan) avec les deux cases qui la suivent, c' est a dire celles qui se trouvent en bas. Dans cet exemple, la fusion s' effectue verticalement et concerne trois cases superposées
+            </li>
+                
+        </ul>
+    
+</body>
+</html>

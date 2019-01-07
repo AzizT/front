@@ -2,13 +2,13 @@ body{
     margin: 0 auto;
     background-color: white;
 }
-div{
+td{
+    
     width: 99%;
     margin: 0 auto;
     background-color: white;
-}
-.clear{
-    clear: both;
+    /* height: 10vh;
+    width: 10vw; */
 }
 .casesW{
     height: 3em;
