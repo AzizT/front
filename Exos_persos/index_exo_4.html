@@ -8,6 +8,9 @@
     <title>Formulaire & autres</title>
 </head>
 <body>
+    <header>
+        <img src="http://www.amoc-asso.fr/wp-content/uploads/banniere-cardio.jpg" alt="bannière logo de l' association">
+    </header>
     <h1>Formulaire d' inscription</h1>
 
     <h2>Qui etes-vous ?</h2>
@@ -45,7 +48,7 @@
         <input type="submit" name="inscription" value="Envoyer">
         <input type="reset" name="annulation" value="Annuler">
     </form>
-    <hr>
+
     <h2>Vos disponibilités</h2>
     <p>
         A l' aide du planning ci dessous, faites nous part des plages horaires durant lesquelles vous pourrez contribuer a notre programme ( si possible choisir les libres)
@@ -102,16 +105,18 @@
                 <td class="dispo"></td>
             </tr>
         </tbody>
+            
     </table>
-    <table>
-        <tr>
-            <td id="pris2">Occupé</td>
-        </tr>
 
-        <tr>
-            <td id="dispo2">Libre</td>
-        </tr>
-    </table>
+    <legend class="occupé">
+        Pris
+    </legend>
+    
+    <legend class="disponible">
+        Dispo
+    </legend>
+    
+
         <form>
             <label for="commentaire">Votre réponse</label>
             <textarea name="commentaire" cols="40" rows="4"></textarea><br /><br />

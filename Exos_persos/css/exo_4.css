@@ -4,11 +4,20 @@ body{
     margin: auto;
     background: rgb(245, 221, 206);
 }
+img{
+    border: 2px double brown;
+    border-top: 10px;
+    /* Bout de code qui suit, pour centrer mon image */
+    display: block;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
 label{
     background-color: rgb(220, 250, 240);
     text-align: center;
     color: rgb(65, 2, 65);
-    width: 190px;  /*Largeur*/
+    width: 190px;
     float: left;
     border: 1px solid brown;
     padding: 1px;
@@ -19,6 +28,9 @@ h1{
     border: 2px double brown;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
+    width:350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 h2{
     color: rgb(141, 17, 17);
@@ -29,7 +41,7 @@ table{
     width: 75%;
     border: 2px solid rgb(7, 7, 153);
     border-collapse: collapse;
-    margin: 25px;
+    margin: 10px;
 }
 thead{
     background-color: rgb(220, 250, 240);
@@ -56,6 +68,7 @@ caption{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     color: rgb(141, 17, 17);
+    margin-bottom: 5px;
 }
 .pris{
     background-color: rgb(252, 210, 159);
@@ -63,11 +76,20 @@ caption{
 .dispo{
     background-color: rgb(124, 243, 243);
 }
-#pris2{
+.occupé{
+    text-align: center;
     width: 50px;
+    Border: 2px solid rgb(7, 7, 153);
     background-color: rgb(252, 210, 159);
+    margin-bottom: 2px;
 }
-#dispo2{
+.disponible{
+    text-align: center;
     width: 50px;
+    Border: 2px solid rgb(7, 7, 153);
     background-color: rgb(124, 243, 243);
+    margin-bottom: 5px;
+} 
+form{
+    margin-bottom: 10px;
 }
