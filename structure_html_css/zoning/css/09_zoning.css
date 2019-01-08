@@ -1,0 +1,42 @@
+#conteneur{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid darkslategray;
+}
+header{
+    background-color: #8e3557;
+    height: 100px;
+}
+nav{
+    background-color: #4a1a2c;
+    height: 30px;
+}
+section{
+    background-color: aqua;
+    height: 500px;
+    margin: 20px;
+}
+p{
+    color: white;
+}
+footer{
+    background-color: bisque;
+    height: 100px;
+}
+.a,.b,.c,.d{
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+.a{
+    background-color: blanchedalmond;
+}
+.b{
+    background-color: rgb(145, 91, 11);
+}
+.c{
+    background-color: rgb(49, 131, 151);
+}
+.d{
+    background-color: rgb(194, 55, 89);
+}
