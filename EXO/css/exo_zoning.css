@@ -1,0 +1,43 @@
+#conteneur{
+    width: 900px;
+    background: white;
+    margin: 0 auto;
+}
+header{
+    width: 900px;
+    height: 200px;
+    background-color: rgb(245, 72, 72);
+    color: white;
+}
+.clear{
+    clear: both;
+}
+.ZG{
+    width: 200px;
+    height: 700px;
+    background-color: rgb(92, 92, 241);
+    color: white;
+    float: left;
+    text-align: center;
+}
+.ZC1{
+    width: 98px;
+    height: 498px;
+    background-color: rgb(101, 252, 101);
+    color: white;
+    border: 1px solid white;
+    float: left;
+}
+.ZD{
+    width: 200px;
+    height: 700px;
+    background-color: rgb(92, 92, 241);
+    color: white;
+    float: left;
+}
+footer{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(247, 247, 114);
+    color: white;
+}
