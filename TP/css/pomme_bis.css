@@ -1,0 +1,38 @@
+body{
+    margin: 10px 0;
+    padding: 0;
+    /* text-align: center; */
+    background: white;
+    font-family: 'PT Sans', sans-serif;
+}
+#conteneur{
+    width: 770px;
+    margin: 0 auto;
+    text-align: left;
+    border: 2px solid #AABB44;
+    background: white;
+}
+h1#header{
+    height: 258px;
+    background: url('../images/apple.jpg')no-repeat left top;
+    margin: 0;
+}
+h1#header a{
+    /* On donne les mêmes dimensions aux liens, chose possible grace a a la propriété display-block, qui transforme le lien en un élément de type block, auquel on peut donner des propriétés de taille */
+    width: 400px;
+    height: 70px;
+    display: block;
+    background: url(../images/title.gif)no-repeat;
+    left: 350px;
+    top: 10px;
+    text-indent: -5000px;
+    /* le text indent négatif est fait pour pouvoir cacher le texte hors de la page, ce que nous voulons */
+}
+ul#menu{
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    background: url(../images/bg_menu.gif)repeat-x 0 -25px;
+    list-style: none;
+    /* pour cacher les puces */
+}

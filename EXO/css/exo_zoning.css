@@ -33,7 +33,7 @@ header{
     background-color: rgb(245, 72, 72);
     line-height: 69px;
     /* il ne voulait pas de 70, donc tenté le 69 */
-    text-align: center;
+    /* text-align: center; */
 }
 .clear{
     clear: both;

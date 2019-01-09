@@ -19,21 +19,23 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 #container{
-    width: 900px;
-    height: 900px;
+    width: 950px;
+    height: 1900px;
     margin: 0 auto;
     background: white;
+    border: 2px solid rgb(30, 204, 30);
 }
-.clear{
-    clear: both;
-}
+
 header{
     height: 258px;
-    width: 100;
+    width: 100%;
 }
 .bouton{
     height: 60px;
-    width: 150px;
+    width: 156px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    background-color: aquamarine;
     background-image: url(../images/bg_menu.jpg);
     background-repeat: repeat;
     float: left;
@@ -41,10 +43,13 @@ header{
 }
 .titre{
     float:right;
+    padding-top: 10px;
+    padding-right: 20px;
 }
 .colonne_gauche{
     width: 60px;
-    height: 398px;
+    height: 700px;
+    float: left;
 }
 /* .longue{
     height: 22px;
@@ -52,11 +57,15 @@ header{
     float: left;
 } */
 .centrale{
-    float: left;
     width: 840px;
-}
+    height: 398px;
+    text-align: justify;
+} 
 /* .texte{
     color: green;
     border-bottom: 1px solid green;
     float: left;
 } */
+.clear{
+    clear: both;
+}
