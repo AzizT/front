@@ -1,27 +1,27 @@
 body{
     margin: 0 auto;
     background: url(https://www.wallbg.com/wallpaper/1920x1200/2016/Abstract%20colorful%20design%20dark%20feeling%20wallpaper%20120.jpg);
+    line-height: 25px;
 }
-/* .menu a{
-    height: 35px;
-    color: rgb(1, 61, 1);
-    text-decoration: none;
-    border: 1px solid rgb(1, 61, 1);
-    
-} */
+header{
+    width: 555px;
+    height: 209px;
+    background: url(../images/logo_test.png)no-repeat;
+    text-indent: -5000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
 ul#menu{
     height: 35px;
     width: 62%;
     margin: 0 auto;
     margin-top: 5px;
     padding: 0;
-    /* background-color: antiquewhite; */
     list-style: none;
-    /* pour cacher les puces */
 }
 ul#menu li{
     float: left;
-    /*  on rend les li flottants pour leur permettre d' aller a l' horizontale */
     text-align: center;
 }
 ul#menu li a{
@@ -33,19 +33,18 @@ ul#menu li a{
     color: brown;
     display: block;
     background-color: antiquewhite;
-    /* pour pouvoir dimensionner les "a"*/
     text-decoration: none;
-    border: 3px solid rgb(235, 161, 4);
-    /* va enlever le underline du lien */
+    border: 3px outset rgb(235, 161, 4);
+    border-radius: 20%;
+    box-shadow: 2px 2px 6px white;
     margin-left:5px;
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
-/* ul#menu li {
-}*/
 ul#menu li a:hover{
-    background-color: gold; 
+    background-color: rgb(245, 226, 121); 
     font-weight: bolder;
-    transform: scale(2);
+    transform: scale(1.1);
 }
 .container{
     width: 80%;
@@ -53,7 +52,9 @@ ul#menu li a:hover{
     margin-bottom: 10px;
     padding-left: 30px;
     background-color: bisque;
-    border: 2px double brown;
+    border: 3px outset brown;
+    border-radius: 20%;
+    box-shadow: 3px 3px 6px white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container1{
@@ -63,8 +64,11 @@ ul#menu li a:hover{
     margin-bottom: 30px;
     margin-top: 5px;
     background-color: bisque;
-    border: 2px double brown;
+    border: 3px outset brown;
+    border-radius: 10%;
+    box-shadow: 3px 3px 6px white;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 35px;
 }
 .container2{
     width: 90%;
@@ -72,7 +76,9 @@ ul#menu li a:hover{
     padding-left: 30px;
     margin: 0 auto;
     background-color: bisque;
-    border: 2px double brown;
+    border: 3px outset brown;
+    box-shadow: 3px 3px 6px black;
+    border-radius: 10%;
 }
 .container3{
     width: 90%;
@@ -82,12 +88,22 @@ ul#menu li a:hover{
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: bisque;
-    border: 2px double brown;
+    border: 3px outset brown;
+    border-radius: 10%;
+    box-shadow: 3px 3px 6px black;
 }
 h3, h4{
     color: brown;
+    text-align: center;
     font-weight: bold;
     text-decoration: underline;
+    font: 25pt roboto slab;
+}
+mark{
+    font-weight: bold;
+    color: brown;
+    text-decoration: underline;
+    background-color: rgb(252, 214, 165);
 }
 .container2 ol li:nth-child(odd){
     background-color: rgb(243, 175, 92);
