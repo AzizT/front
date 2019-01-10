@@ -31,13 +31,12 @@ header{
     width: 100%;
 }
 .bouton{
-    height: 60px;
+    height: 35px;
     width: 156px;
     border-right: 1px solid white;
     border-left: 1px solid white;
     background-color: aquamarine;
-    background-image: url(../images/bg_menu.jpg);
-    background-repeat: repeat;
+    background: url(../images/bg_menu.gif)repeat 0 -25px;
     float: left;
     text-align: center;
 }
@@ -47,15 +46,18 @@ header{
     padding-right: 20px;
 }
 .colonne_gauche{
-    width: 60px;
-    height: 700px;
+    width: 90px;
+    height: 750px;
+    padding-top: 30px;
+    padding-left: 15px;
     float: left;
 }
-/* .longue{
-    height: 22px;
+.longue{
+    width: 700px;
+    height: 32px;
     left: 60px;
     float: left;
-} */
+}
 .centrale{
     width: 840px;
     height: 398px;
@@ -68,4 +70,7 @@ header{
 } */
 .clear{
     clear: both;
+}
+p{
+    padding-top: 5px;
 }

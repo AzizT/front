@@ -1,11 +1,11 @@
 body{
     margin: 10px 0;
     padding: 0;
-    /* text-align: center; */
+    text-align: center;
     background: white;
     font-family: 'PT Sans', sans-serif;
 }
-#conteneur{
+div#conteneur{
     width: 770px;
     margin: 0 auto;
     text-align: left;
@@ -24,7 +24,8 @@ h1#header a{
     display: block;
     background: url(../images/title.gif)no-repeat;
     left: 350px;
-    top: 10px;
+    top: 15px;
+    position: relative;
     text-indent: -5000px;
     /* le text indent négatif est fait pour pouvoir cacher le texte hors de la page, ce que nous voulons */
 }
@@ -35,4 +36,58 @@ ul#menu{
     background: url(../images/bg_menu.gif)repeat-x 0 -25px;
     list-style: none;
     /* pour cacher les puces */
+}
+ul#menu li{
+    float: left;
+    /*  on rend les li flottants pour leur permettre d' aller a l' horizontale */
+    text-align: center;
+}
+ul#menu li a{
+    width: 130px;
+    line-height: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    display: block;
+    /* pour pouvoir dimensionner les "a"*/
+    text-decoration: none;
+    /* va enlever le underline du lien */
+    border-right: 2px solid #dea;
+}
+ul#menu li a:hover{
+    background: url(../images/bg_menu.gif)repeat-x 0 0;
+}
+div#contenu{
+    padding:0 30px 0 100px;
+    background: url(../images/bg_page.gif)no-repeat;
+    /* background-repeat: no-repeat; c' est la même chose */
+    background-position: 15px 15px;
+}
+div#contenu h2{
+    padding-left: 25px;
+    line-height: 25px;
+    font-size: 1.4em;
+    background: url(../images/little_apple.gif)no-repeat left bottom;
+    color: #9b2;
+    border-bottom: 1px solid #9b2;
+}
+div#contenu h3{
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9d2;
+    border-left: 3px solid #9d2;
+    color: #9b2;
+}
+div#contenu p{
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.7em;
+}
+p#footer{
+    margin: 0;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    color: #8a0;
 }
