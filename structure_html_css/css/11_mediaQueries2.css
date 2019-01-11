@@ -1,0 +1,180 @@
+/************************************Reglages généraux *************************************/
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border: 0.3vh solid;
+}
+header{
+    height: 6vh;
+    /* on met vh pour le height, mais si on voulait le width, il aurait fallu mettre vw */
+    background:blue;
+    padding: 1vh;
+}
+nav{
+    height: 3vh;
+    background: red;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+}
+nav a:hover{
+    background: #73cec8;
+    text-decoration: none;
+    padding: 0.5% 0.8%;
+}
+.m1, .m2, .m3, .m4{
+    height: 20vh;
+    width: 38%;
+    padding: 5%;
+    margin: 1%;
+    float: left;
+} 
+.m1{
+    background: orange;
+}
+.m2{
+    background: green;
+}
+.m3{
+    background: yellow;
+}
+.m4{
+    background: pink;
+}
+footer{
+    height: 6vh;
+    background: blue;
+}
+/* **************************************Responsive************************************** */
+@media(max-width: 500px){
+    header{
+        height: 6vh;
+        background: #8E3557;
+    }
+    nav{
+        height: 3vh;
+        background: #046380;
+    }
+    .m1, .m2, .m3, .m4{
+        height: 20vh;
+        width: 86%;
+        margin: 0 auto;
+    }
+    .m1{
+        background: #B4AF91;
+    }
+    .m2{
+        background: #046380;
+    }
+    .m3{
+        background: #F6E497;
+    }
+    .m4{
+        background: #B5E655;
+    }
+    footer{
+    height: 6vh;
+    background: maroon;
+    }
+}
+/****************************************Autre responsive********************************** */
+@media(max-width: 768px){
+    header{
+        height: 7vh;
+        background: #8E3557;
+    }
+    nav{
+        height: 3.5vh;
+        background: #046380;
+    }
+    .m1, .m2, .m3, .m4{
+        height: 20vh;
+        float: left;
+    }
+    .m1{
+        background: #B4AF91;
+    }
+    .m2{
+        background: #046380;
+    }
+    .m3{
+        background: #F6E497;
+    }
+    .m4{
+        background: #B5E655;
+    }
+    footer{
+        height: 7vh;
+    background: #8E3557;
+    }
+}
+/****************************************Autre responsive********************************** */
+@media(max-width: 992px){
+    header{
+        height: 8vh;
+        background: #8E3557;
+    }
+    nav{
+        height: 4vh;
+        background: #046380;
+    }
+    .m1, .m2, .m3, .m4{
+        height: 30vh;
+        float: left;
+    }
+    .m1{
+        background:url(../images/image.jpg);
+        background-size: cover;
+    }
+    .m2{
+        background: #52c1e2;
+    }
+    .m3{
+        background: rgb(247, 235, 183);
+    }
+    .m4{
+        background: rgb(214, 245, 153);
+    }
+    footer{
+        height: 8vh;
+        background: rgb(241, 110, 160);
+    }
+}
+/****************************************Autre responsive********************************** */
+@media(max-width: 1200px){
+    header{
+        height: 9vh;
+        background: #8E3557;
+    }
+    nav{
+        height: 4.5vh;
+        background: #046380;
+    }
+    .m1, .m2, .m3, .m4{
+        height: 40vh;
+        float: left;
+    }
+    .m1{
+        background:linear-gradient(to left,green,purple);
+    }
+    .m2{
+        background: #8cd6ec;
+    }
+    .m3{
+        background: rgb(207, 198, 155);
+    }
+    .m4{
+        background:linear-gradient(to left,purple,green);
+    }
+    footer{
+        height: 9vh;
+        background: rgb(99, 60, 75);
+    }
+}
+section{
+    margin: 1.5vh;
+}
+.clear{
+    clear: both;
+}
