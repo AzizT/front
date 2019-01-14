@@ -1,0 +1,17 @@
+body{
+    background: rgb(199, 243, 181);
+}
+.carousel-inner{
+    margin: 0 auto;
+    max-width: 420px;
+    padding-bottom: 10px;
+}
+h2{
+    color: rgb(0, 49, 0);
+    font-style: Roboto Slab;
+    text-decoration: underline;
+    font-weight: bold;
+}
+p{
+    color: brown;
+}

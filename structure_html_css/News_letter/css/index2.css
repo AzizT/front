@@ -1,0 +1,12 @@
+body{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+p{
+    font-family: Roboto Slab;
+    color: grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

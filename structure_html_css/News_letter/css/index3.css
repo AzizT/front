@@ -1,0 +1,37 @@
+body{
+    margin: 0 auto;
+    background: beige;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+td{
+    width: 100px;
+    height: 50px;
+}
+.casenoire{
+    color: white;
+    background-color: black;
+    font-size: 2em;
+}
+.caserouge1{
+    color: white;
+    background-color: red;
+    font-size: 3em;
+}
+.caserouge2{
+    color: white;
+    background-color: red;
+    font-size: 1em;
+}
+.caserouge{
+    color: white;
+    background-color: red;
+}
+.caseblanche{
+    background-color: white;
+    color: black;
+    font-size: 3em;
+}
