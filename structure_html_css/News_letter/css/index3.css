@@ -34,4 +34,48 @@ td{
     background-color: white;
     color: black;
     font-size: 3em;
+    line-height: 5px;
+}
+.grandCarre{
+    width:700px;
+    height:700px;
+    border: 1px solid black;
+    box-shadow: 6px 6px 6px black;
+    text-align: center;
+}
+.GC{
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.LG1{
+    width: 700px;
+    height: 25px;
+    border: 1px solid black;
+}
+h1{
+    text-align: center;
+}
+.P1{
+    width: 700px;
+    height: 200px;
+    text-align: justify;
+}
+span{
+    font-style: italic;
+}
+.LG2{
+    width: 700px;
+    height: 200px;
+    border: 1px solid black;
+}
+.TD{
+    width: 500px;
+    height: 200px;
+}
+.IG{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
 }
