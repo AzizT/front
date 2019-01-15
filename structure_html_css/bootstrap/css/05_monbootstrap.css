@@ -1,3 +1,7 @@
+.container-fluid{
+    height: 1000px;
+    background: linear-gradient(rgb(236, 1, 1), rgb(233, 233, 1))no-repeat;
+}
 #carouselExampleFade img{
     margin: auto;
 }
