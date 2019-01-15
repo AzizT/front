@@ -1,6 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
 body{
-    margin: 0 auto;
     background: beige;
+}
+.container{
+    margin: 0 auto;
+    width: 75%;
+    background-color: white;
     text-align: center;
 }
 table{
@@ -18,17 +26,17 @@ td{
 }
 .caserouge1{
     color: white;
-    background-color: red;
+    background-color: rgb(197, 3, 3);
     font-size: 3em;
 }
 .caserouge2{
     color: white;
-    background-color: red;
+    background-color: rgb(197, 3, 3);
     font-size: 1em;
 }
 .caserouge{
     color: white;
-    background-color: red;
+    background-color: rgb(197, 3, 3);
 }
 .caseblanche{
     background-color: white;
@@ -40,8 +48,9 @@ td{
     width:700px;
     height:700px;
     border: 1px solid black;
-    box-shadow: 6px 6px 6px black;
-    text-align: center;
+    box-shadow: 3px 3px 6px black;
+     text-align: center;
+    vertical-align: right;
 }
 .GC{
     border-collapse: collapse;
@@ -49,7 +58,7 @@ td{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.LG1{
+.LZ1{
     width: 700px;
     height: 25px;
     border: 1px solid black;
@@ -66,17 +75,29 @@ h1{
 span{
     font-style: italic;
 }
-.LG2{
+.LZ2{
     width: 700px;
-    height: 200px;
+    height: 120px;
     border: 1px solid black;
 }
-.TD{
+.P2{
     width: 500px;
     height: 200px;
+    text-align: left;
+}
+.P3{
+    width: 500px;
+    height: 200px;
+    text-align: right;
+
 }
 .IG{
     width: 200px;
     height: 200px;
     border: 1px solid black;
+    box-shadow: 3px 3px 6px black;
+}
+.paragraphe{
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
