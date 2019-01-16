@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(27, 27, 27);
+}
+.container{
+    width: 64em;
+    height: 200em;
+    margin: 0 auto;
+    background-color: ivory;
+}
+header{
+    width:20em;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+.headerHaut{
+    font-family: Roboto Slab;
+    color: brown;
+    font-size: 0.8em;
+}
+.headerMilieu{
+    font-family: Roboto Slab;
+    width:20em;
+    font-size: 1.8em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.headerBas{
+    font-family: Roboto Slab;
+    font-size: 0.8em;
+}
+.RangeeH{
+    width: 64em;
+}
+.RangeeH .texteRangeeH{
+    width: 32em;
+    height: 32em;
+    padding-left: 25px;
+    padding-right: 50px;
+    font-size: 1em;
+    font-family: Roboto Slab;
+    text-align: right;
+}
+.RangeeH .imageRangeH{
+    width: 32em;
+    height: 32em;
+}
+.imageH{
+    padding-left: 45px;
+}
+.titreH{
+    font-size: 1.6em;
+    font-family: Roboto Slab;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: right;
+}
+.Rangee{
+    width: 64em;
+}
+.Rangee .texteRangee{
+    width: 32em;
+    height: 32em;
+    padding-left: 25px;
+    padding-right: 50px;
+    font-family: Roboto Slab;
+    font-style: italic;
+}
+.Rangee .imageRange{
+    width: 32em;
+    height: 32em;
+}
+.titre{
+    font-size: 1.6em;
+    font-family: Roboto Slab;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    font-style: normal;
+}
+.Rangee .imageRangee .image{
+    background-size: cover;
+    width: 32em;
+    height: 32em;
+}
+.note{
+    width: 15em;
+    color: white;
+    background-color: black;
+    margin-top: 5px;
+    font-style: normal;
+}
+footer{
+    width:20em;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+.footerMilieu{
+    font-family: Roboto Slab;
+    width:20em;
+    font-size: 1.8em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.footerBas{
+    font-family: Roboto Slab;
+    font-size: 0.8em;
+}
+.horaires{
+    font-style: italic;
+}
+.phone{
+    font-size: 0.7em;
+}
