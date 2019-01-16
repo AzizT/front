@@ -114,8 +114,9 @@ footer{
     padding-left: 10px;
     color: white;
 }
-p{
+.ZC .texte p{
     text-align: justify;
+    font-family: Roboto Slab;
 }
 .logo{
     padding-top: 15px;
