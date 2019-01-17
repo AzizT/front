@@ -1,0 +1,29 @@
+.container{
+    background-color: greenyellow;
+height: 65em;
+width: 95em;
+margin: 0 auto;
+}
+header{
+    background-color: blueviolet;
+    width: 45em;
+    height: 10em;
+    margin: 0 auto;
+}
+nav{
+    background-color: blanchedalmond;
+    width: 40em;
+    height: 4em;
+    margin: 0 auto;
+}
+main{
+    background-color: burlywood;
+    width: 45em;
+    height: 40em;
+    margin: 0 auto;
+}
+footer{background-color: aquamarine;
+    width: 40em;
+    height: 2em;
+    margin: 0 auto;
+}
