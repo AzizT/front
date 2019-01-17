@@ -1,0 +1,24 @@
+body{
+    background: rgb(197, 248, 184);
+}
+.container{
+    width: 75%;
+    height: 75%;
+    padding-top: 10%;
+    margin-left: 30%;
+}
+form{
+    border: 3px solid brown;
+    width: 40%;
+    height: 50%;
+    padding: 10px;
+}
+label{
+    float: left;
+    width: 190px;
+    color: black;
+    background-color: rgb(102, 190, 92);
+}
+form:hover{
+    box-shadow: 26px 26px 20px rgb(165, 113, 2);
+}

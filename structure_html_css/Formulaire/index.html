@@ -14,49 +14,64 @@
         <form>
 
                 <label for="pseudo">Pseudo *</label>
-                <input id="pseudo" type="text" name="pseudo" placeholder="TitiVitry" required><br />
+                <input type="text" name="pseudo" placeholder="*****" required><br />
 
                 <label for="mdp">Mot de passe *</label>
-                <input type="password" name="mdp" placeholder="Mot de passe" required><br />
+                <input type="password" id="#" name="#" placeholder="*****" required><br />
 
                 <label for="email">Email *</label>
-                <input type="email" name="email" placeholder="email" required><br/>
+                <input type="email" id="file" name="email" placeholder="*****" required><br/>
 
-                <label for="photo">Photo</label>
-                <input type="file" name="photo"><br />
+                <label for="file">Fichier</label>
+                <input type="file" id="file" name="file" required><br />
 
-                <select name="select">
-                        <option>cerise</option>
-                        <option>orange</option>
-                        <option>pomme</option>
-                      </select><br />
+                <label for="file">Fichier *</label>
+                <select name="#" id="##">
+                <optgroup>
+                    <option value=""></option>
+                    <option value=""></option>
+                </optgroup>
+                <optgroup>
+                    <option value=""></option>
+                    <option value=""></option>
+                </optgroup>
+                </select><br>
 
-                <label for="question" >Choisir</label>
+                <label for="choix" >Choisir</label>
                 <p>
-                <input type="checkbox" name="question" checked>Choix 1
-                <input type="checkbox" name="question">Choix 2
-                <input type="checkbox" name="question">Choix 3
+                <input type="checkbox" name="choix" checked>Choix 1
+                <input type="checkbox" name="choix">Choix 2
+                <input type="checkbox" name="choix">Choix 3
                 </p>
 
-                <label>Civilité</label>
-                <input type="radio" name="civilite" value="M." checked="checked"> M.
-                <input type="radio" name="civilite" value="Mme"> Mme<br />
+                <label for="civilite">Civilité</label>
+                <input type="radio" name="civilite" value="m"> Monsieur
+                <input type="radio" name="civilite" value="f" checked> Madame<br />
 
                 <label for="ville">Ville</label>
-                <input type="ville" name="ville" placeholder="ville" required><br/>
+                <input type="text" id="ville" list="france">
+                <datalist id="france">
+                    <option value="#">Lille</option>
+                    <option value="#">Paris</option>
+                    <option value="#">Toulouse</option>
+                    <option value="#">Marseille</option>
+                </datalist><br/>
 
-                <label for="code postal">Code Postal</label>
-                <input type="code postal" name="code postal" placeholder="code postal" required><br/>
+                <label for="cp">Code Postal</label>
+                <input type="text" id="id" name="id" maxlength="5"><br/>
 
                 <label for="Adresse">Adresse</label>
-                <textarea name="Adresse" cols="80" rows="8"></textarea><br/>
+                <textarea type="range" name="adresse" cols="28" rows="10"></textarea><br/>
 
-                <label>Jauge</label>
-                <input type="range" /><br />
+                <label for="jauge">Jauge</label>
+                <input type="range" id="jauge" min="0" max="200" value="75" /><br />
 
-                <label>Couleur</label>
+                <label for="couleur">Couleur</label>
                 <input type="color" /><br />
 
+                <input type="submit" name="inscription" value="S' inscrire">
+                <input type="reset" name="effacer" value="Recommencer">
+                <br><br>
                 <input type="submit" name="inscription" value="Envoyer">
                 <input type="reset" name="annuler" value="Annuler">
 
