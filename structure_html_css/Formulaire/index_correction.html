@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style_correction.css">
+    <title>Mon Formulaire</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <form method="POST" action="#" enctype="#">
+
+                <label for="pseudo">Pseudo *</label>
+                <input type="text" name="pseudo" placeholder="ecrire pseudo" required><br />
+                <!-- - "for" est l' identifiant de l' élément formulaire
+                     - input est l' entrée de données dans la base de données
+                     - METHOD= circulation des données en PHP,
+                     - ENCTYPE= concerne la récupération de ces mêmes données-->
+
+                <label for="mdp">Mot de passe *</label>
+                <input type="password" id="#" name="#" placeholder="password"><br />
+
+                <label for="email">Email *</label>
+                <input type="email"  id="email" name="email" placeholder="ecrire email" required><br/>
+
+                <label for="file">Fichier</label>
+                <input type="file" id="file" name="file" required><br />
+
+
+                <!-- Liste déroulante avec SELECT et non Input -->
+                <label for="file">Fichier</label>
+                <select name="#" id="##">
+
+                    <optgroup>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </optgroup>
+                    <optgroup>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </optgroup>
+
+                </select><br />
+
+                <label for="choix">Choisir</label>
+                <p>
+                    <input type="checkbox" name="choix" checked>Choix 1
+                    <input type="checkbox" name="choix" >Choix 2
+                    <input type="checkbox" name="choix" >Choix 3
+                </p>
+
+                <label for="civilite">Civilité :</label>
+                <p>
+                    <input type="radio" name="civilite" value="m">Monsieur
+                    <input type="radio" name="civilite" value="f" checked>Madame
+                </p>
+
+                <label for="ville">Ville</label>
+                <input type="text" id="ville" list="france">
+                <datalist id="france">
+                    <!-- la datalist permet de suggerer lorsque l' utilisateur tape, couplé avec du PHP pour aller faire un lien avec une base de données -->
+                    <option value="#">Paris</option>
+                    <option value="#">Marseille</option>
+                    <option value="#">Nantes</option>
+                </datalist><br />
+
+                <label for="cp">code postal</label>
+                <input type="text" id="id" name="id" maxlength="5" pattern="[0-9]{5}"><br />
+                <!-- Maxlength impose un max de caractères et pattern permet d' imposer le type de caracteres numeriques et comme il permet de préciser le nombre de caractères max, ici, on peut enlever le maxlenght car doublon -->
+
+                <label for="adresse">Adresse</label>
+                <textarea type="range" name="adresse" id="adresse" rows="10" cols="25"></textarea><br />
+
+                <label for="jauge">Jauge</label>
+                <input type="range" min="0" max="50" value="25" id="jauge"><br />
+                <!-- MIN et MAX correspondent a l' echelle et VALUE a la place du curseur -->
+
+                <label for="couleur">Couleur</label>
+                <input type="color"><br />
+
+                <input type="submit" name="inscription" value="S' inscrire">
+                <input type="reset"  name="effacer" value="Recommencer">
+                <br />
+                <br />
+                <input type="submit" name="inscription" value="Envoyer">
+                <input type="reset"  name="annuler" value="Annuler">
+
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
