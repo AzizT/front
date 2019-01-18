@@ -1,5 +1,5 @@
 body{
-    background: rgb(197, 248, 184);
+    background: rgb(210, 248, 201);
 }
 .container{
     width: 75%;
@@ -12,12 +12,15 @@ form{
     width: 40%;
     height: 50%;
     padding: 10px;
+    background: rgb(197, 248, 184);
 }
 label{
     float: left;
     width: 190px;
     color: black;
     background-color: rgb(102, 190, 92);
+    /* border: 1px solid brown; */
+    margin-right: 10px;
 }
 form:hover{
     box-shadow: 26px 26px 20px rgb(165, 113, 2);
