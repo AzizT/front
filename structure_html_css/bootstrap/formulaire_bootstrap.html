@@ -12,15 +12,23 @@
 <body>
     <div class="container-fluid">
 
+        <!-- me sert a avoir un margin-top, a défaut d' autre chose, que je n' ai pas réussi a trouver -->
+
+            <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-8 bd-content" role="main">
+            <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-8 bd-content" role="main"></main>
+
+
         <!-- ***************************Prénom et nom*************************** -->
 
         <form>
             <div class="row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="First name">
+              <div class="col-md-3 c1">
+                <label for="inputFirstName">Prénom</label>
+                <input type="text" class="form-control" placeholder="Prénom" >
               </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Last name">
+              <div class="col-md-3 c1">
+                <label for="inputLastName">Nom</label>
+                <input type="text" class="form-control" placeholder="Nom">
               </div>
             </div>
         </form>
@@ -28,57 +36,79 @@
         <!-- *****************************mail, mdp, adresse, ....Sign In************* -->
 
         <form>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
             </div>
-            <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                <label for="inputPassword4">Mot de passe</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Mot de passe">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                <label for="inputAddress">Adresse</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Rue, Bvd, Avn...">
+                </div>
             </div>
-            <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-            </select>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                <label for="inputAddress2">Adresse 2 (facultative)</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Appartment n°, étage">
+                </div>
             </div>
-            <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
+
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                <label for="inputCity">Ville</label>
+                <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-3">
+                <label for="inputState">Departement</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choisir...</option>
+                    <option>Paris</option>
+                    <option>Val de Marne</option>
+                    <option>Seine St Denis</option>
+                    <option>Seine et Marne</option>
+                </select>
+                </div>
+                <div class="form-group col-md-2">
+                <label for="inputZip">Code Postal</label>
+                <input type="text" class="form-control" id="inputZip">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-                Check me out
-            </label>
+
+            <div class="form-group">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Rester connecté
+                </label>
+                </div>
             </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+
+            <button type="submit" class="btn btn-primary">Connexion</button>
+            
         </form>
+
+        <!-- Sauter deux lignes, même cas de figure qu' en haut -->
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-8 bd-content" role="main"></main>
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-8 bd-content" role="main"></main>
 
         <!-- *************************File Input************************* -->
 
         <form>
             <div class="form-group">
-                <label for="exampleFormControlFile1">Example file input</label>
+                <label for="exampleFormControlFile1">Selectionnez un fichier</label>
                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
         </form>
@@ -86,8 +116,8 @@
         <!-- ************************************jauge************************** -->
 
             <form>
-            <div class="form-group">
-                <label for="formControlRange">Example Range input</label>
+            <div class="form-group col-md-3">
+                <label for="formControlRange">Jauge</label>
                 <input type="range" class="form-control-range" id="formControlRange">
             </div>
         </form>
@@ -96,11 +126,11 @@
 
         <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                <label class="form-check-label" for="inlineCheckbox1">Un ado</label>
               </div>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                <label class="form-check-label" for="inlineCheckbox2">Un adulte</label>
               </div>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
