@@ -1,0 +1,18 @@
+body{
+    background: rgb(250, 229, 229);
+}
+
+.container{
+    border: 2px solid black;
+    margin: 50px 0 0 0;
+}
+nav{
+    margin: 2% 10% auto;
+    position: fixed;
+    width: 80%;
+    background-color: rgb(240, 26, 229);
+    top: 0;
+    left: 0;
+    color: blanchedalmond;
+    text-align: center;
+}

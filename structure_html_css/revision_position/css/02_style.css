@@ -1,0 +1,22 @@
+body{
+    background: white;
+}
+.container{
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* permet de verrouiller le conteneur sur 80em, sans que le padding agrandissent le bloc */
+    padding: 1%;
+    width: 80%;
+    /* height: 50%; */
+    /* background-color: rgb(76, 217, 241); */
+    background: url(http://hdwpro.com/wp-content/uploads/2017/01/Free-Background-HD.jpg);
+}
+.sous{
+    width: 450px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 3% 3%;
+    background-color: rgb(33, 167, 167);
+     vertical-align: middle; 
+    display: inline-block;
+}
