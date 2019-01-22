@@ -1,0 +1,38 @@
+.container{
+    width: 90%;
+    background: lightblue;
+    margin: 0 auto;
+    height: 90em;
+}
+h1{
+    padding-top: 2em;
+    text-align: center;
+}
+.rec_texte{
+    width: 40%;
+    height: 20%;
+    background-color: rgb(158, 157, 157);
+    margin: 5% 5%;
+    float: left;
+}
+.rec_image1{
+    width: 40%;
+    height: 20%;
+    background: url(http://www.molenholleke.be/website/molenholleke/assets/images/newsimages/hotels-met-pasenhoofdfoto-4fa8cf278f6db.jpg);
+    margin: 5% 5%;
+    float: left;
+}
+.rec_image2{
+    width: 40%;
+    height: 20%;
+    background: url(https://images.all-free-download.com/images/graphiclarge/hd_egg_pictures_06_hd_pictures_170026.jpg);
+    margin: 5% 5%;
+    float: left;
+}
+.rec_image3{
+    width: 40%;
+    height: 20%;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSt7c9oQIM0Tj1OLqjMj6M9Rma7j95dOCtwYIeFQrudIU7ku1z);
+    margin: 5% 5%;
+    float: left;
+}

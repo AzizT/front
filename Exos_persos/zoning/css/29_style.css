@@ -1,0 +1,24 @@
+.container{
+    width: 90%;
+    height: 90em;
+    background: blanchedalmond;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    padding-top: 1em;
+}
+.longue{
+    width: 30%;
+    height: 80em;
+    background-color: rgb(248, 203, 56);
+    margin: 2% 2%;
+    float: left;
+}
+.rectangle{
+    width: 28%;
+    height: 35em;
+    float: left;
+    background-color: rgb(248, 203, 56);
+    margin: 2% 2%;
+}
