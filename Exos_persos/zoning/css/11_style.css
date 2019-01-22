@@ -1,0 +1,42 @@
+.container{
+    width: 90%;
+    background: blanchedalmond;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    padding-top: 2em;
+}
+.photo{
+    width: 40%;
+    height: 47em;
+    background: url(https://3.bp.blogspot.com/-hRGnukDz17s/VfVy-0rqAFI/AAAAAAAAM1I/B_-ULk71VdY/s1600/Lord-vishwakarma-HD-images-and-HD-photos.jpg);
+    margin-right: 1%;
+    margin-bottom: 1%;
+    float: left;
+}
+article{
+    text-align: justify;
+    padding: 1% 1% 1% 1%;
+}
+.mini_photo1{
+    width: 25%;
+    height: 27em;
+    background: url(http://images.huffingtonpost.com/2016-02-01-1454365830-3844375-vishnu.jpg);
+    float: left;
+    margin: 4%
+}
+.mini_photo2{
+    width: 25%;
+    height: 27em;
+    background: url(http://images.huffingtonpost.com/2016-02-01-1454365830-3844375-vishnu.jpg);
+    float: left;
+    margin: 4%
+}
+.mini_photo3{
+    width: 25%;
+    height: 27em;
+    background: url(http://images.huffingtonpost.com/2016-02-01-1454365830-3844375-vishnu.jpg);
+    float: left;
+    margin: 4%
+}
