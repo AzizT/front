@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* @import url("https://fonts.googleapis.com/css?family=Baloo+Thambi"); */
+body{
+    background: rgb(164, 209, 164);
+}
+.container{
+    width: 50em;
+    height: 137em;
+    margin: 0 auto;
+    font-family: Baloo Thambi;
+    /* background: rgb(164, 209, 164); */
+    padding-top: 5em;
+    /* border-radius: 5%; */
+}
+/* .container{
+    width: 80%;
+    height: 137em;
+    margin: 0 auto;
+    font-family: Baloo Thambi;
+    background: rgb(164, 209, 164);
+    padding-top: 5em;
+} */
+header{
+    width: 50em;
+    height: 30em;
+    background: url(../img/woodPlank.jpg);
+    margin: 0 auto;
+}
+.dots{
+    padding: 1em 1em;
+    letter-spacing: 0.5em;
+}
+.ce_soir{
+    margin-right: 20em;
+    padding-top: 3em;
+    padding-left: 4em;
+    padding-bottom: 0.4em;
+}
+.ce_soir2{
+    font-size: 1.6em;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-bottom: 0.4em;
+}
+.important{
+    width: 2em;
+    height: 10px;
+    margin-left: 7em;
+    color: red;
+    background-color: red;
+}
+.important2{
+    width: 2em;
+    height: 10px;
+    margin-left: 5em;
+    color: red;
+    background-color: red;
+}
+ ul#menu{
+    margin-left: 30em;
+    /*height: 35px;
+    
+    padding: 0;
+    background: url(../images/bg_menu.gif)repeat-x 0 -25px; */
+    list-style: none;
+    float: left;
+    /* pour cacher les puces */
+    
+}
+ul#menu li{
+    float: left;
+    /*  on rend les li flottants pour leur permettre d' aller a l' horizontale */
+    text-align: center;
+    margin-left: 2em;
+}
+ul#menu li a{
+    font-size: 0.7em;
+    font-weight: bold;
+    color: black;
+    /* display: block;
+    pour pouvoir dimensionner les "a"*/
+    text-decoration: none;
+    /* va enlever le underline du lien
+    border-right: 2px solid #dea; */
+    float: left;
+}
+header .logo{
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+    margin-top: 5em;
+    background: url(../img/cerf.svg);
+}
+header .triangle{
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+#rang1{
+    width: 50em;
+    height: 20em;
+    margin: 0 auto;
+}
+#rang1 .texte{
+    width: 20em;
+    height: 20em;
+    background: url(../img/pattern.jpg);
+    float: left;
+}
+p{
+    font-size: 0.7em;
+    padding: 2em 4em 1em 4em;
+    text-align: center;
+}
+h2{
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+hr{
+    width: 2em;
+    height: 2px;
+    margin-left: 9em;
+    color: red;
+    background-color: red;
+}
+.rouge{
+    font-size: 0.9;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1em;
+    color: red;
+}
+#rang1 .image{
+    width: 30em;
+    height: 20em;
+    transform: rotateY(180deg);
+    background: url(../img/asperge.jpg);
+    float: left;
+}
+#rang2{
+    width: 50em;
+    margin: 0 auto;
+}
+#rang2 .image{
+    width: 30em;
+    height: 20em;
+    background: url(../img/soap.jpg);
+    float: left;
+}
+#rang2 .texte{
+    width: 20em;
+    height: 20em;
+    background: url(../img/pattern.jpg);
+    float: left;
+}
+#rang3{
+    width: 50em;
+    margin: 0 auto;
+}
+#rang3 .texte{
+    width: 20em;
+    height: 20em;
+    background: url(../img/pattern.jpg);
+    float: left;
+}
+#rang3 .image{
+    width: 30em;
+    height: 20em;
+    background: url(../img/moule.jpg);
+    float: left;
+}
+.rang4{
+    width: 50em;
+    height: 30em;
+    margin: 0 auto; 
+    background: url(../img/eggs.jpg); 
+    float: left;
+}
+footer{
+    width: 50em;
+    height: 15em;
+    margin: 0 auto;
+    background: url(../img/pattern.jpg);
+
+}
+#contact .footer_haut{
+    font-size: 0.8em;
+    text-align: left;
+    /* padding-top: 0.5em; */
+}
+#contact .footer_bgauche{
+    font-size: 0.6em;
+    text-align: left;
+    padding-top: 0.5em;
+    padding-left: 5em;
+}
+#contact .footer_bdroit{
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    text-align: right;
+    float: right;
+    margin-top: -5em;
+}
+#contact .footer_bdroit a{
+    color: red;
+}
