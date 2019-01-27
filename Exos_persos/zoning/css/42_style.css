@@ -1,7 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
     width: 80%;
-    background: blanchedalmond;
-    margin: 0 auto;
+    height: 105em;
+    background: rgb(248, 216, 168);
+    margin: auto;
 }
 .clear{
     clear: both;
@@ -13,29 +18,74 @@ h1{
 }
 .rangee{
     width: 90%;
-    height: 30em;
+    height: 25em;
+    margin: auto;
+}
+.texte_h{
+    width: 31%;
+    height: 100%;
+    margin-right: 3%;
+    background-color: rgb(141, 250, 168);
+    float: left;
+    border-radius: 5%;
+}
+.horizontale{
+    width: 66%;
+    height: 100%;
     background-color: aquamarine;
-    margin: 0 auto;
+    float: left;
+    border-radius: 5%;
 }
 .colonne_gauche{
-    width: 30%;
+    width: 28%;
     height: 60em;
-    background-color: aquamarine;
-    margin-left: 3em;
+    margin-left: 5%;
+    margin-top: 3%;
     float: left;
+    border-radius: 5%;
 }
-.colonne_centrale{
-    width: 30%;
+.colonne_centre{
+    width: 28%;
     height: 60em;
-    background-color: aquamarine;
-    margin-left: 3em;
+    margin-left: 3%;
+    margin-top: 3%;
     float: left;
+    border-radius: 5%;
 }
 .colonne_droite{
-    width: 30%;
+    width: 28%;
     height: 60em;
-    background-color: aquamarine;
-    margin-left: 3em;
+    background-color: rgb(252, 248, 25);
+    margin-left: 3%;
+    margin-top: 3%;
+    float: left;
+    border-radius: 5%;
+}
+.image_g{
+    width: 100%;
+    height: 36%;
+    margin-bottom: 10%;
+    background-color: rgb(240, 68, 68);
+    border-radius: 5%;
+}
+.texte_g{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(243, 159, 159);
+    border-radius: 5%;
+}
+.texte_c{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 10%;
+    background-color: rgb(83, 80, 253);
+    border-radius: 5%;
+}
+.image_c{
+    width: 100%;
+    height: 36%;
+    background-color: rgb(135, 133, 248);
+    border-radius: 5%;
 }
 /*.texte1{
     width: 25%;

@@ -1,0 +1,33 @@
+body{
+background: rgb(66, 63, 63);
+}
+
+.container{
+background-color: black;
+width: 60%;
+margin: 0 auto;
+}
+header{
+width: 555px;
+height: 153px;
+margin: auto;
+background: url(../img/logo_netflix.png)no-repeat;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+.polar{
+    width: 960px;
+    height: 540px;
+    background: url(../img/polar.jpg);
+    margin: auto;
+
+}
+.onglet{
+
+}
+.regader{
+
+}
+.liste{
+
+}
