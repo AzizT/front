@@ -21,7 +21,7 @@ h1{
     height: 25em;
     margin: auto;
 }
-.texte_h{
+.texte_hg{
     width: 31%;
     height: 100%;
     margin-right: 3%;
@@ -36,20 +36,11 @@ h1{
     float: left;
     border-radius: 5%;
 }
-.texte{
-    width: 30%;
-    height: 30em;
-    background-color: rgb(220, 253, 253);
-    margin-left: 2em;
-    float: left;
-}
-.image{
-    width: 30%;
-    height: 30em;
-    margin-left: 2em;
-    float: left;
-    background: url(http://images.clipartpanda.com/object-clipart-square-objects-clipart-1.jpg)no-repeat;
-}
+/* .image_h{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(245, 145, 145);
+} */
 .colonne_gauche{
     width: 28%;
     height: 60em;
