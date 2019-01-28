@@ -36,10 +36,20 @@ h1{
     float: left;
     border-radius: 5%;
 }
-/* .image_h{
-    width: 33%;
+.image_h_cont{
+    width: 40%;
     height: 100%;
-    background-color: rgb(245, 145, 145);
+    border-radius: 5%;
+    float: left;
+}
+.image_h_img{
+    width: 100%;
+    height: 100%;
+    background: url(http://images.clipartpanda.com/object-clipart-square-objects-clipart-1.jpg);
+}
+/* .texte_h{
+    width: 60%;
+    height: 100%;
 } */
 .colonne_gauche{
     width: 28%;
@@ -66,12 +76,17 @@ h1{
     float: left;
     border-radius: 5%;
 }
-.image_g{
+.image_g_cont{
     width: 100%;
     height: 36%;
     margin-bottom: 10%;
-    background-color: rgb(240, 68, 68);
+    /* background: url(http://images.clipartpanda.com/object-clipart-square-objects-clipart-1.jpg); */
     border-radius: 5%;
+}
+.image_g_img{
+    width: 100%;
+    height: 100%;
+    background: url(http://images.clipartpanda.com/object-clipart-square-objects-clipart-1.jpg);
 }
 .texte_g{
     width: 100%;
@@ -89,46 +104,17 @@ h1{
 .image_c{
     width: 100%;
     height: 36%;
-    background-color: rgb(135, 133, 248);
+    background: url(http://images.clipartpanda.com/object-clipart-square-objects-clipart-1.jpg);
     border-radius: 5%;
 }
-/*.texte1{
-    width: 25%;
-    height: 25em;
-    background-color: rgb(220, 253, 253);
-    margin-left: 2em;
-    float: left;
+.image_d{
+    width: 100%;
+    height: 36%;
+    background: url(http://images.clipartpanda.com/object-clipart-square-objects-clipart-1.jpg);
+    border-radius: 5%;
 }
-.horizontale{
-    width: 65%;
-    height: 25em;
-    background-color: rgb(195, 250, 250);
-    margin-left: 30em;
-    margin-top: 2em;
+p{
+    font-family: 'Roboto Slab';
+    font-size: 12px;
+    padding: 8% 3% 3% 3%;
 }
-.image{
-    width: 45%;
-    height: 25em;
-    margin-left: 2em;
-    float: left;
-    background: url(http://images.clipartpanda.com/object-clipart-square-objects-clipart-1.jpg)no-repeat;
-}
- .texte2{
-    width: 45%;
-    height: 25em;
-    float: left;
-}
-.image2{
-    width: 25%;
-    height: 25em;
-    margin-left: 2em;
-    float: left;
-    background: url(http://images.clipartpanda.com/object-clipart-square-objects-clipart-1.jpg)no-repeat;
-}
-.texte3{
-    width: 25%;
-    height: 50em;
-    background-color: rgb(220, 253, 253);
-    margin-left: 2em;
-    float: left;
-} */
