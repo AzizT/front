@@ -39,7 +39,7 @@ header{
 }
 .liste{
     width: 200px;
-    height: 60px;
+    height: 59px;
     color: white;
     background-color: black;
     float: left;
@@ -52,8 +52,78 @@ header{
     color: white;
     text-align: center;
 }
-.span{
+span{
     display: inline-block;
     border: 1px solid white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
     margin-left: 5px;
+    margin-right: 5px;
+}
+p{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.triple{
+    height: 239px;
+    width: 960px;
+    margin: auto;
+    margin-top: 50px;
+}
+.image_g{
+    height: 239;
+    width: 320;
+    background: url(../img/sex_education.PNG);
+}
+.image_c{
+    height: 239;
+    width: 320;
+    background: url(../img/titans.PNG);
+}
+.image_d{
+    height: 239;
+    width: 320;
+    background: url(../img/birdbox.PNG);
+}
+.navigation{
+    width: 500px;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: red;
+}
+footer{
+    width: 960px;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+}
+ul#menu{
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    /* pour cacher les puces */
+}
+ul#menu li{
+    margin: auto;
+    float: left;
+    /*  on rend les li flottants pour leur permettre d' aller a l' horizontale */
+    text-align: center;
+}
+ul#menu li a{
+    width: 200px;
+    display: block;
+    /* pour pouvoir dimensionner les "a"*/
+    text-decoration: underline;
+}
+.clear{
+    clear: both;
 }
