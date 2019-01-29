@@ -1,33 +1,59 @@
 body{
-background: rgb(66, 63, 63);
+    background: rgb(66, 63, 63);
 }
-
 .container{
-background-color: black;
-width: 60%;
-margin: 0 auto;
+    background-color: black;
+    width: 60%;
+    margin: auto;
+    padding-top: 10px;
 }
 header{
-width: 555px;
-height: 153px;
-margin: auto;
-background: url(../img/logo_netflix.png)no-repeat;
-margin-top: 10px;
-margin-bottom: 5px;
+    width: 555px;
+    height: 153px;
+    margin: auto;
+    background: url(../img/logo_netflix.png)no-repeat;
+    margin-bottom: 10px;
 }
 .polar{
     width: 960px;
     height: 540px;
     background: url(../img/polar.jpg);
     margin: auto;
-
 }
 .onglet{
-
+    width: 410px;
+    height: 60px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
 }
-.regader{
-
+.regarder{
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: red;
+    float: left;
+    margin-right: 8px;
 }
 .liste{
-
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: black;
+    float: left;
+    border: 1px solid white;
+}
+.texte{
+    width: 960px;
+    height: 100px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.span{
+    display: inline-block;
+    border: 1px solid white;
+    margin-left: 5px;
 }

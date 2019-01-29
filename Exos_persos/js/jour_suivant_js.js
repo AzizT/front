@@ -25,10 +25,14 @@
 //     document.write(`Demain, nous serons ${jourSuivant}`);
 // }
 
-const today = "vendredi";
-let demain = "";
+// const today = "vendredi";
+// let demain = "";
+var today;
+var demain;
+var today = prompt("Quel jour sommes nous ?");
 if (today == "lundi") {
-    demain = "mardi";  } else if (today == "mardi"){
+    demain = "mardi";  
+} else if (today == "mardi"){
     demain = "mercredi";
 } else if (today == "mercredi"){
     demain = "jeudi";
@@ -45,7 +49,36 @@ if (today == "lundi") {
     document.write("Erreur, jour non reconnu");
 }
 if (demain != "") {
-    console.log(`Demain, nous serons ${demain}`);
-    document.write(`Demain, nous serons ${demain}`);
+    console.log("Demain, nous serons " + demain);
+    document.write("Demain, nous serons " + demain);
 }
-// pas de simples ou doubles quotes, mais l' accent grave
+
+/* le même avec switch-------------------*/
+var jour = prompt("Quel jour sommes nous ?");
+switch(jour){
+    case 'lundi':
+    document.write("Demain, nous serons mardi");
+    break;
+    case 'mardi':
+    document.write("Demain, nous serons mercredi");
+    break;
+    case 'mercredi':
+    document.write("Demain, nous serons jeudi");
+    break;
+    case 'jeudi':
+    document.write("Demain, nous serons vendredi");
+    break;
+    case 'vendredi':
+    document.write("Demain, nous serons samedi");
+    break;
+    case 'samedi':
+    document.write("Demain, nous serons dimanche");
+    break;
+    case 'dimanche':
+    document.write("Demain, nous serons lundi");
+    break;//ce break sert a sortir du switch d' avant
+    default:
+    break;//celui ci sert a sortir définitivement du programme
+}
+
+
