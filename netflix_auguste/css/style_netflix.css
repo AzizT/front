@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background: rgb(66, 63, 63);
 }
@@ -28,11 +32,14 @@ header{
     margin-bottom: 50px;
     text-align: center;
     text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    line-height: 55px;
 }
 .regarder{
     width: 200px;
     height: 60px;
-    color: white;
     background-color: red;
     float: left;
     margin-right: 8px;
@@ -40,7 +47,6 @@ header{
 .liste{
     width: 200px;
     height: 59px;
-    color: white;
     background-color: black;
     float: left;
     border: 1px solid white;
@@ -52,7 +58,7 @@ header{
     color: white;
     text-align: center;
 }
-span{
+.texte h2 span{
     display: inline-block;
     border: 1px solid white;
     padding-top: 2px;
@@ -61,36 +67,45 @@ span{
     padding-right: 5px;
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 3px;
 }
 p{
     margin-left: 25px;
     margin-right: 25px;
     color: white;
 }
+.texte p .paragraphe{
+    text-decoration: underline;
+}
 a{
     color: white;
     text-decoration: none;
 }
 .triple{
-    height: 239px;
-    width: 960px;
+    height: 249px;
+    width: 508px;
     margin: auto;
     margin-top: 50px;
 }
 .image_g{
-    height: 239;
-    width: 320;
-    background: url(../img/sex_education.PNG);
+    height: 161;
+    width: 225;
+    margin-right: 7px;
+    /* background: url(../img/sex_education.png); */
+    float: left;
 }
 .image_c{
-    height: 239;
-    width: 320;
-    background: url(../img/titans.PNG);
+    height: 161;
+    width: 225;
+    margin-right: 7px;
+    /* background: url(../img/titans.png); */
+    float: left;
 }
 .image_d{
-    height: 239;
-    width: 320;
-    background: url(../img/birdbox.PNG);
+    height: 161;
+    width: 225;
+    /* background: url(../img/birdbox.png); */
+    float: left;
 }
 .navigation{
     width: 500px;
@@ -99,15 +114,15 @@ a{
     text-align: center;
     text-transform: uppercase;
     background-color: red;
+    line-height: 55px;
 }
 footer{
     width: 960px;
-    height: 100px;
+    height: 150px;
     margin: auto;
     margin-top: 50px;
 }
 ul#menu{
-    margin: auto;
     padding: 0;
     list-style: none;
     /* pour cacher les puces */
@@ -119,10 +134,16 @@ ul#menu li{
     text-align: center;
 }
 ul#menu li a{
-    width: 200px;
+    width: 165px;
     display: block;
     /* pour pouvoir dimensionner les "a"*/
     text-decoration: underline;
+    margin-left:55px;
+    margin-bottom: 20px;
+}
+.logo_footer{
+    margin-top: 5px;
+    text-align: center;
 }
 .clear{
     clear: both;
