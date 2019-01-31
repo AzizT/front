@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* je le mets au cas, car comme le zoning est un peu complexe, pour éviter des problèmes de reglages en px */
+}
+body{
+    background: rgb(197, 197, 197);
+}
+.container{
+    /* je choisi celle largeur en rapport avec la largeur du bandeau azzaro */
+    width: 1000px;
+    height: 816px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    /* background: url(../img/fond.png)repeat; */
+    box-shadow: 6px 6px 6px 6px grey;
+    font-family: 'Roboto Slab';
+}
+#logo{
+    height: 75px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+.emplacement_logo{
+    background: no-repeat;
+    float: left;
+}
+.ma_boutique{
+    float: left;
+    margin-left: 25px;
+    width: 380px;
+}
+h1{
+    font-size: 3em;
+    font-style: italic;
+}
+.boutique{
+    color: palevioletred;
+}
+.aide{
+    float: left;
+    width: 330px;
+}
+h2{
+    color: rgb(71, 165, 253);
+}
+span{
+    color: rgb(71, 165, 253);
+}
+.horaires{
+    color: rgb(161, 161, 161);
+}
+.panier{
+    float: left;
+    width: 230px;
+    background-color: rgb(71, 165, 253);
+    color: white;
+}
+.compte{
+    text-align: center;
+}
+hr{
+    background-color: #fff;
+    height: 2px;
+    border: none;
+}
+#logo_panier{
+    float: left;
+}
+.achats{
+    line-height: 50px;
+    float: left;
+}
+ul#menu{
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(71, 165, 253);
+    list-style: none;
+    /* pour cacher les puces */
+}
+ul#menu li{
+    float: left;
+    /*  on rend les li flottants pour leur permettre d' aller a l' horizontale */
+    text-align: center;
+}
+ul#menu li a{
+    width: 164px;
+    line-height: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    display: block;
+    /* pour pouvoir dimensionner les "a"*/
+    text-decoration: none;
+    /* va enlever le underline du lien */
+    /* border-right: 2px solid #dea; */
+}
+/* ul#menu li a:hover{
+    background: url(../images/bg_menu.gif)repeat-x 0 0;
+} */
+.bandeau{
+    width: 1000px;
+    height: 333px;
+    background: url(../img/bandeau.png);
+}
+.centrale{
+    height: 120px;
+    margin-top: 10px;
+}
+.texte_centrale{
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+.paiement{
+    width: 209px;
+    height: 120px;
+    border-right: 1px solid grey;
+    float: left;
+    padding-left: 10px;
+}
+.qui_sommes_nous{
+    width: 550px;
+    height: 120px;
+    border-right: 1px solid grey;
+    float: left;
+    padding-left: 10px;
+}
+.services{
+    width: 209px;
+    height: 120px;
+    float: left;
+    padding-left: 10px;
+}
+.logo_camion{
+    margin-top: 10px;
+    float: left;
+}
+.texte_camion{
+    margin-top: 17px;
+    margin-left: 10px;
+    float: left;
+}
+.fleches{
+    margin-top: 10px;
+    float: left;
+}
+.texte_fleches{
+    margin-top: 17px;
+    margin-left: 10px;
+    float: left;
+}
+h3{
+    color: rgb(71, 165, 253);
+}
+.bas{
+    width: 1000px;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 225px;
+}
+.bon_plan{
+    width: 260px;
+    height: 150px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 6px 6px 6px grey;
+    margin-left: -160px;
+    float: left;
+}
+.coup_de_coeur{
+    width: 260px;
+    height: 150px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 6px 6px 6px grey;
+    margin-left: 40px;
+    float: left;
+}
+.plaisir{
+    width: 260px;
+    height: 150px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 6px 6px 6px grey;
+    margin-left: 40px;
+    float: left;
+}
+.titre_bas{
+    display: inline-block;
+    /* pour lui parametrer le BG, comme un block*/
+    width: 260px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    background: url(../img/fond.png)repeat;
+    color: black;
+
+}
+ul.menu_footer{
+    height: 35px;
+    margin: 0;
+    padding-left: 215px;
+    background-color: rgb(71, 165, 253);
+    list-style: none;
+    /* pour cacher les puces */
+}
+ul.menu_footer li{
+    float: left;
+    /*  on rend les li flottants pour leur permettre d' aller a l' horizontale */
+    text-align: center;
+}
+ul.menu_footer li a{
+    line-height: 35px;
+    font-size: 0.7em;
+    color: #fff;
+    display: block;
+    /* pour pouvoir dimensionner les "a"*/
+    text-decoration: none;
+    /* va enlever le underline du lien */
+}
+.image{
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+.texte_bas{
+    margin-left: 70px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.clear{
+    clear: both;
+}
