@@ -1,0 +1,123 @@
+*{   /* Reset */
+    margin : 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+    font-family:'Roboto Slab';
+}
+.container{
+    width: 100em;
+    height: 72.5em;
+    /* background: url(../images/bkg-body.jpg)no-repeat; */
+    margin: auto;
+
+}
+.header_haut{
+    margin-top: 1em;
+    height: 10em;
+    background-color: white;
+    box-shadow: 6px 6px 6px black;
+    
+
+}
+.logo{
+    background: no-repeat;
+    padding-top: 0.2em;
+    padding-left: 0.5em;
+}
+.titre{
+
+}
+.onglets{
+
+}
+.onglet_haut{
+
+}
+.onglet_bas{
+
+}
+/************************************** a parametrer *******************************/
+ul#menu{
+    height: 3em;;
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+    padding: 0;
+    background-color: black;
+    /* border-radius: 50%; */
+    box-shadow: 6px 6px 6px white;
+    list-style: none;
+    /* pour cacher les puces */
+}
+ul#menu li{
+    float: left;
+    /*  on rend les li flottants pour leur permettre d' aller a l' horizontale */
+    text-align: center;
+}
+ul#menu li a{
+    width: 130px;
+    line-height: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    display: block;
+    /* pour pouvoir dimensionner les "a"*/
+    text-decoration: none;
+    /* va enlever le underline du lien */
+    border-right: 2px solid #dea;
+}
+/* ********************************************************************************** */
+section{
+    height: 62.5em;
+    background: url(../images/bkg-body.jpg)no-repeat;
+    border-radius: 5%;
+    box-shadow: 6px 6px 6px black;
+
+}
+.colonne_gauche{
+
+}
+.photo_classe{
+
+}
+.texte_gauche{
+
+}
+.lancer{
+
+}
+.colonne_hd{
+
+}
+.livre1{
+
+}
+.texte1{
+
+}
+.colonne_bd{
+
+}
+.livre2{
+
+}
+.texte2{
+    
+}
+.qsn{
+
+}
+.contact{
+
+}
+.qr{
+
+}
+.reseaux_sociaux{
+    
+}
