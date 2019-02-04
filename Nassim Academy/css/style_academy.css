@@ -1,23 +1,25 @@
-*{   /* Reset */
-    margin : 0;
-    padding: 0;
-}
 body{
     background-color: gray;
     font-family:'Roboto Slab';
 }
 .container{
     width: 100em;
-    height: 72.5em;
-    /* background: url(../images/bkg-body.jpg)no-repeat; */
+    height: 78.5em;
     margin: auto;
 
 }
+header{
+    width: 90%;
+    height: 13em;
+    margin: auto;
+    box-shadow: 6px 6px 6px white;
+
+}
 .header_haut{
-    margin-top: 1em;
+    /* margin-top: 1em; */
     height: 10em;
     background-color: white;
-    box-shadow: 6px 6px 6px black;
+    /* box-shadow: 6px 6px 6px black; */
     
 
 }
@@ -40,16 +42,15 @@ body{
 }
 /************************************** a parametrer *******************************/
 ul#menu{
-    height: 3em;;
-    width: 80%;
-    margin: auto;
-    margin-top: 1em;
+     height: 3em;
+    /*width: 80%;
+    margin: auto;*/
+    margin-top: 0em; 
     margin-bottom: 1em;
-    
     padding: 0;
     background-color: black;
-    /* border-radius: 50%; */
-    box-shadow: 6px 6px 6px white;
+    /* border-radius: 50%; 
+    box-shadow: 6px 6px 6px white;*/
     list-style: none;
     /* pour cacher les puces */
 }
@@ -59,8 +60,8 @@ ul#menu li{
     text-align: center;
 }
 ul#menu li a{
-    width: 130px;
-    line-height: 25px;
+    width: 18.5em;
+    line-height: 2.3em;
     font-size: 1.2em;
     font-weight: bold;
     letter-spacing: 2px;
@@ -69,13 +70,13 @@ ul#menu li a{
     /* pour pouvoir dimensionner les "a"*/
     text-decoration: none;
     /* va enlever le underline du lien */
-    border-right: 2px solid #dea;
 }
 /* ********************************************************************************** */
-section{
+main{
     height: 62.5em;
     background: url(../images/bkg-body.jpg)no-repeat;
-    border-radius: 5%;
+    margin-top: 2em;
+    border-radius: 2%;
     box-shadow: 6px 6px 6px black;
 
 }

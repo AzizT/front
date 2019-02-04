@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CLemonada%7COswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Ma page structure</title>
+    <meta name = "description" content =" Ma première page en HTML/CSS">
+    <!-- cette meta fait apparaitre dans la rechrche google, une description du site, servant aussi pour les  mots clés -->
+</head>
+
+<body>
+
+        <!-- Corps du document-->
+    
+        <header> <!--Zone du haut,exp: bannière, logo, slogan.....-->
+    
+            <div id="logo">
+    
+            <a href="index.html" target="_blank"><img src="image/logo.png" alt="logo/css"></a>
+    
+            </div>
+    
+            <div id="slogan">
+    
+                <h1>Mon Premier Site en HTML/CSS</h1>   <!--H1 titre de premier rang,un seul par page-->
+    
+            </div>
+    
+            <div id="rs">
+    
+                <a href="https://twitter.com/"target="_blank"><i class="fab fa-twitter"></i></a>
+    
+                <a href="https://www.facebook.com/"target="blank"><i class="fab fa-facebook"></i></a>
+    
+                <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+    
+            </div>
+    
+           <div class="clear"></div>    <!--L'attribut HTML CLEAR de la balise HTML BR renvoie le texte ou l'image à la prochaine ligne libre de toute la page-->
+    
+        </header>
+    
+        <nav> <!-- menu, navigation-->
+    
+            <a href="index.html" >Structure</a>
+    
+            <a href="texte.html" >Textes</a>
+    
+            <a href="selecteur.html" >Selecteurs</a>
+    
+            <a href="images.html">Images</a>
+    
+            <a href="position.html">Positions</a>
+    
+            <a href="zoning.html">Zoning</a>
+    
+            <a href="liste.html">Listes</a>
+    
+            <a href="lien_menu.html" class="activ">Liens & Menus</a>
+    
+            <a href="tableau.html">Tableaux</a>
+    
+            <a href="formulaires.html">Formulaires</a>
+    
+            <a href="multimedia.html">Multimédia</a>
+    
+            <a href="animation.html">Animations</a>
+    
+            </nav>
+    
+            <main> 
+
+                <h2>Texte</h2>
+
+                <section>
+                    <h3>Titre de la première section</h3>
+                    <blockquote>
+                            <i class="fas fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates repellendus praesentium <i class="fas fa-quote-right" aria-hidden="true"></i>
+                    </blockquote>
+                    <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Consequatur quam nihil cupiditate nobis recusandae odio, minus earum optio ut magnam unde corporis ipsa expedita voluptatem. Maxime fugit asperiores aliquid repellat.</p>
+                </section>
+
+                <section class="roboto">
+                    <h3>Titre de la deuxième section</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis iste earum obcaecati a minima totam, voluptas maxime! Necessitatibus magnam at aperiam, adipisci aspernatur exercitationem. Sit nemo quam assumenda unde voluptates!
+                    </p>
+                </section>
+    
+            </main>
+            <section>
+                        <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up"aria-hidden="true"></i></button></a>
+            
+                        <!-- aria accès de contenus web plus faciles pour les handicapés=> https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+            </section>
+                <footer><!--Footer : Zone du bas, ex: les liens administratifs,mentions légales,plan du site...-->
+    
+                </footer>
+    
+    </body> 
+</html>
