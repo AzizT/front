@@ -9,15 +9,16 @@ body{
 
 }
 header{
-    width: 90%;
+    width: 90em;
     height: 13em;
     margin: auto;
-    box-shadow: 6px 6px 6px blanchedalmond;
+    /* box-shadow: 6px 6px 6px blanchedalmond; */
 
 }
 .header_haut{
     height: 10em;
     background-color: white;
+    border-radius: 15% 15% 0 0;
     
 
 }
@@ -107,6 +108,14 @@ main{
 
 }
 .colonne_gauche{
+    height: 40em;
+    width: 40em;
+    margin-top: 19em;
+    margin-bottom: 3em;
+    margin-left: 2em;
+    background-color: rgb(247, 157, 157);
+    border-radius: 5%;
+    float: left;
 
 }
 .photo_classe{
@@ -118,8 +127,23 @@ main{
 .lancer{
 
 }
-.colonne_hd{
+.colonne_droite{
+    height: 40em;
+    width: 40em;
+    margin-top: 20em;
+    margin-bottom: 3em;
+    margin-left: 58em;
+    background-color: rgb(247, 157, 157);
+    border-radius: 5%;
 
+}
+.colonne_hd{
+    /* height: 18em;
+    width: 40em;
+    margin-top: 21em;
+    margin-right: 2em;
+    margin-left:58em;
+    background-color: rgb(247, 157, 157); */
 }
 .livre1{
 
@@ -128,6 +152,13 @@ main{
 
 }
 .colonne_bd{
+
+    /* height: 18em;
+    width: 40em;
+    margin-top: 40em;
+    margin-right: 2em;
+    margin-left:58em;
+    background-color: rgb(247, 157, 157); */
 
 }
 .livre2{
