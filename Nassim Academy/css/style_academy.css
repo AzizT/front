@@ -61,7 +61,7 @@ hr{
     text-decoration: none;
 }
 .onglet_bas a p{
-    background-color: rgb(248, 76, 76);
+    background-color: rgb(170, 4, 4);
     width:10em;
     height:2em;
     line-height: 1.8em;
@@ -108,27 +108,55 @@ main{
 
 }
 .colonne_gauche{
-    height: 40em;
+    height: 39em;
     width: 40em;
     margin-top: 19em;
     margin-bottom: 3em;
     margin-left: 2em;
-    background-color: rgb(247, 157, 157);
+    padding-top: 1em;
+    background-color: blanchedalmond;
     border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
     float: left;
 
 }
 .photo_classe{
+    width: 36em;
+    height: 20.25em;
+    margin-left: 2em;
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
+
 
 }
 .texte_gauche{
+    width: 36em;
+    height: 10em;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 2em;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(252, 222, 178);
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
 
 }
 .lancer{
-
+    width: 36em;
+    height: 1em;
+    padding-top: 0.5em;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+.application{
+    width: 10em;
+    height: 2em;
+    font-weight: bold;
+    margin-left: 18em;
+    background-color: rgb(252, 222, 178);
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
 }
 .colonne_droite{
-    height: 40em;
+    height: 39em;
     width: 40em;
     margin-top: 20em;
     margin-bottom: 3em;
