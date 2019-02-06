@@ -1,10 +1,12 @@
- function calcul(){
+function calcul(){
+
+// moyenne_generale.onclick=function calcul(){
  
  var moyenne_maths = Number(prompt("Entre ta moyenne en mathématiques pour ce trimestre"));
  var moyenne_français = Number(prompt("Entre ta moyenne en français pour ce trimestre"));
  var moyenne_svt = Number(prompt("Entre ta moyenne en SVT pour ce trimestre"));
  var moyenne_hg = Number(prompt("Entre ta moyenne en Histoire - Géographie pour ce trimestre"));
- var moyenne_generale = (moyenne_maths + moyenne_français + moyenne_svt + moyenne_hg) / 4;
+ var moyenne_generale =(moyenne_maths + moyenne_français + moyenne_svt + moyenne_hg) / 4;
 }
 
  if(moyenne_generale < 5){

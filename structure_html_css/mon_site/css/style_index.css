@@ -511,3 +511,223 @@ td{
     background: blue;
  
  }
+
+ /* *********************page zoning************************* */
+
+               /************zoning 1********  */
+ #zoning1{
+     width: 500px;
+     height: 450px;
+     margin: auto;
+     text-align: center;
+ }
+ .zoneJ{
+     width: 500px;
+     height: 50px;
+     background-color: yellow;
+ }
+ .zoneVc{
+     width: 150px;
+     height: 400px;
+     background-color: rgb(2, 172, 2);
+     float: left;
+ }
+ .zoneVf{
+    width: 350px;
+    height: 400px;
+    background-color: rgb(1, 90, 1);
+    float: left;
+ }
+ .pont_suspendu{
+     margin-left: 0;
+     margin-right: 0;
+     margin-top: 80px;
+ }
+
+                 /************zoning 2********  */
+
+ .bloc{
+     width: 500px;
+     height: 600px;
+     margin: auto;
+     text-align: center;
+     color: white;
+ }
+ .zone_haut{
+     width:500px;
+     height: 100px;
+     background-color: #fff;
+ }
+ .zone_haut span{
+     color: black;
+ }
+ .zoneG{
+     width: 100px;
+     height: 500px;
+     background-color: rgb(1, 90, 1);
+     float: left;
+ }
+ .milieu{
+     width: 300px;
+     height: 500px;
+     background-color: purple;
+     float: left;
+ }
+ .zoneD{
+    width: 100px;
+    height: 500px;
+    background-color: rgb(1, 90, 1);
+    float: left;
+}
+                     /************zoning 3********  */
+
+#zoning3{
+    width: 600px;
+     height: 500px;
+     margin: auto;
+     text-align: center;
+     color: white;
+     text-shadow: 1px 1px 1px darkgrey;
+}
+.zoneVf2{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(1, 71, 1);
+    float: left;
+}
+.zoneVc2{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(1, 156, 1);
+    float: left;
+}
+.zoneVtc{
+    width: 600px;
+    height: 100px;
+    background-color: rgb(2, 235, 2);
+    float: left;
+}
+.zoneVtc span{
+    color: black;
+}
+
+                   /************zoning 4********  */
+
+#zoning4{
+    width: 600px;
+    height: 800px;
+    margin: auto;
+    text-align: center;
+}
+.bleuC{
+    width: 600px;
+    height: 200px;
+    background-color: rgb(75, 188, 253);
+}
+.bleuF{
+    width: 600px;
+    height: 100px;
+    background-color: rgb(19, 167, 252);
+}
+.blanche{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    padding-top: 10px;
+}
+.grise{
+    width: 580px;
+    height: 380px;
+    background-color: grey;
+    margin: auto;
+}
+.automne{
+    width: 580px;
+    height: 380px;
+}
+.marron{
+    width: 600px;
+    height: 100px;
+    background-color: brown;
+}
+                            /************zoning 5********  */
+
+#zoning5{
+    height: 670px;
+    width: 620px;
+    margin: auto;
+    text-align: center;
+}
+.headerBeigeClair{
+    width: 620px;
+    height: 100px;
+    background-color: rgb(253, 210, 90);
+}
+.navBeigeFonce{
+    width: 620px;
+    height: 50px;
+    background-color: rgb(250, 185, 8);
+}
+.centrale{
+    height: 420px;
+    width: 620px;
+    padding-top: 10px;
+    background-color: white;
+}
+.beigeFonce1{
+    height: 200px;
+    width: 300px;
+    margin-left: 10px;
+    background-color: rgb(250, 185, 8);
+    float: left;
+}
+.beigeFonce2{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(250, 185, 8);
+    float: left;
+}
+.beigeClair1{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(253, 210, 90);
+    float: left;
+}
+.beigeClair2{
+    height: 200px;
+    width: 300px;
+    margin-left: 10px;
+    background-color: rgb(253, 210, 90);
+    float: left;
+}
+.footerBeigeClair{
+    height: 50px;
+    width: 620px;
+    background-color: rgb(250, 185, 8);
+}
+.zoneImage{
+    height: 200px;
+    width: 300px;
+}
+.zoneImage1{
+    height: 200px;
+    width: 300px;
+}
+.zoneImage1:hover{
+    transform: rotate(-15deg);
+    box-shadow: 10px 10px 10px brown;
+    transition: 1s;
+}
+.zoneImage2{
+    height: 200px;
+    width: 300px;
+}
+.zoneImage2:hover{
+        box-shadow: 0px 30px 30px rgb(3, 3, 3);
+        animation: bounce 0.45s ease infinite alternate; 
+    } 
+    @keyframes bounce{ from {transform: translateY(0);} to {transform: translateY(-20px);}
+}
+
+                         /* *************zoning 6************ */
+

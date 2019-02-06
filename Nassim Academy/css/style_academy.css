@@ -4,7 +4,7 @@ body{
 }
 .container{
     width: 100em;
-    height: 78.5em;
+    height: 85em;
     margin: auto;
 
 }
@@ -12,7 +12,6 @@ header{
     width: 90em;
     height: 13em;
     margin: auto;
-    /* box-shadow: 6px 6px 6px blanchedalmond; */
 
 }
 .header_haut{
@@ -79,6 +78,7 @@ ul#menu{
     background-color: rgb(58, 58, 58);
     list-style: none;
     /* pour cacher les puces */
+    border-bottom: 2px solid rgba(255, 235, 205, 0.719);
 }
 ul#menu li{
     float: left;
@@ -103,6 +103,7 @@ main{
     height: 62.5em;
     background: url(../images/bkg-body.jpg)no-repeat;
     margin-top: 2em;
+    margin-bottom: 2em;
     border-radius: 2%;
     box-shadow: 6px 6px 6px rgb(58, 58, 58);
 
@@ -114,7 +115,7 @@ main{
     margin-bottom: 3em;
     margin-left: 2em;
     padding-top: 1em;
-    background-color: blanchedalmond;
+    background-color: rgb(199, 197, 197);
     border-radius: 5%;
     box-shadow: 2px 2px 2px rgb(58, 58, 58);
     float: left;
@@ -136,7 +137,7 @@ main{
     margin-left: 2em;
     text-align: center;
     font-weight: bold;
-    background-color: rgb(252, 222, 178);
+    background-color: rgb(252, 239, 220);
     box-shadow: 2px 2px 2px rgb(58, 58, 58);
 
 }
@@ -161,39 +162,57 @@ main{
     margin-top: 20em;
     margin-bottom: 3em;
     margin-left: 58em;
-    background-color: rgb(247, 157, 157);
-    border-radius: 5%;
+    /* background-color: rgb(247, 157, 157);
+    border-radius: 5%; */
 
 }
 .colonne_hd{
-    /* height: 18em;
+    height: 19em;
     width: 40em;
-    margin-top: 21em;
-    margin-right: 2em;
-    margin-left:58em;
-    background-color: rgb(247, 157, 157); */
+    background-color: rgb(199, 197, 197);
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
 }
 .livre1{
-
+    height:17em;
+    width: 12em;
+}
+.svt{
+    margin-top: 1em;
+    margin-left: 1em;
+    box-shadow: -2px -2px 2px rgb(58, 58, 58);
 }
 .texte1{
 
 }
 .colonne_bd{
 
-    /* height: 18em;
+    height: 19em;
     width: 40em;
-    margin-top: 40em;
-    margin-right: 2em;
-    margin-left:58em;
-    background-color: rgb(247, 157, 157); */
-
+    margin-top:1em;
+    background-color: rgb(199, 197, 197);
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
 }
 .livre2{
-
+    height:17em;
+    width: 12em;
+}
+.dixit{
+    margin-top: 1em;
+    margin-left: 26.5em;
+    box-shadow: 3px 3px 3px rgb(58, 58, 58);
 }
 .texte2{
     
+}
+footer{
+    width: 90%;
+    height: 5em;
+    background-color: rgb(58, 58, 58);
+    margin:auto;
+    border-radius: 0 0 15% 15%;
+    border-top: 2px solid rgba(255, 235, 205, 0.719);
 }
 .qsn{
 
