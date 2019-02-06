@@ -54,7 +54,7 @@ hr{
     width:10em;
     height:2em;
     line-height: 1.8em;
-    color:white;
+    color:blanchedalmond;
     text-align: center;
     border-radius: 10%;
     text-decoration: none;
@@ -64,7 +64,7 @@ hr{
     width:10em;
     height:2em;
     line-height: 1.8em;
-    color:white;
+    color:blanchedalmond;
     text-align: center;
     border-radius: 10%;
     text-decoration: none;
@@ -176,14 +176,27 @@ main{
 .livre1{
     height:17em;
     width: 12em;
+    float: left;
 }
 .svt{
     margin-top: 1em;
     margin-left: 1em;
-    box-shadow: -2px -2px 2px rgb(58, 58, 58);
+    box-shadow: 3px 3px 10px rgb(58, 58, 58);
 }
 .texte1{
-
+    height: 17em;
+    width: 20em;
+    float: left;
+    margin-left: 7em;
+    text-align: right;
+    
+    
+}
+.texte_livre1{
+    font-weight: bold;
+    padding-right: 0.5em;
+    background-color: rgb(252, 239, 220);
+    box-shadow: -3px 3px 3px rgb(58, 58, 58);
 }
 .colonne_bd{
 
@@ -197,14 +210,25 @@ main{
 .livre2{
     height:17em;
     width: 12em;
+    float: left;
 }
 .dixit{
     margin-top: 1em;
-    margin-left: 26.5em;
-    box-shadow: 3px 3px 3px rgb(58, 58, 58);
+    margin-left: 5.5em;
+    box-shadow: -3px 3px 10px rgb(58, 58, 58);
 }
 .texte2{
-    
+    height: 17em;
+    width: 20em;
+    float: left;
+    margin-left: 1em;
+    text-align: left;
+}
+.texte_livre2{
+    font-weight: bold;
+    padding-left: 0.5em;
+    background-color: rgb(252, 239, 220);
+    box-shadow: 3px 3px 3px rgb(58, 58, 58);
 }
 footer{
     width: 90%;
@@ -213,16 +237,48 @@ footer{
     margin:auto;
     border-radius: 0 0 15% 15%;
     border-top: 2px solid rgba(255, 235, 205, 0.719);
+    color: blanchedalmond;
+    text-align: center;
 }
 .qsn{
-
+    width: 25%;
+    height: 5em;
+    float: left;
 }
 .contact{
-
+    width: 25%;
+    height: 5em;
+    float: left;
 }
 .qr{
-
+    width: 25%;
+    height: 5em;
+    float: left;
 }
 .reseaux_sociaux{
-    
+    width: 25%;
+    height: 5em;
+    float: left;
+}
+.qsn a{
+    color: blanchedalmond;
+    text-decoration: none;
+    line-height: 40px;
+}
+.contact a{
+    color: blanchedalmond;
+    text-decoration: none;
+    line-height: 40px;
+}
+.qr a{
+    color: blanchedalmond;
+    text-decoration: none;
+    line-height: 40px;
+}
+.reseaux_sociaux a{
+    letter-spacing: 5px;
+    font-size: 18px;
+    color: blanchedalmond;
+    text-decoration: none;
+    line-height: 40px;
 }
