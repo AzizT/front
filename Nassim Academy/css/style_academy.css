@@ -6,20 +6,16 @@ body{
     width: 100em;
     height: 85em;
     margin: auto;
-
 }
 header{
     width: 90em;
     height: 13em;
     margin: auto;
-
 }
 .header_haut{
     height: 10em;
     background-color: white;
     border-radius: 15% 15% 0 0;
-    
-
 }
 .logo{
     width: 20%;
@@ -47,7 +43,6 @@ hr{
     float: left;
     margin-left: 6em;
     margin-top: 2em;
-
 }
 .onglet_haut a p{
     background-color: rgb(58, 58, 58);
@@ -106,7 +101,9 @@ main{
     margin-bottom: 2em;
     border-radius: 2%;
     box-shadow: 6px 6px 6px rgb(58, 58, 58);
-
+}
+.disparu{
+    text-indent: -5000px;
 }
 .colonne_gauche{
     height: 39em;
@@ -119,15 +116,12 @@ main{
     border-radius: 5%;
     box-shadow: 2px 2px 2px rgb(58, 58, 58);
     float: left;
-
 }
 .photo_classe{
     width: 36em;
     height: 20.25em;
     margin-left: 2em;
     box-shadow: 2px 2px 2px rgb(58, 58, 58);
-
-
 }
 .texte_gauche{
     width: 36em;
@@ -137,9 +131,8 @@ main{
     margin-left: 2em;
     text-align: center;
     font-weight: bold;
-    background-color: rgb(252, 239, 220);
+    background-color: rgb(250, 244, 235);
     box-shadow: 2px 2px 2px rgb(58, 58, 58);
-
 }
 .lancer{
     width: 36em;
@@ -151,9 +144,10 @@ main{
 .application{
     width: 10em;
     height: 2em;
+    color: blanchedalmond;
     font-weight: bold;
     margin-left: 18em;
-    background-color: rgb(252, 222, 178);
+    background-color: rgb(58, 58, 58);
     box-shadow: 2px 2px 2px rgb(58, 58, 58);
 }
 .colonne_droite{
@@ -183,6 +177,11 @@ main{
     margin-left: 1em;
     box-shadow: 3px 3px 10px rgb(58, 58, 58);
 }
+.svt:hover{
+    transform: scale(1.3);
+    transition: 2s;
+    box-shadow: 6px 6px 10px rgb(58, 58, 58);
+}
 .texte1{
     height: 17em;
     width: 20em;
@@ -195,7 +194,7 @@ main{
 .texte_livre1{
     font-weight: bold;
     padding-right: 0.5em;
-    background-color: rgb(252, 239, 220);
+    background-color: rgb(250, 244, 235);
     box-shadow: -3px 3px 3px rgb(58, 58, 58);
 }
 .colonne_bd{
@@ -217,6 +216,11 @@ main{
     margin-left: 5.5em;
     box-shadow: -3px 3px 10px rgb(58, 58, 58);
 }
+.dixit:hover{
+    transform: scale(1.3);
+    transition: 2s;
+    box-shadow: -6px 6px 10px rgb(58, 58, 58);
+}
 .texte2{
     height: 17em;
     width: 20em;
@@ -227,7 +231,7 @@ main{
 .texte_livre2{
     font-weight: bold;
     padding-left: 0.5em;
-    background-color: rgb(252, 239, 220);
+    background-color: rgb(250, 244, 235);
     box-shadow: 3px 3px 3px rgb(58, 58, 58);
 }
 footer{
