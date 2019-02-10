@@ -1,0 +1,60 @@
+/* *******************mise en forme et mise en place du slider dans la page*********** */
+
+.slider{
+    width:400px;
+    height:200px;
+    border:solid 1px #555;
+    padding:0;
+    position:relative;
+    margin:150px auto;
+    overflow:hidden;
+    /* afin de cacher les images dépassant de notre zone de slide */
+}
+/* ************************gestion de la liste a puce************ */
+
+#slider-list{
+    list-style-type:none;
+    display:flex;
+    /*  du flex au lieu du float
+    Si on veut du float, il faut activer le "#slider-list li" ci dessous, et neutraliser le flexbox */
+    margin:0;
+    position:absolute;
+    left:0;
+    top:0;
+    padding:0;
+    animation:slide 15s linear infinite;
+/* c' est la propriété qui régit le défilement */
+}
+/* #slider-list li{
+    float: left;
+} */
+/* **********************pour limiter la taille des images au cadre du slider********* */
+
+#slider-list img{
+    width:400px;
+    height:200px;
+    margin:0;
+}
+/* **********************L' animation des images************* */
+
+@keyframes slide{
+    0%{left:0px;}
+    10%{left:0px;}
+    35%{left:-100%;}
+    45%{left:-100%;}
+    75%{left:-200%;}
+    85%{left:-200%;}
+    90%{left:0px;}
+    /* Mes reglages pour 4 images
+     0%{left:0px;}
+    10%{left:0px;}
+    20%{left:-100%;}
+    30%{left:-100%;}
+    40%{left:-100%;}
+    50%{left:-200%;}
+    60%{left:-200%;}
+    70%{left:-200%;}
+    80%{left:-300%;}
+    90%{left:-300px;}
+    100%{left:0px;} */
+}

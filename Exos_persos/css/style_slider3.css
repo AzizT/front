@@ -1,0 +1,35 @@
+/* *********       réalisé grace a ce tuto
+https://la-cascade.io/un-carrousel-responsif-en-pur-css/    ******* */
+
+#slider{
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    /* pour cacher ce qui risque de depasser */
+}
+#slider figure{
+    position: relative;
+    /* permet a l' image de se deplacer plus facilement */
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    animation: 30s slidy infinite;
+}
+#slider figure img{
+    width: 20%;
+    /* 20% car 5 images, si 4 images => 25%, 3 images => 33% etc... */
+    height: auto;
+    float: left;
+}
+@keyframes slidy{
+    0%{left: 0%;}
+    20%{left: 0%;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left: -200%;}
+    70%{left: -200%;}
+    75%{left: -300%;}
+    95%{left: -300%;}
+    100%{left: -400%;}
+    /* 20% de temps pour l' animation et 5% pour le défilement */
+}
