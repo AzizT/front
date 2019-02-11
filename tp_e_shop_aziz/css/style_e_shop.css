@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-style: 'Roboto Slab';
+}
+.clear{
+    clear: both;
+}
+.container{
+    margin: auto;
+    width: 95%;
+}
+
+/* header haut */
+
+.sav{
+    height: 2rem;
+    background-color:rgb(87, 86, 86);
+    color: rgb(248, 237, 221);
+    font-size: 13px;
+    text-align: center;
+}
+
+.sav p{
+    line-height: 30px;
+    /* pour gérer son emplacment a la verticale */
+}
+.satisfait{
+    width: 33%;
+    float: left;
+}
+.besoin{
+    width: 33%;
+    float: left;
+}
+.paiement{
+    width: 33%;
+    float: left;
+}
+
+/* header milieu */
+
+#logo{
+    height: 8rem;
+    background-color: rgb(250, 238, 219);
+
+    
+}
+.logo_e_shop{
+    padding-top: 0.5rem;
+    padding-left: 5rem;
+    width: 66%;
+    float: left;
+}
+.onglets_gauche{
+    width: 33%;
+    float: left;
+}
+.devis{
+    width: 50%;
+    height: 4rem;
+    float: left;
+}
+.connexion{
+    width: 50%;
+    height: 4rem;
+    float: left;
+}
+.cEq{
+    width: 50%;
+    height: 4rem;
+    float: left;
+}
+.panier{
+    width: 50%;
+    height: 4rem;
+    float: left;
+}
+
+/* barre de navigation */
+
+ul#menu{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 238, 219);
+    list-style: none;
+    /* pour cacher les puces */
+}
+ul#menu li{
+    width: 10%;
+    float: left;
+    /*rend les li flottants pour leur permettre d' aller a l' horizontale */
+    text-align: center;
+}
+ul#menu li a{
+    
+    color: black;
+    display: block;
+    /* pour pouvoir dimensionner les "a"*/
+    text-decoration: none;
+    /*enlever le underline du lien */
+}
+/* début du main */
+
+main{
+    width: 90%;
+    margin-left: 2rem;
+}
+
+.showroom{
+    width: 100%;
+    height: 25rem;
+    padding-top: 2rem;
+
+}
+.slider_bs{
+    width: 70%;
+    float: left;
+}
+.images_droite{
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.haut_droit{
+    height: 50%;   
+}
+.bas_droit{
+    height: 50%;
+}
+.sejour{
+    width: 85%;
+    margin-left: 2rem;
+}
+.cuisine{
+    width: 85%;
+    padding-top: 1rem;
+    margin-left: 2rem;
+}
+span{
+    height: 2rem;
+    color: white;
+    background-color: red;
+    margin-left: 2rem;
+
+}
+/* navigation interne */
+
+.onglets_milieu{
+    height: 6rem;
+    text-align: center;
+    color: grey;
+}
+.securise{
+    width: 25%;
+    height: 3rem;
+    float: left;
+}
+.garantie{
+    width: 25%;
+    height: 3rem;
+    float: left;
+}
+.rembourse{
+    width: 25%;
+    height: 3rem;
+    float: left;
+}
+.facilite{
+    width: 25%;
+    height: 3rem;
+    float: left;
+}
+.livraison{
+    width: 25%;
+    height: 3rem;
+    float: left;
+}
+.echantillon{
+    width: 25%;
+    height: 3rem;
+    float: left;
+}
+.echange{
+    width: 25%;
+    height: 6rem;
+    float: left;
+}
+/* les images/produits cliquables */
+
+.catalogue{
+    height: 20rem;
+    text-align: center;
+}
+.produit_1{
+    float: left;
+    width: 33%;
+}
+.produit_2{
+    float: left;
+    width: 33%;
+}
+.produit_3{
+    float: left;
+    width: 33%;
+}
+.produit_4{
+    float: left;
+    width: 33%;
+}
+.produit_5{
+    float: left;
+    width: 33%;
+}
+.produit_6{
+    float: left;
+    width: 33%;
+}
+.c1, .c2, .c3, .c4, .c5, .c6{
+    width: 12rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+/* le footer dark */
+.footer_contact{
+    background-color: rgb(87, 86, 86);
+    color: rgb(248, 237, 221);
+}
+.ate{
+    width: 33%;
+    float: left;
+}
+.horaires{
+    width: 33%;
+    float: left;
+}
+.qsn{
+    width: 33%;
+    float: left;
+}
+.message_invitation{
+    color: red;
+    text-align: center;
+    padding-bottom: 1px;
+}
+/* le vrai footer */
+footer{
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(250, 238, 219);
+    margin-top: 3rem;
+    text-align: center;
+}
+footer h5{
+    color: black;
+}
+.footer_gauche{
+    width: 75%;
+    height: 30rem;
+    float: left;
+}
+.e_shop{
+    width: 33%;
+    height: 15rem;
+    float: left;
+}
+.infos{
+    width: 33%;
+    height: 15rem;
+    float: left;
+}
+.qualite{
+    width: 33%;
+    height: 15rem;
+    float: left;
+}
+.propos{
+    width: 100%;
+    height: 15rem;
+    float: left;
+    text-align: left;
+}
+.partage{
+    width: 25%;
+    height: 30rem;
+    float: left;
+}
