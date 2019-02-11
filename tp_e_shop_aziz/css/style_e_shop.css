@@ -51,12 +51,26 @@ body{
 .logo_e_shop{
     padding-top: 0.5rem;
     padding-left: 5rem;
-    width: 66%;
+    width: 60%;
     float: left;
 }
 .onglets_gauche{
-    width: 33%;
+    width: 40%;
     float: left;
+}
+.onglets_gauche h4{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.onglets_gauche p{
+    font-size: 0.7rem;
+    line-height: 0.1rem;
+}
+.image_og{
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    margin-right: 1rem;
 }
 .devis{
     width: 50%;
@@ -100,6 +114,7 @@ ul#menu li{
 ul#menu li a{
     
     color: black;
+    font-weight: bold;
     display: block;
     /* pour pouvoir dimensionner les "a"*/
     text-decoration: none;
