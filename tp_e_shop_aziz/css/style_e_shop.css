@@ -157,12 +157,23 @@ main{
     padding-top: 1rem;
     margin-left: 2rem;
 }
-span{
+.span_haut{
     height: 2rem;
     color: white;
-    background-color: red;
+    background-color: rgb(252, 32, 153);
     margin-left: 2rem;
-
+    padding-top: 1px;
+    padding-left: 46px;
+    padding-right: 46px;
+}
+.span_bas{
+    height: 2rem;
+    color: white;
+    background-color: rgb(252, 32, 153);
+    margin-left: 2rem;
+    padding-top: 1px;
+    padding-left: 51px;
+    padding-right: 51px;
 }
 /* navigation interne */
 
