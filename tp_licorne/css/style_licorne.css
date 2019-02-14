@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 120rem;
+    background-image: url(../image/background.png);
+}
+.logo_unicorn{
+    height: 5rem;
+    padding-left: 1rem;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+    color: #FFF;
+    background-color: #C55394;
+}
+ul#menu{
+    text-align: right;
+}
+.titre{
+    width: 20%;
+    margin: auto;
+    font-family: 'Courgette', cursive;
+    color: #C55394;
+}
+.arc_en_ciel{
+    text-align: center;
+}
+h1{
+    line-height: 0px;
+}
