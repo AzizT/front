@@ -11,6 +11,9 @@ body{
     height: 12rem;
     background-image: url(../image/background.png);
 }
+.clear{
+    clear: both;
+}
 .logo_unicorn{
     height: 5rem;
     padding-left: 1rem;
@@ -44,6 +47,9 @@ main{
     margin-top: 5rem;
 
 }
+.images_milieu{
+    margin-left: 3rem;
+}
 h2{
     font-family: 'Courgette', cursive;
     color: #C55394;
@@ -52,6 +58,23 @@ h2{
 }
 .image_licorne{
     float: left;
-    margin-left: 1.2rem;
+    margin-left: 1.3rem;
     margin-bottom: 3rem;
+}
+.map{
+    width: 60%;
+    float: left;
+}
+.map_droite{
+    width: 40%;
+    float: left;
+}
+h3{
+    font-family: 'Courgette', cursive;
+    color: #C55394;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.map_droite p{
+    margin-bottom: 5rem;
 }
