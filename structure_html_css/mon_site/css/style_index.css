@@ -1073,3 +1073,65 @@ ul#menu_site_lien2 li a:hover{
     /* le ease-in-out est équivalent a hover; survol de la souris
        Dans le cas présent, pas très parlant */
 }
+/* *********************le menu déroulant***************** */
+
+
+#menuDeroulant{  
+    height:650px;
+}
+#menuDeroulant nav{  
+    background: transparent;  border: none;  width: 90%;  margin: auto 0;
+}
+#menuDeroulant nav ul li{
+    float: left;  list-style: none;  width: 20%;
+}
+#menuDeroulant ul ul{
+    /*on définit les listes qui sont dans les listes*/
+    display: none;
+}
+#menuDeroulant nav ul li ul li{ 
+    border-top: 1px solid pink;  width: 100%;
+}
+#menuDeroulant nav li{ 
+    background: GAINSBORO;
+}
+#menuDeroulant nav li a {
+    text-decoration: none;  color: black;  padding: 4px 0 4px;  display: block;/*pour qu'ils s'étendent sur toute la longueur de son conteneur*/  background: mistyrose;
+}
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2{
+    display: block;
+}
+
+/* ***********************page formulaire*************************** */
+
+.cadre_formulaire{
+    width: 60%;
+    margin: auto;
+    color: white;
+    background-color: brown;
+    border-radius: 5%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.input_droit{
+    margin-left: 15rem;
+}
+.input_droit1{
+    margin-left: 11rem;
+}
+.input_droit2{
+    margin-left: 8.5rem;
+}
+.input_droit3{
+    margin-left: 8.7rem;
+}
+.input_droit4{
+    margin-left: 11.6rem;
+}
+.input_droit5{
+    margin-left: 13.3rem;
+}
+.input_droit6{
+    margin-left: 10rem;
+}

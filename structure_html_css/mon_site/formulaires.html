@@ -66,6 +66,46 @@
 
     <main>
 
+        
+
+        <form class="cadre_formulaire">
+
+                <label for="pseudo">Pseudo *</label>
+                <input class="input_droit1" id="pseudo" type="text" name="pseudo" placeholder="***" required><br /><br />
+
+                <label for="prenom">Votre prénom *</label>
+                <input class="input_droit2" id="prenom" type="text" name="prenom" placeholder="***" required><br/><br />
+
+                <label for="mdp">Mot de passe *</label>
+                <input class="input_droit3" type="password" name="mdp" placeholder="***" required><br /><br />
+
+                <label for="email">Email *</label>
+                <input class="input_droit4" type="email" name="email" placeholder="******@***" required><br/><br />
+
+                <label for="CV">CV</label>
+                <input class="input_droit5" type="file" name="cv"><br /><br />
+
+                <label for="question" >Quels sont vos fruits préférés ? *</label>
+                <p>
+                <input type="checkbox" name="question">Orange
+                <input type="checkbox" name="question" checked>Fraise
+                <input type="checkbox" name="question">Mangue
+                </p><br />
+
+                <label for="codePostal">Code Postal</label>
+                <input class="input_droit6" type="adress" name="codePostal" placeholder="***" required><br /><br />
+
+                <!-- <label for="Commentaire">Commentaires</label> -->
+                <label for="commentaire">Message</label>
+                <textarea class="input_droit" name="commentaire" cols="35" rows="6"></textarea><br/><br />
+                <!-- bouton envoi de formulaire -->
+                <input type="submit" name="inscription" value="Envoyer">
+                <!-- bouton pour vider le formulaire -->
+                <input type="reset" name="annuler" value="Annuler">
+
+        </form>
+
+        
 
     </main>
 
