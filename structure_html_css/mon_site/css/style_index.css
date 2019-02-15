@@ -1161,3 +1161,23 @@ ul#menu_site_lien2 li a:hover{
 .map_coubertin{
     margin-left: 3.1rem;
 }
+
+/* ********************page fancy box********************** */
+
+a img {
+
+    /*height: 35%;
+ 
+    width: 15%;*/
+ 
+         height:50px;
+ 
+         width: 20px;
+ 
+ }a {
+ 
+    text-decoration: none;
+ 
+    outline: none;
+ 
+ }
