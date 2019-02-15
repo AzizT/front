@@ -1135,3 +1135,29 @@ ul#menu_site_lien2 li a:hover{
 .input_droit6{
     margin-left: 10rem;
 }
+/* ***********************page multimedia*************** */
+
+.videoTexte{
+    margin-left: 3.3rem;
+}
+.video_abercrombie{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 13rem;
+}
+.audio{
+    text-align: center;
+}
+.videoFond p{
+    width:75%;
+    margin: -350px auto 200px auto;
+    background: white;
+    opacity: 0.6;
+    /* rgba pour la transparence */
+    padding: 20px;
+    font-size: 120%;
+    border-radius: 10px;  
+}
+.map_coubertin{
+    margin-left: 3.1rem;
+}
