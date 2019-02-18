@@ -31,7 +31,7 @@ A la sortie du survol du rectangle
 La méthode .remove() va ajouter la class CSS
 */
 
-function aSortiSourisRectangle(){
+function aSortieSourisRectangle(){
     rectangle.classList.remove('good');
     rectangle.classList.remove('important');
 }
@@ -42,9 +42,14 @@ function aSortiSourisRectangle(){
 Installation d' un gestionnaire d' evenement au clic sur le bouton
 */
 bouton.addEventListener('click', surClicBouton);
+/*
+La methode addEventListener() met en place une fonction a appeler chaque fois que l' evenement spécifié est remis a la cible.
+Les cibles courantes sont un élément. Le "Document" lui même est une Window, mais elle peut etre tout objet prenant en charge les éléments ( comme XMLHttpRequest)
+*/
 // installation d' un gestionnaire d' evenement au double clic sur le rectangle
 rectangle.addEventListener('dblclick', auDoubleClicRectangle);
 // installation d' un gestionnaire d' évenement au survol sur le rectangle
 rectangle.addEventListener('mouseover', auSurvolSourisRectangle);
 // installation d' un gestionnaire d' evenement a la sortie du survol du rectangle
 rectangle.addEventListener('mouseout', aSortieSourisRectangle);
+
