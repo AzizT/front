@@ -220,37 +220,54 @@ main{
 /* les images/produits cliquables */
 
 .catalogue{
-    height: 20rem;
+    height: 35rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
-.produit_1{
+.produit{
     float: left;
     width: 33%;
 }
-.produit_2{
-    float: left;
-    width: 33%;
+.carrelage{
+    width: 15rem;
+    height: 7rem;
 }
-.produit_3{
-    float: left;
-    width: 33%;
+.texte_blanc{
+    width: 15rem;
+    height: 5rem;
+    background-color: #fff;
+    font-size: 14px;
+    padding-top: 1rem;
+    font-weight: bold;
+    margin-left: 3rem;
 }
-.produit_4{
-    float: left;
-    width: 33%;
+.prix{
+    color: palevioletred;
 }
-.produit_5{
-    float: left;
-    width: 33%;
+.noir_rose{
+    margin-left: 3rem;
 }
-.produit_6{
+.texte_noir{
+    width: 7.5rem;
+    height: 2rem;
+    background-color: black;
+    color: white;
     float: left;
-    width: 33%;
 }
-.c1, .c2, .c3, .c4, .c5, .c6{
-    width: 12rem;
-    height: 6rem;
+.texte_rose{
+    width: 7.5rem;
+    height: 2rem;
+    background-color: palevioletred;
+    color: white;
+    float: left;
+}
+.texte_gris{
+    width: 15rem;
+    height: 2rem;
+    background-color: grey;
+    color: white;
     margin-bottom: 1rem;
+    margin-left: 3rem;
 }
 /* le footer dark */
 .footer_contact{
