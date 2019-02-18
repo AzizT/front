@@ -7,19 +7,19 @@ body{
     font-family: Arial, sans-serif;
 }
 .container{
-    width: 100%;
+    width: 100vw;
     background-image: url(../image/background.png);
 }
 .clear{
     clear: both;
 }
 .navigation{
-    height: 5rem;
+    height: 9vh;
     background-color: #C55394;
     color: white;
 }
 .logo_unicorn{
-    height: 5rem;
+    height: 9vh;
     padding-left: 1rem;
     font-family: 'Courgette', cursive;
     font-weight: bold;
@@ -39,7 +39,7 @@ footer{
     color: #FFF;
 }
 ul#menu{
-    height: 5rem;
+    height: 9vh;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -53,9 +53,9 @@ ul#menu li{
     
 }
 ul#menu li a{
-    width: 12rem;
+    width: 10vw;
     /* line-height: 25px; */
-    font-size: 1em;
+    font-size: 0.8vw;
     font-weight: bold;
     letter-spacing: 2px;
     display: block;
@@ -86,15 +86,17 @@ ul#menu li a:hover{
     height: 15rem;
 }
 h1{
+    font-size: 1.8vw;
     margin-top: -13rem;
 }
 main{
-    width: 75%;
+    width: 80vw;
     height: 90rem;
     margin: auto;
     padding-left: 1rem;
     margin-top: 3rem;
     border: 2px solid rgb(177, 175, 175);
+    position: relative;
     box-shadow: 2px 2px 2px rgb(177, 175, 175);
     border-radius: 3%;
     background-color: #fff;
@@ -128,7 +130,7 @@ h2{
     text-align: center;
     opacity: 0.85;
     color: #FFF;
-    float: left;
+    /* float: left; */
     font-weight: bold;
 }
 .map{
