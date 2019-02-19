@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 140vw;
+    background: rgb(36, 35, 35);
+    font-family: 'Roboto Slab';
+}
+main{
+    /* je choisi cette largeur car elle correspond a la largeur de mon image des boxeurs, convertie en pixels.
+    Raisonnement idem pour la largeur de mon container ci dessus, un peu plus large que mon main ( je teste et j' adapte la largeur qui me parait similaire a la maquette */
+
+    width: 114vw;
+    margin: auto;
+    margin-top: 1vh;
+}
+.clear{
+    clear: both;
+}
+
+/* mon header, avec différents calculs au fur et a mesure pour le calibrer au mieux par rapport a la maquette */
+
+header{
+    width: 140vw;
+    /* idem que mon container */
+    height: 16vh;
+    background-color: rgb(247, 247, 236);
+}
+#en_tete{
+    width: 114vw;
+    /* idem que mon main */
+    height: 16vh;
+    /* hauteur calculée par rapport au logo (qui en fait 8)
+    Ajouté a cela les margin, padding etc...
+    Je teste sur la console et j' adapte au mieux */
+    
+    padding-top: 1rem;
+    padding-left:1rem;
+    margin: auto;
+}
+.logo{
+    width: 18vw;
+    /* calculé en convertissant les px de la largeur de mon logo */
+    height: 14vh;
+    float: left;
+    border-left: 2px solid orange;
+    padding-left: 1rem;
+}
+.logo p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2vw;
+    line-height: 4vh;
+}
+.texte_logo{
+    color: orange;
+}
+.espace_personnel{
+    float: left;
+    margin-left: 10vw;
+}
+.achat_ensemble{
+    width:28vw;
+    height: 6.5vh;
+    float: left;
+    border: 1px solid black;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    margin-bottom: 1vh;
+    background-color: rgb(250, 250, 220);
+}
+.achat{
+    float: left;
+    width: 13vw;
+    height: 6.5vh;
+}
+.icone{
+    float: left;
+}
+.achat p{
+    float: left;
+    margin-left: 1vw;
+    font-weight: bold;
+    line-height: 5vh;
+}
+.bienvenue{
+    text-align: right;
+    font-weight: bold;
+    padding-right: 1vw;
+    margin-bottom: 1vh;
+}
+.onglets_header{
+    float: left;
+    width: 8vw;
+    height: 2.4vh;
+    border: 1px solid lightgrey;
+    text-align: center;
+    
+}
+.onglets_header a{
+    text-decoration: none;
+    color: black;
+}
+
+/*  fin de mon header************************************** */
+
+/* début de ma section principale #promo ( l' image du dessus n' ayant pas besoin de css car calibrée dès le début */
+
+#promos{
+    width: 60vw;
+    /* idem que mon main, en_tete */
+    height: 105vh;
+    background-color: rgb(247, 247, 236);
+    padding-top: 5vh;
+}
+.article{
+    float: left;
+    width: 21vw;
+    margin-left: 6vw;
+}
+.image_gant{
+    box-shadow: 3px 3px 6px black;
+}
+.rabais{
+    position: relative;
+    color: orange;
+    width: 5vw;
+    height: 5vh;
+    background-color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+    border: 1px groove white;
+    top: -40vh;
+    left: 17vw;
+}
+.reference_gant{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    top: -9vh;
+}
+.texte_noir{
+    float: left;
+    width: 10vw;
+    height: 3vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -6vh;
+    margin-left: 0.5rem;
+    line-height: 3vh;
+}
+.texte_noir a{
+    text-decoration: none;
+    color: white;
+}
+.texte_blanc{
+    float: left;
+    width: 10vw;
+    height: 3vh;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -6vh;
+    margin-left: 10.5vw;
+    box-shadow: 1px 1px 2px black;
+    line-height: 3vh;
+    text-decoration: line-through;
+}
+span{
+    text-decoration: none;
+}
+
+/* fin de mon main*************************** */
+
+/* début de mon footer avec ses différentes parties********* */
+
+footer{
+    width: 140vw;
+    height: 45vh;
+    background: rgb(66, 65, 65);
+}
+.contact{
+    position: relative;
+    /* désolé, je sais qu' il ne faut pas abuser des positions relatives, mais je ne voyais pas autre chose a 40 mn de la fin */
+    width: 140vw;
+    height: 3vh;
+    background: rgb(66, 65, 65);
+    padding-left: 27vw;
+    top: -5vh;
+}
+.onglets_footer{
+    float: left;
+    width: 8vw;
+    height: 3vh;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+.service_apres_vente{
+    width: 36vw;
+    margin-left: 28vw;
+    color: white;
+}
+.sav{
+    margin-top: 5vh;
+    float: left;
+    width: 9vw;
+}
+.icone_footer{
+    padding-left: 2vw;
+    margin-bottom: 1vh;
+}
+.reseaux_sociaux{
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    padding-left: 37vw;
+}
+.reseaux_sociaux a{
+    margin-left: 3vw;
+}
+footer p{
+    color: white;
+}

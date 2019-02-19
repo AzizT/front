@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- link pour integrer les fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style_evaluation_1.css">
+    <title>Accueil Sport.com</title>
+</head>
+<body>
+
+    <div class="container">
+
+
+        <header>
+
+            <!-- le logo a gauche dans mon header -->
+
+            <section id="en_tete">
+
+                <!-- je la crée pour englober les différentes div, et mieux maitriser leur taille ainsi que le float -->
+
+                <div class="logo">
+                    <img src="image/logo.png" alt="logo de Sport.com">
+                    <p>Lorem ipsum dolor <span class="texte_logo">sit amet</span></p>
+                </div>
+
+                <!-- mon espace personnel -->
+
+                <div class="espace_personnel">
+
+                    <div class="achat_ensemble">
+
+                        <!-- je la crée pour grouper les deux .achat, pour leur donner une border commune -->
+
+                        <div class="achat"><a href><img class="icone" src="image/icon-mon-compte.png" alt="icone pour le compte personnel"><p>Mon Compte</p></a></div>
+
+                        <div class="achat"><a href><img class="icone" src="image/icon-mon-panier.png" alt="icone pour le panier achat"><p>Votre panier est vide</p></a></div>
+
+                    </div>
+
+                    <p class="bienvenue">Bonjour Julien</p>
+
+                    <div class="onglets_header"><a href><p>Connectez-vous</p></a></div>
+
+                    <div class="onglets_header"><a href><p>Parrainage</p></a></div>
+
+                    <div class="onglets_header"><a href><p>Deconnexion</p></a></div>
+
+                </div>
+        
+            </section>
+
+        </header>
+
+        <main>
+
+            <!-- mon main, qui aura la même largeur partout, inférieure au header et au footer -->
+
+            <figure><img src="image/header-page-catalogue.png" alt="Deux boxeurs se combattant"><figcaption></figcaption></figure>
+
+            <!--  Ma grande section pour contenir les divers texte et images des articles du catalogue
+            Que je vais dupliquer 4 fois ici et en css car elles ont le même comportement, hormis un peu de texte qui diffère-->
+
+            <section id="promos">
+
+                <div class="article">
+
+                    <div class="image_gant"><img src="image/gant-boxe-2.png" alt="gants noirs en promotion"></div>
+
+                    <div class="rabais"><p>- 45 %</p></div>
+
+                    <div class="reference_gant">GANT DE BOXE COMBAT KLIMAX</div>
+
+                    <div class="texte_noir"><a href>Voir la vente</a></div>
+
+                    <div class="texte_blanc">129 € <span>65 €</span></div>
+
+                </div>
+
+                <div class="article">
+
+                    <div class="image_gant"><img src="image/gant-boxe-1.png" alt="gants rouges en promotion"></div>
+
+                    <div class="rabais"><p>- 60 %</p></div>
+
+                    <div class="reference_gant">GANT DE BOXE COMBAT KLIMAX</div>
+
+                    <div class="texte_noir"><a href>Voir la vente</a></div>
+
+                    <div class="texte_blanc">129 € <span>65 €</span></div>
+
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="article">
+
+                    <div class="image_gant"><img src="image/gant-boxe-2.png" alt="gants noirs en promotion"></div>
+
+                    <div class="rabais"><p>- 30 %</p></div>
+
+                    <div class="reference_gant">GANT DE BOXE COMBAT KLIMAX</div>
+
+                    <div class="texte_noir">Voir la vente</div>
+
+                    <div class="texte_blanc">129 € <span>65 €</span></div>
+
+                </div>
+
+                <div class="article">
+
+                    <div class="image_gant"><img src="image/gant-boxe-1.png" alt="gants rouges en promotion"></div>
+
+                    <div class="rabais"><p>- 70 %</p></div>
+
+                    <div class="reference_gant">GANT DE BOXE COMBAT KLIMAX</div>
+
+                    <div class="texte_noir">Voir la vente</div>
+
+                    <div class="texte_blanc">129 € <span>65 €</span></div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- mon footer, que je vais diviser en 4 parties, dont la seconde en quatre autres ( mais qui auront le même comportement css) -->
+
+        <footer>
+
+            <nav class="contact">
+                <div class="onglets_footer">Qui sommes nous ?</div>
+                <div class="onglets_footer">Contact</div>
+                <div class="onglets_footer">Assistance</div>
+                <div class="onglets_footer">CGV</div>
+            </nav>
+
+            <div class="service_apres_vente">
+
+                <div class="sav">
+                    <img class="icone_footer" src="image/icon-livre.png" alt="icone livre">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, fugit. Deleniti impedit quo </p>
+                </div>
+
+                <div class="sav">
+                    <img class="icone_footer" src="image/icon-camion.png" alt="icone camion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, fugit. Deleniti impedit quo </p>
+                </div>
+
+                <div class="sav">
+                    <img class="icone_footer" src="image/icon-cadenat.png" alt="icone cadenas">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, fugit. Deleniti impedit quo </p>
+                </div>
+
+                <div class="sav">
+                    <img class="icone_footer" src="image/icon-pouce.png" alt="icone pouce">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, fugit. Deleniti impedit quo </p>
+                </div>
+
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="reseaux_sociaux">
+                <a href=""><img src="image/icon-facebook.png" alt="lien Facebook"></a>
+                <a href=""><img src="image/icon-twitter.png" alt="lien Twitter"></a>
+                <a href=""><img src="image/icon-linkedin.png" alt="lien Linkedin"></a>
+            </div>
+
+            <div class="clear"></div>
+
+            <p>© 2013 Lorem ipsum dolor sit amet</p>
+
+        </footer>
+
+
+    </div>
+    
+</body>
+</html>
