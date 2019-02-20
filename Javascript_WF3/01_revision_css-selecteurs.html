@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exemples selecteurs</title>
+    <style>
+        a:link{
+            color: orange;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:visited{
+            color: teal;
+        }
+        a:hover, a:focus{
+            text-decoration: underline;
+            outline: thin solid gold;
+        }
+        div{
+            padding: 1rem;
+            /* équivalent a */
+        }
+        a:active{
+            color: crimson;
+        }
+        :target{
+            border-left: 4px solid silver;
+        }
+        #chap1:target{
+            background-color: lightgreen;
+        }
+        #chap2:target{
+            background-color: rgb(77, 245, 77);
+        }
+        #chap3:target{
+            background-color: rgb(4, 248, 4);
+        }
+        [title]{
+            /* usage du crochet pour cibler un attribut d' une balise, ici, le title de a href */
+            font-weight: bold;
+        }
+        [href^=http]{
+            /* [href^] selectionne tous les liens commençant par http  */
+            border-bottom: 3px dotted violet;
+            /* différents styles de border: solid, dashed (tirets) et dotted (points) */
+            background-image: url(images/lien_externe.svg);
+            /* le svg se retaille automatiquement le cas échéant, ici pas besoin de width, height il va se loger dans le padding qu' on lui a crée... */
+            background-repeat: no-repeat;
+            background-color: silver;
+            margin-bottom: 2rem;
+            /* ne fonctionne pas tant qu' on ne lui met pas un display: inLine Block, car élément inLine on ne peut gérer  a la verticale ( transformer son display ) */
+            display: inline-block;
+            padding: .5rem 2rem .5rem .5rem;
+            background-position: right .25rem;
+            /* 0(gauche) 0(haut) par défaut, équivalent de ci dessus, 100% voudra dire extreme droite, et 50%, au milieu */
+            background-size: 1.5rem auto;
+            /* auto permet de ne donner qu' une valeur, le reste sera calculé de manière homotétique */
+        }
+        /* la même chose, en plus court
+        background: silver url(blablabla)no repeat right .5rem;
+        Seront donc pris sur la même ligne: le bg image, le bg repeat, le bg color, le bg position, mais pas le bg size.
+        */
+
+    </style>
+</head>
+<body>
+
+    <a href="http://www.apple.com" title="liens vers apple">Lien vers Apple</a>
+    <!-- lien absolu ( vers une page externe), avec adresse complète-->
+    <a href="https://www.sncf.com/fr" title="lien vers la SNCF">Lien vers la SNCF</a>
+    <nav>
+        <a href="#chap1">Chapitre 1</a>
+        <a href="#chap2">Chapitre 2</a>
+        <a href="#chap3">Chapitre 3</a>
+    </nav>
+    <div id="chap1">Rogatus ad ultimum admissusque in consistorium ambage nulla praegressa inconsiderate et leviter proficiscere inquit ut praeceptum est, Caesar sciens quod si cessaveris, et tuas et palatii tui auferri iubebo prope diem annonas. hocque solo contumaciter dicto subiratus abscessit nec in conspectum eius postea venit saepius arcessitus.</div>
+    <div id="chap2">Rogatus ad ultimum admissusque in consistorium ambage nulla praegressa inconsiderate et leviter proficiscere inquit ut praeceptum est, Caesar sciens quod si cessaveris, et tuas et palatii tui auferri iubebo prope diem annonas. hocque solo contumaciter dicto subiratus abscessit nec in conspectum eius postea venit saepius arcessitus.</div>
+    <div id="chap3">Rogatus ad ultimum admissusque in consistorium ambage nulla praegressa inconsiderate et leviter proficiscere inquit ut praeceptum est, Caesar sciens quod si cessaveris, et tuas et palatii tui auferri iubebo prope diem annonas. hocque solo contumaciter dicto subiratus abscessit nec in conspectum eius postea venit saepius arcessitus.</div>
+    
+</body>
+</html>

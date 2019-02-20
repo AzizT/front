@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>le box-sizing</title>
+
+    <style>
+        p{
+            background-color: forestgreen;
+        }
+        strong{
+            background-color: yellow;
+            /* strong étant un élément inLine, c' est une boite de ligne dont la largeur s' adapte au texte qu' il y a dedans.
+            Alors que "p" est de type block, sa largeur sera de 100% */
+            padding: 1rem;
+            margin-bottom: 100px;
+            /* margin et padding top et bottom fonctionnent mal sur des balises inLine 
+            Même chose pour la width et la height, ne fonctionnent pas*/
+        }
+        em{
+            background-color: thistle;
+            padding: 1rem;
+            display: inline-block;
+        }
+        ul{
+            border: 2px solid crimson;
+            list-style: none;
+            padding-left: 0;
+            /* les ul ont un padding-left de 40px par défaut */
+        }
+        li{
+            border: 2px solid gold;
+            /* float: left; 
+            Pas de float car ça le sort du flux, il faut donc utiliser le display ci dessous*/
+            padding: 5px;
+            display: inline-block;
+        }
+        section{
+            border: 2px solid teal;
+            width: 60%;
+        }
+        section div{
+            border: 2px solid firebrick;
+            box-sizing: border-box;
+            width: 50%;
+            padding: 1rem;
+            float: left;
+            /* ils sortent du flux. Le parent (section) ne les contient plus ( on le voit avec la border au-dessus ) */
+        }
+        .clearfix:after{
+            /* boite a outil des float: le clearfix
+            Pour l' utiliser, on attribue la class"clearfix" au parent des flottants */
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    
+    
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor, sit amet <strong>DU GRAS </strong>consectetur adipisicing elit. Facere, repellendus? Velit quidem ea sit eius quisquam deserunt voluptatum corporis ab ad! Non sapiente ipsum reprehenderit dolor quod autem culpa minus!</p>
+
+    <p>Lorem ipsum dolor sit amet <em>De l' ITALIQUE </em>consectetur adipisicing elit. Rerum facere id aperiam dicta odit pariatur quas voluptate, voluptates optio officia maxime. Similique error iusto doloribus dignissimos nisi odit eaque deserunt.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, labore tenetur. Odio nobis inventore impedit qui enim saepe amet. Esse dolores voluptatibus dolorum ab autem minima quam dolore consequuntur quae!</p>
+    <ul>
+        <li>Pomme</li>
+        <li>Banane</li>
+        <li>Poire</li>
+    </ul>
+
+    <section class="clearfix">
+        <div>Un</div>
+        <div>Deux</div>
+        <div>Trois</div>
+    </section>
+
+  
+    
+</body>
+
+</html>

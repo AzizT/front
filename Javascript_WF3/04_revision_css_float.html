@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>les flottants</title>
+
+    <style>
+        .container{
+            width: 80%;
+            border: 2px solid purple;
+            margin: 0 auto;
+        }
+        .flt_1{
+            float: left;
+        }
+        .clear{
+            clear: both;
+            display: table;
+        }
+        .clearfix:after{
+            content: 'FAUX FOOTER';
+            clear: both;
+            display: table;
+        }
+        
+    </style>
+    
+    
+</head>
+
+<body>
+
+    <div class="container clearfix">
+
+    <img class="flt_1" src="images/index.jpg" alt="montagne">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates reiciendis inventore nostrum nesciunt optio minus, iusto nihil animi hic corrupti delectus in, ea cum, perferendis molestiae molestias? Aliquid, sunt!</p>
+    <strong class="clear">Une montagne enneigée</strong>
+    <!-- ne pas rajouter une div.clear supplémentaire, on donne la class clear a la balise concernée -->
+
+    <img class="flt_1" src="images/index.jpg" alt="montagne">
+
+    </div>
+
+</body>
+
+</html>
