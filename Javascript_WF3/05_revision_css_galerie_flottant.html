@@ -7,10 +7,24 @@
     <title>les flottants</title>
 
     <style>
+        *{
+            box-sizing: border-box;
+            /* va nous permettre d' avoir des border et padding a l' interieur de la width d' origine, et non pas les additionner a la width du début */
+        }
         .container{
             width: 80%;
             border: 2px solid purple;
             margin: 0 auto;
+        }
+        .container figure{
+            border: 2px solid orange;
+            width: 25%;
+            margin: 0;
+            float: left;
+            padding: .5rem;
+        }
+        figure img{
+            max-width: 100%;
         }
         .flt_1{
             float: left;
@@ -20,9 +34,31 @@
             display: table;
         }
         .clearfix:after{
-            content: 'FAUX FOOTER';
+            content: '';
             clear: both;
             display: table;
+        }
+        /* les medias querys
+        Pour tous les ecrans inferieurs a 640px, on va mettre 2 figures par lignes*/
+        @media(max-width:640px){
+            body{
+                background-color: hotpink;
+            }
+            .container{
+                width: 100%;
+            }
+            .container figure{
+                width: 50%;
+            }
+        }
+        /* pour ceux inferieurs a 480px */
+        @media(max-width:480px){
+            body{
+                background-color: teal;
+            }
+            .container{
+                width: 100%;
+            }
         }
         
     </style>
@@ -33,22 +69,42 @@
 <body>
 
     <div class="container clearfix">
-        <figure>
+        <figure class="flt_1">
             <img src="images/index.jpg" alt="">
             <figcaption>Montagne</figcaption>
         </figure>
 
-        <figure>
+        <figure class="flt_1">
             <img src="images/index.jpg" alt="">
             <figcaption>Montagne</figcaption>
         </figure>
 
-        <figure>
+        <figure class="flt_1">
             <img src="images/index.jpg" alt="">
             <figcaption>Montagne</figcaption>
         </figure>
 
-        <figure>
+        <figure class="flt_1">
+            <img src="images/index.jpg" alt="">
+            <figcaption>Montagne</figcaption>
+        </figure>
+
+        <figure class="flt_1">
+            <img src="images/index.jpg" alt="">
+            <figcaption>Montagne</figcaption>
+        </figure>
+
+        <figure class="flt_1">
+            <img src="images/index.jpg" alt="">
+            <figcaption>Montagne</figcaption>
+        </figure>
+
+        <figure class="flt_1">
+            <img src="images/index.jpg" alt="">
+            <figcaption>Montagne</figcaption>
+        </figure>
+
+        <figure class="flt_1">
             <img src="images/index.jpg" alt="">
             <figcaption>Montagne</figcaption>
         </figure>
