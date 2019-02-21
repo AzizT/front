@@ -134,12 +134,12 @@ main{
 
 }
 .slider_bs{
-    width: 70%;
+    width: 69%;
     float: left;
 }
 .images_droite{
     float: left;
-    width: 30%;
+    width: 31%;
     text-align: center;
 }
 .haut_droit{
@@ -220,7 +220,7 @@ main{
 /* les images/produits cliquables */
 
 .catalogue{
-    height: 35rem;
+    height: 45rem;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -229,11 +229,12 @@ main{
     width: 33%;
 }
 .carrelage{
-    width: 15rem;
-    height: 7rem;
+    width: 18rem;
+    height: 10rem;
+    margin-left: 3rem;
 }
 .texte_blanc{
-    width: 15rem;
+    width: 18rem;
     height: 5rem;
     background-color: #fff;
     font-size: 14px;
@@ -245,24 +246,25 @@ main{
     color: palevioletred;
 }
 .noir_rose{
+    width: 18rem;
     margin-left: 3rem;
 }
 .texte_noir{
-    width: 7.5rem;
+    width: 9rem;
     height: 2rem;
     background-color: black;
     color: white;
     float: left;
 }
 .texte_rose{
-    width: 7.5rem;
+    width: 9rem;
     height: 2rem;
     background-color: palevioletred;
     color: white;
     float: left;
 }
 .texte_gris{
-    width: 15rem;
+    width: 18rem;
     height: 2rem;
     background-color: grey;
     color: white;
@@ -271,6 +273,8 @@ main{
 }
 /* le footer dark */
 .footer_contact{
+    width: 95%;
+    margin-left: 3rem;
     background-color: rgb(87, 86, 86);
     color: rgb(248, 237, 221);
 }

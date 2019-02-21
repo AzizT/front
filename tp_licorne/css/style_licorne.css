@@ -43,12 +43,12 @@ ul#menu{
     margin: 0;
     padding: 0;
     list-style: none;
-    float: left;
-    margin-left: 63rem;
+    margin-left: 83rem;
     padding-top: 2rem;
 }
 ul#menu li{
-    float: left;
+    display: inline-block;
+    /* remplace le float left */
     text-align: center;
     
 }
