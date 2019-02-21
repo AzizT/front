@@ -7,12 +7,109 @@
     <title>Position absolue</title>
 
     <style>
-
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
         .container{
             width: 80%;
             margin: 0 auto;
+            border: 2px solid firebrick;
+            padding: 122px 2rem 0;
+            position: relative;
         }
-        
+        p{
+            /* valeurs pour la propriété position:text-align:
+            -static
+            par défaut, toutes les positions sont en position: static; (pas de positionnement, elles restent dans le flux)
+            -relative
+            Il sera positionné par rapport a son emplacement naturel dans le flux ( comme s' il avait une marge)
+            Son emplacement reservé ( il restera vide)
+            Un élément relatif devient référent de positionnement pour ses enfants absolute
+            _fixed:
+            Un élément qui a une position fixed, restera fixe par rapport au viewport ( fenetre du navigateur), même si on scroll
+            L' objet fixed reste calé sur sa position
+            Dans ce contexte, on va donner une position relative au 1er "p" pour que le badge en absolute soit calé par rapport a ce "p" */
+
+            
+        }
+        .container p:nth-child(1){
+            /* pour cibler le premier "p" du container */
+            color: orange;
+            position: relative;
+            /* cette position relative permet au badge de se positionner par rapport a son premier ancetre, le premier "p" */
+        }
+        .badge{
+            width: 80px;
+            height: 80px;
+            background-color: crimson;
+            border-radius: 50%;
+            display: inline-block;
+            /* ou display: block */
+            text-align: center;
+            line-height: 80px;
+            position: absolute;
+            left: -40px;
+            top: 20px;
+            /* un élément positionné en absolute, le sera par rapport a son premier ancetre, positionné
+            Et s' il n' a pas d' ancetre positionné, il le sera par rappport au body */
+        }
+
+        nav{
+            border-bottom: 3px solid navy;
+            padding-left: 0;
+            position: fixed;
+            background-color:rgba(0,0,0, .5);
+            width: 100%;
+        }
+        nav ul{
+            /* reset du padding existant */
+            padding-left: 0;
+            display: flex;
+            /* permet d' aligner les (enfants) li */
+            justify-content: space-around;
+            /* autre possibilité avec space-between et flex-end */
+        }
+        nav li{
+            border: 2px solid pink;
+            border-radius: 20%;
+            color: bisque;
+            background-color: purple;
+            padding: 1rem;
+            list-style: none;
+        }
+        .carre{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 10px solid purple;
+            display: inline-block;
+            position: absolute;
+            left: 1480px;
+            top: 1110px;
+        }
+        .rond{
+            width: 100px;
+            height: 100px;
+            border: 10px solid aqua;
+            border-radius: 50%;
+            background-color: yellow;
+            display: inline-block;
+            position: absolute;
+            left: 1435px;
+            top: 1130px;
+        }
+        .triangle{
+            display: inline-block;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid blue;
+            position: absolute;
+            left:1500px;
+            top: 1160px;
+        }
         
     </style>
     
@@ -21,9 +118,96 @@
 
 <body>
 
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Galerie</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
         <div class="container">
 
-            <p>contenu</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo itaque quam voluptatem beatae magnam exercitationem, totam, quasi earum hic praesentium ea fugit commodi ratione repellat iusto ab placeat consectetur.
+                <span class="badge">NEW</span>
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?</p>
+                <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    *Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?</p> 
+                   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    *Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?</p> 
+                   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    *Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur quaerat? Praesentium magnam rerum quaerat. Perspiciatis numquam fugiat mollitia ea veritatis sequi molestiae error nemo aperiam, nostrum atque earum saepe?
+            </p>
+
+            <a class="carre" href="#"></a>
+            <a class="rond" href="#"></a>
+            <a class="triangle" href="#"></a>
+
+            
 
         </div>
     

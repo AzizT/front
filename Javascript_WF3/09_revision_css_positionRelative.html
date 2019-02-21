@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position relative</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .container{
+            margin: 0 auto;
+            border: 2px solid crimson;
+            width: 70%;
+        }
+        p:nth-of-type(2){
+            background-color: crimson;
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+        p:nth-of-type(4){
+            background-color: tomato;
+            top: 40px;
+            left: 100px;
+            position: relative;
+            /* propriete necessaire pour que le top et left fonctionnent, comme ont fonctionne les margin au dessus */
+        }
+        footer{
+            background-color: silver;
+            padding: 1rem;
+            border-radius: 10px;
+            width: 90%;
+            margin: 0 auto;
+            bottom: -1rem;
+            position: relative;
+        }
+
+        
+        
+    </style>
+    
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam optio beatae dolorum labore hic placeat laboriosam a dicta, doloremque fugiat iusto reiciendis necessitatibus officia maxime quae soluta quam harum voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam optio beatae dolorum labore hic placeat laboriosam a dicta, doloremque fugiat iusto reiciendis necessitatibus officia maxime quae soluta quam harum voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam optio beatae dolorum labore hic placeat laboriosam a dicta, doloremque fugiat iusto reiciendis necessitatibus officia maxime quae soluta quam harum voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam optio beatae dolorum labore hic placeat laboriosam a dicta, doloremque fugiat iusto reiciendis necessitatibus officia maxime quae soluta quam harum voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam optio beatae dolorum labore hic placeat laboriosam a dicta, doloremque fugiat iusto reiciendis necessitatibus officia maxime quae soluta quam harum voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam optio beatae dolorum labore hic placeat laboriosam a dicta, doloremque fugiat iusto reiciendis necessitatibus officia maxime quae soluta quam harum voluptatem.</p>
+
+        <footer>
+            7 av maximilien Robespierre 94400 Vitry/Seine
+        </footer>
+
+        <!-- on le place en relative pour qu' il reste dans le flux.
+        Si on l' avait mis en absolute, il serait a l' exterieur du container -->
+
+    </div>
+
+    
+    
+    
+
+</body>
+
+</html>
