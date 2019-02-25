@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ici on declare une valeur
+        var a = 10;
+        // ici on lui re assigne une nouvelle valeur
+        a = 8; 
+            
+            // pour tester une variable, on ouvre la console, on ecrit le nom de la variable a droite des >> puis entrée
+        
+            //alert(a); affiche une boite de dialogue contenant la valeur de la var "a", si on veut ressevoir le contenu de la valeur, et nom pas la chaine de caracter, on n emet pas de guillements 
+
+            //alert('a');
+            // les guillements"" ou quote'' pour afficher une chaine de caractiere
+
+            // 3eme façon de tester, on ecrit dans le script
+            //console.log(a);
+            // Resultat, le navigateur affiche le resulmtat de "a" dans la console
+
+            var b = 4;
+            /* autre façon d'ecrire une variable
+            var b;
+            b = 4;
+            console.log(b);*/
+
+            // ajoute = a + b;
+            // alert(ajoute);
+            // console.log(ajoute);
+            // pour afficher d'abord une boite de dialogue contenant le resultat d'a + b, puis ensuite, il affiche le resultat de ajoute, donc a + b dans la console.
+
+            soustrait= a-b;
+            //console.log(soustrait); la console affiche 4
+
+            multiplie= a*b;
+            //console.log(multiplie);  la console affiche 32
+            // *** attention, si je met une variable que je n'ai pas renseigné, par exemple muliplie(a*c) , dans la console il m'indiquera "error" c n'est pas renseigné
+            // *** Attention, Les majuscules et minuscules: JS est sensible a la casse (case sensitive), ("a" est different de "A")
+
+            var message = "hello";
+            message = "world";
+            var hello = "hello world";
+            //  J'ai assigné une premiere fois la chaine de caracter "hello" , puis je lui re-assigne "world"
+            alert(message);
+            // La boite de dialogue va afficher la nouvelle valeur de message (donc "world")
+
+            message = hello;
+            alert(message);
+
+            prenom = "gerard";
+            age = 22;
+            console.log(prenom + " a " + age + " ans ");
+            // On fait une concatenation avec l'operateur +
+            // resultat: gerard a 22 ans
+            document.write(prenom + " a <br>" + age + " ans ");// document.write pour faire apparraitre cette phrase sur le navigateur (j'ai rajouté ici une balise <br> pour paser a la ligne) 
+
+            // ici on demande au navigateur si le chiffre 12 est inferieur ou égal a 13, le navigateur va repondre avec la valeur booléenne "true" 
+            console.log(12<=13);
+
+
+
+    </script>
+</body>
+</html>

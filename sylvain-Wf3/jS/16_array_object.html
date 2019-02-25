@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // cree un tableau
+        var monTableau = ['fraise', 'orange', 'banane'];  
+        // Le type est un objet
+        console.log(typeof monTableau);
+
+        // Le type du constructeur c'est un array = un tableau
+        if (monTableau.constructor.name == 'Array') {
+                console.log("Array");// array veut dire tableau de donnée en fr, 
+            }  
+
+        //  recuperer une information stockée dans un tableau, par exemple "orange", on va utiliser un index (une clé) de tableau
+                console.log(monTableau[1]);
+                // Attention: dans les objets (ici un tableau) on compte toujours en commençant par 0
+                // l'index de fraise est "0"
+                // l'index de orange est "1"
+
+        // Creer un tableau associatif / un dictionnaire
+        
+        traduction = {
+            "fraise": "strawberry",
+            "pomme" : "apple",
+            "poire" : "pear"
+        };
+        // pour recuperer une information dans un dictionnaire, on utilise des mots clés, 
+        console.log(traduction.pomme);
+
+        frigo = {
+            "fruits" : ["ananas","mangue","papaye"],
+            "legumes": ["poireaux", "courgetes"],
+            "laitage": [ "yaourt", "lait"]
+        };
+        console.log(frigo.legumes[1]);
+
+        mesFruits = frigo.fruits;
+        console.log(mesFruits);
+
+        // autre façon de recuperer la liste des legumes
+        mesLegumes = frigo["legumes"];
+        console.log(mesLegumes);
+
+
+        
+    </script>
+</body>
+</html> 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #monCanvas{
+            border: 2px solid orange;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="monCanvas">
+        <!-- convas est une surface de dessin -->
+
+    </canvas>
+    <script>
+    var canvas = document.getElementById('monCanvas');
+    var feuille = canvas.getContext('2d');
+
+    feuille.fillStyle = 'tomato';
+    feuille.fillRect(20, 5, 100, 20);
+    // les 4 valeurs sont, position x (20), position y(5), largeur(100), et hauteur(20) 
+
+    feuille.fillStyle = 'gold';
+    feuille.fillRect(60, 5, 20, 100);
+
+
+    </script>
+</body>
+</html>

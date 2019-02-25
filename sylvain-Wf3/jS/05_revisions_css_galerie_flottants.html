@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* le selecteur universel "*" se lit toutes les balises */
+            /* le box-sizing: border-box: permet de donner des padding et des borders sans augmenter la taille totale de toutes les boites  */
+        }
+        .container {
+            width: 80%;
+            border: 2px solid olivedrab;
+            margin: 0 auto;
+        }
+        .container figure{
+            border: 2px solid red;
+            width: 25%;
+            margin: 0;
+            float: left;
+        }
+        figure img{
+            max-width: 100%;
+            /* si l'image est plus petite que 100% , on fait juste un width: 100% */
+        }
+        p {
+            border: 2px solid tomato;
+        }
+        .flt_l {
+            float: left;
+        }
+        .clear {
+            clear: both;
+            display: table;
+        }
+        .clearfix::after {
+            /* La class clearfix se donne au parent pour qu'il contienne ses flottants pour ne pas qu'ils sortent */
+            content: 'faux footer';/* clearfix  + after permet de positionner la clear apres ainsi que du "content"*/
+            clear: both;
+            display: table;
+        }
+        /* mediaqueries, pour tous les ecrans plus petits que 640 px de large, on va mettre 2 figures par lignes,  */
+        @media (max-width:640px){
+            body{
+                background-color: pink;
+            }
+            .container{
+                width: 100%;
+            }
+            .container figure{
+                width: 50%;
+            }
+        }
+        /* pour tous les ecrans plus petits que 480px de large, on va mettre 1 figure par ligne */
+        @media (max-width:480px){
+            body{
+                background-color: hotpink;
+            }
+            
+            .container figure{
+                width: 100%;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <figure><img src="images/montagne.jfif" alt="">
+        <figcaption>La montagne</figcaption>
+        </figure>
+        <figure><img src="images/montagne.jfif" alt="">
+        <figcaption>La montagne</figcaption>
+        </figure>
+        <figure><img src="images/montagne.jfif" alt="">
+        <figcaption>La montagne</figcaption>
+        </figure>
+        <figure><img src="images/montagne.jfif" alt="">
+        <figcaption>La montagne</figcaption>
+        </figure>
+        <figure><img src="images/montagne.jfif" alt="">
+        <figcaption>La montagne</figcaption>
+        </figure>
+        <figure><img src="images/montagne.jfif" alt="">
+        <figcaption>La montagne</figcaption>
+        </figure>
+        <figure><img src="images/montagne.jfif" alt="">
+        <figcaption>La montagne</figcaption>
+        </figure>
+        <figure><img src="images/montagne.jfif" alt="">
+        <figcaption>La montagne</figcaption>
+        </figure>
+    </div>
+    
+</body>
+</html>

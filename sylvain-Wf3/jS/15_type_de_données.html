@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var maVariable = 10;
+        console.log(typeof maVariable);
+
+        var monTexte = 'soleil';
+
+        console.log(typeof monTexte);
+
+        // valeur isNaN : is not a number
+        console.log(isNaN(100));
+        console.log(isNaN("100"));
+        // dans ce cas la, la chaine de caracter 100 est convertie en number par le navigateur avant d'etre testée, attention a la methode isNaN, elle peut apparter des surprises lors de l'affichage
+        console.log(isNaN("abc100"));// ici l'instruction affiche TRUE car la chaine de caractere n'est clairement pas un nombre
+        
+        var monBooleen = true;
+        console.log(typeof monBooleen);// la console affiche le resultat "boolean"
+
+        var maListe = ["pomme" , "poire" , "banane", 20 ];
+        console.log(typeof maListe);//  la console affiche "object"
+
+        // structure du test if
+        //  en français ça s'ecrirait comme ça: Si (une condition est vraie ou fausse){
+        //                                     Alors
+        //                                     Fais une chose; (instruction 1)
+        //                                     fais une autre chose; (instruction 2)
+        //                                     
+        // en pseudo code algorithmique: si(condition){
+        //     Alors
+        //     instruction1;
+        //     instruction2;
+        // }
+            
+        // si le nom du constructeur est égal a array, alors affiche en console la chaine de caractere "Array"
+        if(maListe.constructor.name == 'Array'){
+            console.log("Array");// array veut dire tableau de donnée en fr, 
+        }
+
+
+
+
+    </script>
+</body>
+</html>

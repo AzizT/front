@@ -1,0 +1,211 @@
+Cours:
+INTRO JAVASCRIPT
+Le Javascript (developpeme,nt coté client - Front end developement)est tout ce qui est traité par le navigateur et affiché au visiteur (User).
+Nous, en tant que developpeur on est auteur (author en anglais)
+
+Le dev javascript permet principalement de reagir aux actions de l'utilisateur, directement dans le navigateur.
+Ajax: Asynchronous Javascript And Xml = permet d'avoir des changements sans reload de page.(ex chargement de données ou data).
+
+Les qualités requises pour être developpeur: la RIGUEUR (primordiale dans l'ecriture du code. Les navigateurs trebuchent sur tout code mal écrit)
+                                            Faire tres attention  et se relire constamment, valider sur le w3c, tester, tot et souvent!!!
+                                            par ex, un signe ecrit deux fois au lieu d'une peut inverser totalement la signification du code!        
+
+                                            l'Organisation = Le rangement, la nomenclature, commentaires, faire du code simple, commenté et lisible)
+                                            la Capacité d'abstraction=  Un developpeur quand il fait face a un probleme à resoudre doit savoir fractionner, celui ci, en morceaux plus digestes et garder une vue plus globale de l'ensemble du code. 
+                                            Avant de commencer a écrire, il doit etre capable de s'imaginer le resultat du code qu'il va executer.      
+                                            
+La version actuelle de javascript, JS en abregé, est l'implémentation d'un langage script appellé EcmaScript. (standardisé dans les années 90 par Netscape) Inventé par Brendan Eich, confondateur du projet Mozilla. ES5 5 est utilisé depuis 2009, On arrive à ES6 aujourd'hui!
+
+JS permet:
+
+-Definir une action au clic
+-Verifier des données entrées dans un formulaire
+-Detecter des changements de page et lancer des alertes.
+-Stocker des valeurs utiles dans des variables
+-Faire des opérations sur des morceaux de texte (chaines de caracteres/ string)
+-Permet d'executer du code en réponse à certains évenements se produisant sur une page web
+-creer ou declancher des animations
+-faire des carousels, des menus deroulants, des galeries d'images interactives, gerer la video et l'audio 
+-Creer des jeux, des graphiques, 2d et 3d, (Datavisualisation = graphiques, camemberts, données et chiffres sur une carte...), des applications completes fondées sur des bases de données, applis mobile (online ou offline)
+
+JS est un langae compacte, en restant souple.
+
+Les developpeurs ont écrits de nombreux outils sur le coeur de javaScript (core), creant des fonctionalités supplementaires. Parmi ces outils, il y'a les API (application Programming Interface)
+interface de programmation d'application pour navigateurs.
+2 categories, d'API => API navigateur et API tierce particulierement
+Ce sont des blocs de code deja prets, qui permettent au developpement de creer plus facilement des programmes (boites a outil deja developpés et testés.)
+C'est comme le code en "kit" pour la programmation, Menuisier VS Ikea.
+
+Les APIs navigateur font partie integrante du navigateur, et peuvent acceder a des données de l'environnement informatique (l'ordinateur, le mobile), ou faire d'autres choses complexes.
+Par exemple: 
+
+****1****
+
+-L'API DOM (Document Object Model) nous permet de manipuler du html et du css, creer , modifier, supprimer du html, appliquer de nouveaux styles a la page de façon dynamique (ex: creer une popup
+charger de nouveaux contenus dans une page, il s'agit de l'action du DOM.) https://fr.wikipedia.org/wiki/Document_Object_Model
+
+-API de geolocalisation: https://fr.wikipedia.org/wiki/G%C3%A9olocalisation
+                        https://developer.mozilla.org/fr/docs/Using_geolocation permet de demander a l'utilisateur ou il se trouve (coordonnées) et d'afficher ses coordonnées sur une carte.
+
+-API Canvas et webGL: permet de creer des graphiques animés en 2d(Canvas) et en 3d(wbGL): https://developer.mozilla.org/fr/docs/Web/HTML/Canvas
+ex Canvas: https://developer.mozilla.org/en-US/docs/Web/Demos_of_open_web_technologies
+https://codepen.io/soulwire/pen/Ffvlo
+https://codepen.io/eltonkamami/pen/ECrKd
+ex webGL: http://sentdex.com/1w-global-sentiment-analysis/
+
+-API Video et Audio permet de lire de la video et de l'audio sans plugin
+
+-API web rtc: (peer to peer)
+https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API#Connection_setup_and_management
+
+-API Webstorage: permet de faire des applications offline (cash manifest)
+
+-API Webworkers: multi thread en JS: 
+
+****2****
+
+Les API tierces parties ne font pas parties par defaut du navigateur, on doit donc recuperer le code de la librairie (faire un lien vers la librairie) pour pouvoir l' utiliser dans son site.
+
+L'API de twitter  qui permet par exemple d'afficher les derniers tweets dans votre page.
+https://developer.twitter.com/
+
+L'API de ggoglemaps: permet d'afficher des cartes personalisées (api payante) 
+https://cloud.google.com/maps-platform/
+
+Un site ou trouver toutes les API tierce parties: https://www.programmableweb.com/category/all/apis
+----------------------------------
+
+Séparation des concepts:
+
+Regles de bases: 
+   -Pas de CSS dans Javascript
+   - Pas de balises HTML dans le javascript
+   -pas de Css dans le HTML (des feuilles de style interne ou externe oui mais on evite les style inline)
+   <p style="color:red";>lorem</p>
+__________________________________
+liens utiles:
+https://caniuse.com
+https://www.quirksmode.org/css/selectors/
+https://www.w3.org/TR/css-2010/ (dico propriétés css)
+
+Qui lit quoi comme format:
+http://camendesign.com/code/video_for_everybody/test.html
+
+Compresser de la Video et du Son:
+https://handbrake.fr/
+
+icones:
+https://thenounproject.com
+
+jeux educatifs:
+https://flexboxfroggy.com/#fr
+
+---------------------------------
+Taille et police par défaut d'une page HTML:
+Times, times New Roman; serif;
+16px;
+Le Rem est une unité de mesure par rapport au root(taille HTML)
+
+1 rem est = 1 fois la valeur de font-size definie pour la balise html. Si on ne change pas la taille de la balise html, on a 1rem = 16px par defaut (privilegier le rem)
+
+1 em est = 1 fois la valeur de font-size de sa balise parente: ex: H1 = 2em par defaut, si le H1 est enfant de la balise body et qu'on a donné une font-size de 14px a body, 
+le h1 = 2* 14px  donc 28px
+
+
+---------------------------------
+les images
+
+.svg 
+(scale vector graphics) images en vectorielles, des qu'on peut s'en servir, prendre du svg pour qu'il s'adapte automatiquement a la place qu'il a selon l'ecran
+
+---------------------------------
+Les marges par defaut des navigateurs
+
+le body a des marges par defaut de 8px, les titres h1 a h6, p, ont aussi des marges par defaut, les ul et ol, ont des marges et padding par defaut, ci dessous la listes 
+des differents marges par defaut de chaque élément sur w3c
+
+On utilise un reset pour elaguer des differences d'affichages sur tous les navigateurs, particulierement les vieux navigateurs. et corriger certains bugs d'affichages.
+
+https://www.w3.org/TR/CSS2/sample.html
+
+html, address,
+blockquote,
+body, dd, div,
+dl, dt, fieldset, form,
+frame, frameset,
+h1, h2, h3, h4,
+h5, h6, noframes,
+ol, p, ul, center,
+dir, hr, menu, pre { display: block; unicode-bidi: embed }
+li { display: list-item }
+head { display: none }
+table { display: table }
+tr { display: table-row }
+thead { display: table-header-group }
+tbody { display: table-row-group }
+tfoot { display: table-footer-group }
+col { display: table-column }
+colgroup { display: table-column-group }
+td, th { display: table-cell }
+caption { display: table-caption }
+th { font-weight: bolder; text-align: center }
+caption { text-align: center }
+body { margin: 8px }
+h1 { font-size: 2em; margin: .67em 0 }
+h2 { font-size: 1.5em; margin: .75em 0 }
+h3 { font-size: 1.17em; margin: .83em 0 }
+h4, p,
+blockquote, ul,
+fieldset, form,
+ol, dl, dir,
+menu { margin: 1.12em 0 }
+h5 { font-size: .83em; margin: 1.5em 0 }
+h6 { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6, b,
+strong { font-weight: bolder }
+blockquote { margin-left: 40px; margin-right: 40px }
+i, cite, em,
+var, address { font-style: italic }
+pre, tt, code,
+kbd, samp { font-family: monospace }
+pre { white-space: pre }
+button, textarea,
+input, select { display: inline-block }
+big { font-size: 1.17em }
+small, sub, sup { font-size: .83em }
+sub { vertical-align: sub }
+sup { vertical-align: super }
+table { border-spacing: 2px; }
+thead, tbody,
+tfoot { vertical-align: middle }
+td, th, tr { vertical-align: inherit }
+s, strike, del { text-decoration: line-through }
+hr { border: 1px inset }
+ol, ul, dir,
+menu, dd { margin-left: 40px }
+ol { list-style-type: decimal }
+ol ul, ul ol,
+ul ul, ol ol { margin-top: 0; margin-bottom: 0 }
+u, ins { text-decoration: underline }
+br:before { content: "\A"; white-space: pre-line }
+center { text-align: center }
+:link, :visited { text-decoration: underline }
+:focus { outline: thin dotted invert }
+
+/* Begin bidirectionality settings (do not change) */
+BDO[DIR="ltr"] { direction: ltr; unicode-bidi: bidi-override }
+BDO[DIR="rtl"] { direction: rtl; unicode-bidi: bidi-override }
+
+*[DIR="ltr"] { direction: ltr; unicode-bidi: embed }
+*[DIR="rtl"] { direction: rtl; unicode-bidi: embed }
+
+@media print {
+h1 { page-break-before: always }
+h1, h2, h3,
+h4, h5, h6 { page-break-after: avoid }
+ul, ol, dl { page-break-before: avoid }
+}
+
+-----------------------------------
+

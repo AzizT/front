@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            /* modifier la taille de typo pour avoir une taille de reference de 10px */
+            font-size: 62.5%
+            /* ici on veut lui mettre 10px par rapport aux 16px par defaut, on affiche le resultat en % simplement par rapport  */
+        }
+
+        body{
+            margin: 0;
+            font-size: 1.4rem;/* equivalent a 14px  vu*/
+        }
+        h1{
+            border: 2px solid crimson;
+            margin-bottom: 0;
+            padding: 1rem;/* 10px */
+            width: 300px;
+            /* la taille calculée de la boite du h1: width=300px + padding-right=10px + padding-left=10px + border-right=2px + border-left=2px  = 324px */
+        }
+        p{
+            border: 2px solid gold;
+            font-size: 1.3em;
+            margin-top: 0;
+            width: 300px;
+            /* width=300px + border-left= 2px + border-right=2px = 304px */
+        }
+        article{
+            border: 2px silver solid;
+            width: 50%;
+            padding: 1rem;
+            /* la taille calculée de l'article: width=300px + padding-right=10px + padding-left=10px + border-right=2px + border-left=2px  = 324px */
+            box-sizing: border-box;
+            /* avec le box-sizing:border-box la largeur de la valeur calculée sera de 300 px peu importe les borders et les padding */
+            margin: 0 auto;
+            /* pour eviter que cet article soit plus petit que 160px, on utilise le min-width */
+            min-width: 160px;
+            max-width: 600px;
+        }
+        h2{
+            background: coral;
+            width: 57.9710%;   */
+            margin: 0 auto;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    Revision: les balises block sont des boites qui font 100% de largeur par defaut, et qui sont affichées les unes sous les autres (verticalement). L'espace vertical qui les separent , est de la marge.
+
+
+    <!-- liste des balises diplay: block:
+    body, div, p, h1, h2, h3, h4, h5, h6, 
+
+    new html5: section, article, aside, nav, header, footer 
+
+    listes des balises inline: a, strong, em, span, label, adress
+
+    liste des balises inline-block : img, audio, video, canvas, input, select, textarea 
+
+    balise: table 
+    balise: table-row : tr 
+    balise: table-cell : td  -->
+
+    <h1>HTML</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate adipisci, tempore beatae nisi nemo itaque. Non, distinctio! Accusantium architecto hic cum, quam recusandae explicabo vitae iusto ad esse assumenda reprehenderit?</p>
+
+    <h1>CSS</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate adipisci, tempore beatae nisi nemo itaque. Non, distinctio! Accusantium architecto hic cum, quam recusandae explicabo vitae iusto ad esse assumenda reprehenderit?</p>
+
+    <article>
+        <h2>Histoire du web</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto modi repellat impedit eum eligendi, quis amet animi ut? Voluptatem dolores incidunt eligendi cum perferendis, quasi deserunt id quidem quibusdam.
+    </article>
+</body>
+</html>

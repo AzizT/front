@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            border: 2px solid olivedrab;
+            margin: 0 auto;
+        }
+        p{
+            border: 2px solid tomato;
+        }
+        .flt_l{
+            float: left;
+        }
+        .clear{
+            clear: both;
+            display: table;
+        }
+        .clearfix:after{
+            /* La class clearfix se donne au parent pour qu'il contienne ses flottants pour ne pas qu'ils sortent */
+            content: 'faux footer';
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <img src="images/montagne.jfif" alt="" class="flt_l">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus mollitia dignissimos velit hic laboriosam sit minus quae vitae enim sunt, molestiae perspiciatis obcaecati eaque possimus a recusandae ad odit.</p>
+        <strong class="clear">la montagne</strong>
+        <img src="images/montagne.jfif" alt="" class="flt_l">
+        <!-- <footer class="clear">Copyright</footer> -->
+    </div>
+
+    
+</body>
+</html>

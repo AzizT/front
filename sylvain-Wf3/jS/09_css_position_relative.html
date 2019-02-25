@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       *{
+           box-sizing: border-box;
+       }
+       body{
+           margin: 0;
+       }
+       .container{
+           border: 2px solid crimson;
+           width: 70%;
+           margin: 0 auto;
+       }
+       p:nth-of-type(2){
+           background-color: aqua;
+           margin-top: 40px;
+           margin-left: 100px;
+       }
+       p:nth-of-type(4){
+           background-color: coral;
+           position: relative;
+           /* la position relative ne sort pas du flux, la position absolute sort completement du flux */
+           top: 40px;
+           left: 100px;
+           /* top  */
+       }
+       footer{
+           background: silver;
+           padding: 1rem;
+           border-radius: 10px;
+           width: 90%;
+           position: relative;
+           margin: 0 auto;
+           bottom: -1rem;
+       }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error at voluptates commodi, odit aut nesciunt excepturi et est ex animi totam, sit consectetur aliquam perspiciatis quibusdam! Fugiat quis consequuntur aspernatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error at voluptates commodi, odit aut nesciunt excepturi et est ex animi totam, sit consectetur aliquam perspiciatis quibusdam! Fugiat quis consequuntur aspernatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error at voluptates commodi, odit aut nesciunt excepturi et est ex animi totam, sit consectetur aliquam perspiciatis quibusdam! Fugiat quis consequuntur aspernatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error at voluptates commodi, odit aut nesciunt excepturi et est ex animi totam, sit consectetur aliquam perspiciatis quibusdam! Fugiat quis consequuntur aspernatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error at voluptates commodi, odit aut nesciunt excepturi et est ex animi totam, sit consectetur aliquam perspiciatis quibusdam! Fugiat quis consequuntur aspernatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error at voluptates commodi, odit aut nesciunt excepturi et est ex animi totam, sit consectetur aliquam perspiciatis quibusdam! Fugiat quis consequuntur aspernatur?</p>
+        <footer>7 av Robespierre 94400 Vitry</footer>
+    </div>
+    
+</body>
+</html>
