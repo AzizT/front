@@ -1,0 +1,17 @@
+Les variables:
+
+Les variables sont un receptacte permettant de stocker des valeurs, qui peuvent evoluer dans le temps.
+
+Pour commencer, il faut declarer une variable avec le mot clé: "var" et en faisant suivre le nom de la variable.
+
+On declare une variable en lui donnant un nom, et on lui assigne une valeur avec l'operateur "=" , (c'est l'operatieur d'assignation)
+Plusieurs façons d'ecrire les variable, exemple: "var a = 4" ou  "a = 4" (Le mot variable indique ici une variable globale)
+On peut voir aussi la syntaxe "let" a la place de variable (c'est utilisé dans l'ES6, ECMAScript6) nous nous faisons de l'ES5 actuellement donc nous utilisons "var".
+
+d = 10;
+
+Plus tard dans le script, 
+
+d = 8
+Ici je viens de ré-assigner la var d, j'ai vidé la boite contenant 10 pour y mettre la valeur 8
+

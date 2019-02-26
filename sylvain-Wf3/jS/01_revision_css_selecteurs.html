@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a:link{
+            color:orange;
+            text-decoration: none;
+        }
+        a:visited{
+            color: blue;
+        }
+
+        a:hover, a:focus{
+            color:orangered;
+        }
+        a:active{
+            color:chocolate;
+        }
+        div{
+            padding: 1rem; /*  1 rem =16px */
+        }
+        :target{
+            /* va mettre un background de ma couleur a ce qui vient d'etre ciblé (selectionne les ancres ciblées) */
+            background-color: bisque;
+            border-left: 4px solid saddlebrown;
+        }
+        [title] /* lattribut [] tous les lelements qui ont l'attribut title */
+        {
+            font-weight: bold;
+        }
+        /* rappel selecteurs CSS */
+        /* selectionne tous les liens dont l'attibut href commence par http, autrement dit, tous les liens externes et leur met une couleur de fond*/
+        [href^=http]{
+            border-bottom: 3px dotted brown;
+            margin-bottom: 2rem;
+            padding: .5rem 2rem .5rem .5rem;
+            /*   cela ne marche pas, les margin et bottom verticaux ne fonctionnent pas avec les elements inline, pour que ça marche il faudra transformer ses proprietés en block avec display:inline-block*/
+            /* toujours 3 proprietés obligatoires: epaisseur de bordure | style de bordure ex: solid ou dotted, dashed... | couleur de bordure */
+            display: inline-block;
+            background-color: silver;
+            background-image: url(images/lien_externe.svg);
+            background-repeat: no-repeat; 
+            /* background-position: 0 0 en haut et gauche par defaut , on aurait pu ecrire 100% 50% pour le mete tout a droite et au milieu verticalement*/
+            background-position: 100% .25rem;
+            /* a la place de 100% et .25rem, j'aurais pu ecrire des mots clés, genre right  & center */
+            background-size: 1.5rem auto;
+            /* je donne une largeur, et avec auto le navigateur va calculer la hauteur en fonction de la largeur, on parle d'une valeur homotetique */
+        
+            /* version courte: */
+            background: silver url(images/lien_externe.svg) no-repeat right 05rem;
+            /* couleur de fond | chemin vers l'image |repetitio | position x | position y */
+        }
+
+        /* selecteur d'attribut, cibler tous les liens dont l'attribut commence par a href commence par http*/
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="http://www.apple.com" title="lien vers apple">Lien apple</a><br>
+        <!-- lien absolu = vers une page internet, ce lien absolu contiendra toujours une adresse web complete avec le protocole http -->
+        <a href="#chap1">Chapitre 1</a>
+        <a href="#chap2">Chapitre 2</a>
+        <a href="#chap3">Chapitre 3</a>
+
+    </nav>
+<section>
+    <div id="chap1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vel repudiandae amet ipsum laboriosam! Temporibus
+        accusantium, saepe asperiores, dolores dicta laborum rerum, non nisi quibusdam enim possimus tempora deleniti
+        fugiat.</div>
+    <div id="chap2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam inventore voluptates illum, pariatur quos sunt
+        reiciendis vel voluptas eos. Alias, qui temporibus ipsam natus illo consequuntur officia cupiditate autem
+        consequatur.</div>
+    <div id="chap3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non facilis libero ut temporibus minima labore quidem
+        nobis culpa porro, dolore commodi quos! Distinctio, quod possimus provident asperiores corporis fugiat cum.</div>
+</section>
+    
+    
+</body>
+</html>

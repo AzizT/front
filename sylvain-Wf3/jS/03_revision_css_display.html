@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            background-color:forestgreen;
+            /* p etant une balise block, sa largeur est de 100% il prend toute la place disponible */
+        }
+        strong{
+            background-color: aquamarine;
+            /* strong etant un element inline, c'est une boite de ligne dont la largeur s'adapte au texte qu'il y'a dedans */
+            padding: 1rem;
+            margin-bottom: 100px;
+            /* les marges top et bottom ne fonctionnent pas ou mal sur les balises inline, les width et height ne fonctionne pas non plus sur les éléments inline */
+        }
+        em{
+            background-color: cornflowerblue;
+            padding: 1rem;
+            display: inline-block;
+        }
+        ul{
+            border: 2px crimson solid;
+            list-style: none;
+            /* attention, les ul ont un padding-left de 40px par defaut, il faut l'annuler , faire un rest de ce padding, pour l'enlever */
+            padding-left: 0;
+        }
+        li{
+            border: 2px darkblue solid;
+            display: inline-block;
+            padding: 1rem;
+        }
+        section{
+            border: 2px aqua solid;
+            width: 60%;
+        }
+        section div{
+            border: 2px firebrick solid;
+            box-sizing: border-box;
+            width: 50%;
+            padding: 1rem;
+            float: left;
+            /* avec le float, les div sortent du flux, leur parent (section) ne les contient plus */
+        }
+        /* la boite a outil du float: le clearfix */
+        .clearfix:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        /* pour l'utiliser on attribut la classe .clearfix a la balise parente, ici section */
+
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>du gras</strong> Eaque optio maxime explicabo in perspiciatis omnis a ducimus illo autem expedita nihil nesciunt, adipisci enim beatae, asperiores id mollitia. Laborum, architecto!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque <em>optio maxime explicabo</em>  in perspiciatis omnis a ducimus illo autem expedita nihil nesciunt, adipisci enim beatae, asperiores id mollitia. Laborum, architecto!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque optio maxime explicabo in perspiciatis omnis a ducimus illo autem expedita nihil nesciunt, adipisci enim beatae, asperiores id mollitia. Laborum, architecto!</p>
+
+    <ul>
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>Banane</li>
+    </ul>
+
+    <section class="clearfix">
+        <div>UN</div>
+        <div>DEUX</div>
+        <div>TROIS</div>
+    </section>
+    
+</body>
+</html>
