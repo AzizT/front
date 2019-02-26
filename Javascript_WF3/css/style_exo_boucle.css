@@ -1,0 +1,21 @@
+*{
+    box-sizing : border-box;
+}
+body{
+    margin: 0;
+}
+html{
+    width: 100%;
+    height: inherit;
+    /* hérite de son parent "window" pour la propriete height */
+}
+canvas{
+    display: block;
+    /* pour que le canvas s' adapte a la taille du body */
+    border: 4px solid crimson;
+}
+button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
