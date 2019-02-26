@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changer le bg de maniere aleatoire</title>
+</head>
+<body>
+
+    <!-- faire fonction, change bg, qui ne contient pourl' instant qu' une seule instruction pour l' instant ( une alert ok
+    ) Cette focntion doit etre declenchée par le bouton -->
+
+    <button>Change la couleur</button>
+    
+
+    <script>
+
+var btn = document.querySelector('button');
+function changeBg(){
+    // alert('ok');
+    document.body.style.backgroundColor = 'orange';
+}
+btn.addEventListener('click', changeBg);
+
+        // var changeBg = document.querySelector('button');
+        // var fenetre = alert('ok');
+        // changeBg.addEventListener('click', fenetre);
+        
+    </script>
+</body>
+</html>
