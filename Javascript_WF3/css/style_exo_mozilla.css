@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    /* 10px */
+}
+body{
+    margin: 0;
+    font: 1.4rem/1.2 arial, helvetica, sans-serif;
+    /* font-size, line-height, font-family */
+    background-color: royalblue;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: orange;
+    padding: 1rem;
+    border: 3px solid black;
+}
+h1{
+    text-align: center;
+    color: steelblue;
+    text-shadow: 2px 2px gray;
+}
+img{
+    margin: 0 auto;
+    display: block;
+    /* va permettre de centrer l' image, sinon, impossible avec le margin: auto */
+}
