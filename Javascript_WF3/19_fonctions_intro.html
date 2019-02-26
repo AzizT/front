@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introduction aux fonctions</title>
+    
+</head>
+
+<body>
+
+        <h2>Les instructions </h2>
+        <p>Les fonctions permettent de regrouper une serie d'instruction pour pouvoir les re-utiliser</p>
+        <h3>Les instrutions</h3>
+        <p>Un script js est un fichier contenant des instructions, placées les unes a la suite des autres.Chacune de ces instructions peut etre vue comme un ordre doné au moteur javaScript, une action que l'on souhaite réaliser a la maniere d'une recette de cuisine.  
+        </p>
+        <ul>
+            <li>Faire fondre le beurre</li>
+            <li>Melanger le beurre et la farine</li>
+            <li>Verser le chocolat petit a petit et...</li>
+        </ul>
+        <p>Les instructions se suivent et sont effectuées les unes a la suite des autres, <strong>du haut vers le bas</strong>(comme en CSS). Le browser parse (analyse) dans l'ordre du flux </p>
+        <p>Chaque instruction DOIT se terminer par un point virgule, afin d'indiquer au moteur javaScript que cette instruction est terminée.</p>
+    
+    *******************
+    
+        <h2>Les fonctions</h2>
+        <p>Le fonctions permettent de regrouper une serie d'instructions pour pouvoir les reutiliser. Quand on a besoin du code d'une serie d'instruction.Plutot que de ré ecrire a chaque fois toutes les instructions, on appellera une fonction par son nom (faireUnGateau). Cette fonction contient l'ensemble des instructions a executer.</p>
+        <p>Par exemple la fonction alert est une fonction native integrée au navigateur, qui contient en gros les instructions suivantes:</p>
+        <ul>
+            <li>Creer le cadre de la boite de dialogue</li>
+            <li>Positionner le cadre dans la fenetre</li>
+            <li>Creer un backgroud semi transparent sur toute la page</li>
+            <li>Placer un bouton avec le texte ok et un evenement click</li>
+            <li>Creer une zone de texte qui affichera de l'art a presenterau visiteur</li>
+        </ul>
+        <p>Nous on a juste besoin d'utiliser la fonction alert() en lui donnant un argument, ex ("coucou")
+            La fonction executera toutes les instructions a chaque fois <br>
+            On peut utiliser cette fonction alert quand on veut en la declenchant avec : alert("quelquechose")
+            Ce quelquechose est un ARGUMENT attendu par la fonction.
+        </p>
+        <code>
+                var maVariable = document.querySelector('h2');
+                alert('coucou');
+        </code>
+        <p>Les fonctions querySelector et alert sont disponibles dans le navigateur, ce sont des <strong>methodes</strong> </p> 
+        
+        <p>si vous voyez quelquechose qui ressemble a une variable et qui est suivie de parenthese, c'est une fonction.</p>
+        
+        <p>Les fonctions prennent souvent des arguments, des bouts de données dont elles ont besoin pour faire leur travail? Les arguments sont placés ENTRE les parentheses, separées par des virgules si il y'en a plusieurs</p>
+    
+        <p>Par exemple la fonction alert , fait apparaitre une popup mais vous devez donner une chaine comme argument pour indiquer a la fonction ce que vous souhaitez ecrire dans la fenetre.</p>
+    
+        <p>Nous pouvns ecrire nos propres fonctions</p>
+
+<script type="text/javascript" src="js/19_fonctions_intro.js"></script>
+</body>
+
+</html>
