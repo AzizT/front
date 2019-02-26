@@ -18,7 +18,12 @@
 }
 .chat{
     background: darkblue;
-    height: 10vh;
+    width: 14.5vw;
+    height: 25vh;
+}
+.silhouette_chat{
+    width: 14.5vw;
+    height: 25vh;
 }
 .footer{
     background: navy;
