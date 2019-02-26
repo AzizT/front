@@ -11,26 +11,31 @@
     <!-- faire fonction, change bg, qui ne contient pourl' instant qu' une seule instruction pour l' instant ( une alert ok
     ) Cette focntion doit etre declenchée par le bouton -->
 
-    <button>Change la couleur</button>
+    <button>Change couleur</button>
+    <div class="unDiv">ICI le div</div>
     
 
     <script>
 
+
 var btn = document.querySelector('button');
+var monDiv = document.querySelector(' .unDiv');
 
 function random(number){
     return Math.floor(Math.random()* number);
 }
-function changeBg(){
+function changeBg(e){
     // alert('ok');
-    document.body.style.backgroundColor = 'hsla('+ random(360)+', 100%, 50%, 1)';
+    e.target.style.backgroundColor = 'hsla('+ random(360)+', 100%, 50%, 1)';
 }
 btn.addEventListener('click', changeBg);
+monDiv.addEventListener('click', changeBg);
 
         // var changeBg = document.querySelector('button');
         // var fenetre = alert('ok');
         // changeBg.addEventListener('click', fenetre);
         
+    
     </script>
 </body>
 </html>
