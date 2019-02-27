@@ -21,9 +21,14 @@
             background-color: pink;
             padding: 10px 20px;
         }
-        button{
+        #btnAfficheDialogue{
             position: absolute;
             left: 0;
+            top: 0;
+        }
+        button{
+            position: absolute;
+            right: 0;
             top: 0;
         }
     
@@ -60,12 +65,20 @@
         pMessage.textContent = "Je suis une boite de dialogue";
         // textContent pour ajouter du texte en JS. Le textContent fonctionne avec un = et non ('')
         boiteDialogue.appendChild(pMessage);
+        // creer balise closeBtn, x comme texte et enfant de la boiteDialogue
+        var closeBtn= document.createElement('button');
+        closeBtn.textContent = 'x';
+        boiteDialogue.appendChild(closeBtn);
 
+        closeBtn.addEventListener('click', function(){
+            boiteDialogue.parentNode.removeChild(boiteDialogue);
+        })
     }
     // fin de la fonction afficheMessage()
 
     // declenchement de l' evenement
     btnOpenBox.addEventListener('click', afficheMessage);
+    
 </script>
     
 </body>
