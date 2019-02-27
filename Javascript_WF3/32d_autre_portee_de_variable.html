@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Autres Portée de variables</title>
+</head>
+<body>
+
+    <p>Que se passe t-il si les variables sont appelées de l'interieur d' une fonction ?</p>
+    
+<script>
+    // etape D
+
+    var x = 1;
+    function a(){
+        y = 2;
+        sortie(z);
+    }
+    function b(){
+        var z = 3;
+        sortie(y);
+    }
+    function sortie(valeur){
+        var para = document.createElement('p');
+        document.body.appendChild(para);
+        para.textContent = 'La valeur est : '+ valeur;
+    }
+    
+    sortie(x);
+    a();
+    b();
+
+    /*
+    Cette fois, l' appel de a() et b() renverra l' erreur; referenceError z is not defined
+    Car l' appel de la fonction sortie() et des variables qu' elle essaie d' afficher ne sont pas dans les memes portées (fonctions)
+    Elles sont donc invisibles dans ces appels de fonction
+    Au cas ou la variable a été crée, il faut donc vérifier quelle est sa portée. Car le referenceError est un des messages d' erreurs les plus rencontrés
+    Les regles de portées ne s' appliquent ni aux boucles ni aux instructions conditionnelles telles que if etc...
+    */
+</script>
+    
+</body>
+</html>

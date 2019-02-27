@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Cours boucle while</title>
+</head>
+<body>
+    <h1>Boucles for et While</h1>
+
+    <p>Elles servent a repeter, une ou plusieurs lignes de code</p>
+
+    <h2>While, en JS, sert a répéter TANT QUE</h2>
+
+    <p>Elle définit une liste d' instructions a executer TANT QUE une condition est vraie</p>
+    <strong>Structure de la boucle While</strong>
+
+    <pre>
+        while(condition){
+            instruction 1;
+            instruction 2;
+            etc...
+        }
+    </pre>
+
+    <p>While ne prend qu' un seul parametre, <strong>la condition a vérifier</strong>.
+    Tant qu' elle est vraie, la boucle continue de s' executer.
+Dans l' exemple en console.log, elle va s' executer 5 fois, et x aura pour résultat final 20
+<br>
+Il faut donc s' arranger pour que <strong>la condition ne soit plus vraie. </strong>
+Sinon la boucle va se répéter a l' infini et planter le navigateur</p>
+    
+
+    <script>
+
+        var  x= 0;
+
+        while(x<20){
+            // tant que x est inferieur a 20, on entre dans la boucle et on réalise l' instruction; ajoute 5 a x
+            x +=5;
+            // va ajouter 5 a la variable x
+            console.log(x);
+            // va afficher, si on le met dans la boucle: 5 10 15 20 ( resultat a chaque tour de boucle)
+            // si on le met a l' exterieur, il affichera 20, directement le resultat final
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Exo boucle while</title>
+</head>
+<body>
+    <h1>Exo bis ( break ) prenoms avec While</h1>
+
+    <p>On va demander a l' internaute son prenom, ainsi que les prenoms de ses freres et soeurs.<br>
+    On va afficher une boite de dialogue avec la methode prompt() pour chaque prenom<br>
+Le problème: comment savoir a l' avance combien il y aura de freres et soeurs ( et donc ouvrir de prompt )?<br>
+La boucle ne s' arretera que lorsque l' utilisateur decidera de ne plus entrer de prenom</p>
+    
+    
+
+    <script>
+        var prenoms = '',
+            prenom;
+            // variable proceed supprimée
+           
+        while(true){
+            // le proceed est remplacé par true
+            prenom = prompt('Entrer un prenom');
+            if(prenom){
+                prenoms += prenom + '<br>';
+            }
+            else{
+                break;
+                // on remplace le proceed = false, par le break, pour sortir de la boucle
+            }
+        }
+        document.write(prenoms);
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Autres Portée de variables</title>
+</head>
+<body>
+
+    <p>On va créer deux fonctions appellées a() et b(), et trois variables: x, y et z.<br>
+    Deux d' entre elles seront definies a l' interieur de la fonction et l' autre sera definie dans la portée globale<br>
+On aura une troisieme fonction appellée sortie(), qui ne prend qu' un seul pârametre et qui le renvoi dans un paragraphe de la page</p>
+    
+<script>
+    // etape A
+    var x = 1;
+    //  var x est dans la portée globale
+    function a(){
+        y = 2;
+        //  y et en dessous,z, sont dans les fonctions
+    }
+    function b(){
+        var z = 3;
+    }
+    // declaration de la focntion qui attend un parametre
+    function sortie(valeur){
+        // on crée un node (noeud) p, qui est un objet du document
+        var para=document.createElement('p');
+        //  on ajoute ce node comme enfant de la balise body
+        document.body.appendChild(para);
+        // créer le node de texte qui est le contenu texte de ka bakise p, avec la methode textContent ( on pourra aussi uutiliser innerHtml)
+        para.textContent = 'La valeur est : '+ valeur;
+    }
+    // invocation de la focntion sortie en lui envoyant l' argument x
+    sortie(x);
+    // comme x est dans la portée globale, on a bien acces et donc le paragraphe crée par la fonction sortie affiche bien la valeur de x. Vous devez normalement voir la valeur de la variable x
+    sortie(y);
+    sortie(z);
+
+</script>
+    
+</body>
+</html>

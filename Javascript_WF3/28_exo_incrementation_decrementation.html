@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> exo incrementation decrementation</title>
+</head>
+<body>
+    <h1>Incrementation et decrementation</h1>
+
+    <p>Ce sont des raccourcis pour ajouter ou soustraire une valeur a une variable</p>
+    <ul>
+        <li>++X signifie ajouter 1 a la variable X</li>
+        <li>--X signifie retirer 1 a la variable X</li>
+        <li>+= Y signifie ajouter Y a la variable X</li>
+        <li>Autres variantes: -=, *=, /=, %=</li>
+    </ul>
+
+    <p>x++ et ++x ont le même résultat a la différence pres que x++ retourne la valeur de x AVANT d' effectuer l' opération, alors que ++x retourne la valeur de x APRES avoir effectue l' operation</p>
+    
+
+    <script>
+        var x = 5;
+        console.log(x++);
+        // va donner 5 en console, et x est desormais egal a 6
+        console.log(x);
+        // va afficher 6, sa valeur actuelle
+        console.log(++x);
+        // x est maintenant egal a 7, mais c' est 7 qui sera affiché en console ( et pas 6)
+
+        var heure = 5;
+        heure++;
+        console.log('il est '+heure+ ' heures');
+
+        heure+=2;
+        console.log('il est '+heure+ ' heures');
+
+        heure /= 2;
+        console.log('il est '+heure+ ' heures');
+
+        heure %=3;
+        console.log('il est '+heure+ ' heures');
+        // devient 1 car 4/3, il reste 1
+
+    </script>
+</body>
+</html>

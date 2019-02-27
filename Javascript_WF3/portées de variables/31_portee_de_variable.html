@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portée de variables</title>
+</head>
+<body>
+    <h1>La portée des fonctions et les conflits</h1>
+    <p>La portée est un concept tres important en JS, lorsqu' on a affaire a des fonctions.<br>
+    Quand on crée une fontion, les variables et autres choses qui sont definies a l' interieur de la fonction ont leur propre portée.<br>
+Ce qui signifie qu' elles sont enfermées dans leur propre compartiment séparé, et qu' elles ne peuvent pas etre affectées par d' autres focntions ou par le code en dehors de la fonction ( metaphore du zoo, chaque animal a son propre enclos, la portée de la fonction)</p>
+<p>Le plus haut niveau en dehors de toutes vos fonctions est appelé la portée globale. <br>Les valeurs definies dans la portée globale sont accessibles a partir de n' importe quelle partie du code ( le gardien du zoo qui a toutes les cles )</p>
+<p>Le JS est construit de cette façon pour plusieurs raisons et en particulier pour la securité et l' organisation<br>
+Parfois, vous ne voulez pas que vos variables soient accesssibles depuis toutes les autres parties du code.<br>
+- des parties externes appelées depuis l' exterieur de votre fonction pourraient interferer avec votre code et causer des problemes parce qu' ils utilisent les mêmes noms de variables que d' autres parties du code, provoquant des conflits. Par malveillance comme inadvertance</p>
+<p>Par exemple, on va avoir un fichier html, qui appelle deux fichiers JS externes, et que les deux ont une variable et une fonction definie qui utilisent le même nom</p>
+
+<script type="text/javascript" src="31_script1.js"></script>
+<script type="text/javascript" src="31_script2.js"></script>
+<script>
+// on invoque la fonction ditSalut() qui peut etre aussi bien definie en interne qu' en externe
+ditSalut();
+// ce sont les parentheses qui executent la focntion
+</script>
+    
+</body>
+</html>

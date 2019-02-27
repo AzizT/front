@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo boite dialogue perso</title>
+
+    <style>
+        .msgBox{
+            background-color: silver;
+            width: 242px;
+            height: 242px;/* temporaire, le temps de créer du contenu dans msgBox*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* permet de parfaitement centrer notre objet/div dans le body */
+        }
+        .msgBox p{
+            background-color: pink;
+            padding: 10px 20px;
+        }
+        button{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- <div class="msgBox">
+        <p>message</p>
+    
+    <button>x</button>
+    </div> -->
+    <button id="btnAfficheDialogue">Affiche la boite de dialogue</button>
+    
+    
+<script>
+
+    var btnOpenBox = document.getElementById('btnAfficheDialogue');
+
+    function afficheMessage(){
+        // variable nommée body, on selectionne la balise body dans le DOM
+        var body = document.querySelector('body');
+        // dans une variable boiteDialogue, on cree un objet div, avec methode createElement
+        var boiteDialogue = document.createElement('div');
+        // on va ajouter a boiteDialogue l' attribut, l' attribut class="msgBox", avec la methode: setAttribute ('nom de l' attribut' , 'nouvelle valeur')
+        // les deux parametres attendus par setAttribut: * nom de l' attribut: on mettra class / * nouvelle valeur: on mettra msgBox
+
+        boiteDialogue.setAttribute('class', 'msgBox');
+        body.appendChild(boiteDialogue);
+        // on donne boiteDialogue comme enfant a body, pouvoir la créer physiquement dans la page web
+        // créer une variable pMessage, qui crée un objet paragraphe
+        var pMessage= document.createElement('p');
+        // ajouter a cet objet pMessage, le contenu texte suivant: "je suis une boite de dialogue"
+        // ajouter ce pMessage comme enfant de la boiteDialogue
+        pMessage.textContent = "Je suis une boite de dialogue";
+        // textContent pour ajouter du texte en JS. Le textContent fonctionne avec un = et non ('')
+        boiteDialogue.appendChild(pMessage);
+
+    }
+    // fin de la fonction afficheMessage()
+
+    // declenchement de l' evenement
+    btnOpenBox.addEventListener('click', afficheMessage);
+</script>
+    
+</body>
+</html>

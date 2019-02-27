@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Autres Portée de variables</title>
+</head>
+<body>
+
+    <p>Que se passe t-il si les variables sont appelées de l'interieur d' une fonction ?</p>
+    
+<script>
+    // etape B
+
+    var x = 1;
+    function a(){
+        y = 2;
+        sortie(y);
+    }
+    function b(){
+        var z = 3;
+        sortie(z);
+    }
+    function sortie(valeur){
+        var para = document.createElement('p');
+        document.body.appendChild(para);
+        para.textContent = 'La valeur est : '+ valeur;
+    }
+    
+    sortie(x);
+    a();
+    b();
+
+    /*
+    Tout notre code fonctionne bien car notre focntion sortie est appelée a l' interieur des autres focntions, dans la portée (scope, l' enclos) dans la portée des variables qu' elles renvoient sont definies
+    La focntion sortie() est elle même disponible dans le code, car elle est definie dans la portée globale
+    */
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Boucles Do While et For In</title>
+</head>
+<body>
+
+    <h1>Boucles Do While et For In</h1>
+
+    <h2>La boucle Do While</h2>
+
+    <p>Elle ressemble beaucoup a la while, sauf que dans son cas elle est toujours executée AU MOINS UNE FOIS<br>
+    Dans le cas de while, si la condition n' est pas valide, la boucle ne sera jamais executée<br>
+dans le cas de do while, la boucle sera executée une fois, puis la condition doit etre testée pour savoir si elle doit etre executée a nouveau</p>
+
+<pre>
+    <strong>Structure de Do While</strong>
+    do{
+        instruction 1;
+        instruction 2; etc...
+    }
+    while(condition)
+</pre>
+<p>on ne la rencontre que très peu frequemment ( quasimment plus jamais )</p>
+
+<h2>La boucle For In</h2>
+<p>Elle permet de parcourir un objet</p>
+    
+
+    <script>
+        frigo = {
+            fruits:["citron", "orange"],
+            legumes:["patates", "tomates"]
+        };
+        for(type in frigo){
+            // parcourt chaque cle de l' objet.type aura fruits et legumes comme valeurs.
+            document.write(frigo[type]);
+        }
+
+       
+    </script>
+</body>
+</html>

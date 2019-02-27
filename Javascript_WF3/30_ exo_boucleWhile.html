@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Exo boucle while</title>
+</head>
+<body>
+    <h1>Exo prenoms avec While</h1>
+
+    <p>On va demander a l' internaute son prenom, ainsi que les prenoms de ses freres et soeurs.<br>
+    On va afficher une boite de dialogue avec la methode prompt() pour chaque prenom<br>
+Le problème: comment savoir a l' avance combien il y aura de freres et soeurs ( et donc ouvrir de prompt )?<br>
+La boucle ne s' arretera que lorsque l' utilisateur decidera de ne plus entrer de prenom</p>
+    
+    
+
+    <script>
+        var prenoms = '',
+            prenom,
+            proceed = true;
+            // suite de virgule et non de point virgule, car c' est une suite de variables. Le point virgule n' arrive qu' a la fin de toutes la declaration des variables
+
+        while(proceed){
+            // proceed tout seul en condition est équivalent a proceed = true
+            prenom = prompt('Entrer un prenom');
+            // attention, pour l' instant cette boucle est toujours vraie, donc elle est infinie ( pas bon, affiche prompt continuellement, proceed n' est jamais false)
+            //  pour qu' elle stoppe, on va tester SI (l'utilisateur entre un prenom dans le prompt,) ALORS on ajoute ce prenom dans le tableau prenoms. SINON, on sort de la boucle en mettant la variable proceed en false
+            if(prenom){
+                prenoms += prenom + '<br>';
+                // ici, on ajoute le nouveau prenom au tableau prenoms, suivi d' un espace
+            }
+            // fin du if
+            else{
+                proceed = false;
+                // puisqu' aucun prenom n' a été rentré, on fait en sorte d' invalider la condition en mettant proceed en false
+            }
+            // fin du else
+        }
+        // fin de la boucle while
+        document.write(prenoms);
+        // va afficher les prenoms les uns a la suite des autres
+
+       
+    </script>
+</body>
+</html>

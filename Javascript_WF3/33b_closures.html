@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>closures</title>
+</head>
+<body>
+    <h1>Les closures</h1>
+
+    <p>Il faut garder a l' esprit qu' on peut appeler une fonction de n' importe ou; même a l' interieur d' une autre fonction<br>
+    C' est donc souvent utile pour l' organisation du code ( division d' une fonction complexe en plusieurs sous-fonctions )<br>
+    Lire les closures de Pierre Giraud
+</p>
+
+    
+    
+<script>
+
+    // etape B
+
+    function maMetaFonction(){
+        var maVariable = 1;
+
+        sousFonction1(maVariable);
+
+        
+        sousFonction2(maVariable);
+            
+        
+        sousFonction3(maVariable);
+            
+        
+    }
+    // fin de la meta fonction
+
+    function sousFonction1(valeur){
+        document.write(valeur);
+    }
+    function sousFonction2(valeur){
+        document.write(valeur);
+    }
+    function sousFonction3(valeur){
+        document.write(valeur);
+    }
+    maMetaFonction();
+
+    /*
+    Ici, on a bien acces a maViable, car on a passé sa valeur dans la metafonction et sous-fonctions, en tant que parametre
+    */
+
+    
+</script>
+    
+</body>
+</html>
