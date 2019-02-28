@@ -1,23 +1,26 @@
-#header{
+#header h1{
     background-image:url(../img/background.jpg);
     height: 20vh;
     text-align: center;
     Color: white;
+    margin-bottom: 5vh;
 }
 .slide{
     width: 48.5;
     height: 47.5vh;
+    margin-bottom: 5vh;
 }
 .form{
-    background: bisque;
     height: 10vh;
+    margin-bottom: 5vh;
+    font-weight: bold;
 }
 .txt{
     background: rosyBrown;
-    height: 10vh;
+    height: 25vh;
 }
 .chat{
-    background: darkblue;
+    /* background: darkblue; */
     width: 14.5vw;
     height: 25vh;
 }
@@ -27,5 +30,6 @@
 }
 .footer{
     background: navy;
-    height: 10vh;
+    height: 5vh;
+    color: white;
 }

@@ -1,0 +1,47 @@
+.container-fluid{
+    padding: 0;
+}
+header{
+    background: url(../img/background.jpg);
+    height: 13rem;
+}
+nav{
+    background: #061339;
+    padding-top: 1vh;
+    height: 3rem;
+}
+nav a{
+    
+    color: white;
+}
+footer{
+    background-color: #061339;
+    height: 2rem;
+    color: white;
+    text-align: right;
+    padding-top: .5vh;
+}
+a, h1, h2, h3{
+    font-family: 'merienda';
+}
+h1{
+    color: #FFF;
+    text-align: center;
+    margin-top: 3rem;
+}
+h2{
+    color: #2F4073;
+}
+#cat img{
+    width: 100%;
+    background: #7885A5;
+}
+#formSlide{
+    background-color: rgb(244, 245, 247);
+    padding-top: 4vh;
+
+}
+#logo{
+    background-color: rgb(216, 217, 219);
+    padding-top: 4vh;
+}
