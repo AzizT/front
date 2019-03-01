@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo ajouter du css avec du JQuery</title>
+
+    <style>
+    article{
+        width: 200px;
+        padding: 20px;
+        background: gold;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <article>
+        contenu article
+    </article>
+
+    <p class="resultat">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, nesciunt ex sapiente, obcaecati laborum ratione voluptatem facilis quasi et aspernatur fugit consequuntur qui, adipisci nemo facere illum magnam porro inventore?</p>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        // le test pour vérifier si JQ est bien chargé
+        $ (function(){
+            console.log('Le DOM est bien chargé');
+
+            //  on va selectionner la balise article avec le selecteur article
+            $('article').on('click', function(){
+                $(this).css("background-color", "indianred");
+                // pour changer le bg du paragraphe tout en cliquant sur l' article
+                $('.resultat').css("background-color", "aqua");
+            })
+            // fonction pour changer au clic resultat
+            $('.resultat').on('click', function(){
+                $(this).css({
+                    "font-size": "2rem",
+                    "color": "hotpink",
+                    "transform": "rotate(.25turn)"
+
+                // $(this).css("color", "hotpink");
+            });
+            
+        })    
+            })
+       
+        // fin du scope Jquery
+    
+    </script>
+    
+</body>
+</html>
