@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exo 100 cercles aleatoires</title>
+    
+</head>
+
+<body>
+
+    <button>Dessine</button>
+
+    <canvas></canvas>
+
+    
+
+<script>
+    var btn = document.querySelector('button');
+var canvas = document.querySelector('canvas');
+var feuille = canvas.getContext('2d');
+
+var WIDTH = document.documentElement.clientWidth;
+var HEIGHT = document.documentElement.clientHeight;
+
+canvas.width = WIDTH;
+canvas.height = HEIGHT;
+
+function random(number){
+    return Math.floor(Math.random()* number);
+    // Math.floor convertit en nombre entier.
+    // ici, on convertit en nombre entier ( sans virgule) le nombre randomisé et multiplié par la valeur number (qui est l' argument utilisé en début de fonction)
+}
+
+function dessineUnCercle(){
+        feuille.clearRect(0,0, WIDTH, HEIGHT);
+        // pour effacer le rectangle du contenu du canvas
+
+        var i=0, combienDeFois = 500;
+        // initialisation de i et nombre de cercles qu' on voudra réaliser
+            // les instructions a réaliser autant de fois que la boucle le dit
+
+        function f(){
+                feuille.beginPath();
+            feuille.fillStyle = 'hsla(' + random(360) + ', 100%, 50%, .5)';
+
+            feuille.arc(random(WIDTH), random(HEIGHT), random(150), 0, 2 * Math.PI);
+            feuille.fill();
+
+            i++; 
+                if(i< combienDeFois){
+                    setTimeout(f, 200);
+                    // attendre 0.5 seconde et relancer f (toi même)
+                    // attention, pas ecrire TimeOut, mais Timeout
+                }
+         }
+       // fin de la declaration de la fonction f()
+        f();
+     }
+   // fin de la fonction dessine un cercle
+    
+
+
+btn.addEventListener('click', dessineUnCercle);
+</script>
+</body>
+
+</html>

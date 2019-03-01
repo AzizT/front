@@ -48,12 +48,13 @@
     var btnOpenBox = document.getElementById('btnAfficheDialogue');
 
     function afficheMessage(){
-        // variable nommée body, on selectionne la balise body dans le DOM
+        
         var body = document.querySelector('body');
-        // dans une variable boiteDialogue, on cree un objet div, avec methode createElement
+        // variable nommée body, on selectionne la balise body dans le DOM
         var boiteDialogue = document.createElement('div');
+        // dans une variable boiteDialogue, on cree un objet div, avec methode createElement
         // on va ajouter a boiteDialogue l' attribut, l' attribut class="msgBox", avec la methode: setAttribute ('nom de l' attribut' , 'nouvelle valeur')
-        // les deux parametres attendus par setAttribut: * nom de l' attribut: on mettra class / * nouvelle valeur: on mettra msgBox
+        // les deux parametres attendus par setAttribut: * nom de l' attribut: on mettra class - * nouvelle valeur: on mettra msgBox
 
         boiteDialogue.setAttribute('class', 'msgBox');
         body.appendChild(boiteDialogue);
@@ -88,13 +89,13 @@
     
 </script>
 
-if(msgtype === 'warning'){
+<!-- if(msgtype === 'warning'){
     alert('ATTENTION');
 }else if(msgType === 'chat'){
     aler('CHAT');
 }else{
     alert('RIEN');
-}
+} -->
     
 </body>
 </html>
