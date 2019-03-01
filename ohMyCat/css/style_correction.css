@@ -11,8 +11,12 @@ nav{
     height: 3rem;
 }
 nav a{
-    
     color: white;
+}
+nav a:hover{
+    text-decoration: none;
+    color: rgb(144, 159, 196);
+    transition: 1s;
 }
 footer{
     background-color: #061339;
@@ -23,6 +27,9 @@ footer{
 }
 a, h1, h2, h3{
     font-family: 'merienda';
+}
+a{
+    margin-left: 1vw;
 }
 h1{
     color: #FFF;
@@ -36,12 +43,22 @@ h2{
     width: 100%;
     background: #7885A5;
 }
+#cat img:hover{
+    width: 100%;
+    background: #061339;
+}
 #formSlide{
     background-color: rgb(244, 245, 247);
     padding-top: 4vh;
+    padding-bottom: 2vh;
 
 }
+#form{
+    padding-top: 3vh;
+    border: 1px solid rgb(224, 224, 224);
+    box-shadow: 2px 2px 2px rgb(224, 224, 224);
+}
 #logo{
-    background-color: rgb(216, 217, 219);
+    background-color: #DEDEDE;
     padding-top: 4vh;
 }
