@@ -24,6 +24,9 @@ footer{
 a, h1, h2, h3{
     font-family: 'merienda';
 }
+a{
+    margin-left: 4vw;
+}
 h1{
     color: #FFF;
     text-align: center;
@@ -36,10 +39,20 @@ h2{
     width: 100%;
     background: #7885A5;
 }
+#cat img:hover{
+    width: 100%;
+    background: #061339;
+}
 #formSlide{
-    background-color: rgb(244, 245, 247);
+    background-color: rgb(231, 231, 233);
     padding-top: 4vh;
+    padding-bottom: 2vh;
 
+}
+#form{
+    border: 1px solid rgb(211, 210, 210);
+    padding-top: 1rem;
+    box-shadow: 2px 2px 2px rgb(212, 212, 212);
 }
 #logo{
     background-color: rgb(216, 217, 219);
