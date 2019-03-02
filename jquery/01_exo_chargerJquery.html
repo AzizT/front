@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo Charger JQuery</title>
+</head>
+<body>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- methode traditionnelle pour tester que JQuery et le DOM sont bien chargés -->
+
+   <!-- <script> document.addEventListener("DomContentLoaded", function(){
+       console.log("DOM chargé");
+   }
+        </script> -->
+
+        <!-- autre méthode pour vérifier quele DOM est bien chargé
+        $(document).ready( function(){
+            console.log("Le DOM est bien chargé")
+        })
+        -->
+        <!-- Autre méthode, conseillée pour charger -->
+       <script> $(function(){
+           console.log("Le DOM est bien chargé");
+           alert("Le DOM est bien chargé");
+       })
+
+        </script>
+
+
+
+
+
+    
+
+</body>
+</html>

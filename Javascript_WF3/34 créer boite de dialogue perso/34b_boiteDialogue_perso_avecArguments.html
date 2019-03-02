@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo boite dialogue perso</title>
+
+    <style>
+        body{
+            background: aqua;
+        }
+        .msgBox{
+            background-color: silver;
+            width: 242px;
+            height: 242px;/* temporaire, le temps de créer du contenu dans msgBox*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* permet de parfaitement centrer notre objet/div dans le body */
+        }
+        .msgBox p{
+            background-color: pink;
+            padding: 10px 20px;
+        }
+        .msgBox button{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- <div class="msgBox">
+        <p>message</p>
+    
+    <button>x</button>
+    </div> -->
+    <button id="btnAfficheDialogue">Affiche la boite de dialogue</button>
+    
+    
+<script>
+
+    var btnOpenBox = document.getElementById('btnAfficheDialogue');
+
+    function afficheMessage(msgText){
+        // désormais, le texte apparent ne sera plus crée en string, mais via la variable msgText
+        // variable nommée body, on selectionne la balise body dans le DOM
+        var body = document.querySelector('body');
+        // dans une variable boiteDialogue, on cree un objet div, avec methode createElement
+        var boiteDialogue = document.createElement('div');
+        // on va ajouter a boiteDialogue l' attribut, l' attribut class="msgBox", avec la methode: setAttribute ('nom de l' attribut' , 'nouvelle valeur')
+        // les deux parametres attendus par setAttribut: * nom de l' attribut: on mettra class / * nouvelle valeur: on mettra msgBox
+
+        boiteDialogue.setAttribute('class', 'msgBox');
+        body.appendChild(boiteDialogue);
+        // on donne boiteDialogue comme enfant a body, pouvoir la créer physiquement dans la page web
+        // créer une variable pMessage, qui crée un objet paragraphe
+        var pMessage= document.createElement('p');
+        // ajouter a cet objet pMessage, le contenu texte selon msgText
+        // ajouter ce pMessage comme enfant de la boiteDialogue
+        pMessage.textContent = msgText;
+        // textContent pour ajouter du texte en JS. Le textContent fonctionne avec un = et non ('')
+        boiteDialogue.appendChild(pMessage);
+        // creer balise closeBtn, x comme texte et enfant de la boiteDialogue
+        var closeBtn= document.createElement('button');
+        closeBtn.textContent = 'x';
+        boiteDialogue.appendChild(closeBtn);
+
+
+        // closeBtn devient cliquable, pour fermer la boite de dialogue, grace a removeChild
+        closeBtn.addEventListener('click', function(){
+            boiteDialogue.parentNode.removeChild(boiteDialogue);
+        })
+    }
+    // fin de la fonction afficheMessage()
+
+    // declenchement de l' evenement
+    // precedemment, les parentheses qui suivaient afficheMessage (btnOpenBox.addEventListener('click',afficheMessage('Le nouveau message de la boite');) declenchaient immédiatement la fonction, sans attendre le click. Pour éviter cela, on va faire une seconde version ci dessous
+    // Si nous voulons spécifier des parametres pour la fonction que nous appelons ( ici, afficheMessage), alors nous ne pourons plus l' invoquer directement. Nous avons besoin d' une fonction anonyme ( function()). Ainsi, elle n' est plus dans la portée immédiate, et donc appelée directement.
+    btnOpenBox.addEventListener('click', function(){
+        afficheMessage('Le nouveau message de la boite');
+    })
+    
+</script>
+    
+</body>
+</html>

@@ -11,8 +11,12 @@ nav{
     height: 3rem;
 }
 nav a{
-    
     color: white;
+}
+nav a:hover{
+    text-decoration: none;
+    color: rgb(144, 159, 196);
+    transition: 1s;
 }
 footer{
     background-color: #061339;
@@ -25,7 +29,11 @@ a, h1, h2, h3{
     font-family: 'merienda';
 }
 a{
+<<<<<<< HEAD
     margin-left: 4vw;
+=======
+    margin-left: 1vw;
+>>>>>>> 2845f35cb0b960b9655ed15ec00888998dc7ace8
 }
 h1{
     color: #FFF;
@@ -50,11 +58,17 @@ h2{
 
 }
 #form{
+<<<<<<< HEAD
     border: 1px solid rgb(211, 210, 210);
     padding-top: 1rem;
     box-shadow: 2px 2px 2px rgb(212, 212, 212);
+=======
+    padding-top: 3vh;
+    border: 1px solid rgb(224, 224, 224);
+    box-shadow: 2px 2px 2px rgb(224, 224, 224);
+>>>>>>> 2845f35cb0b960b9655ed15ec00888998dc7ace8
 }
 #logo{
-    background-color: rgb(216, 217, 219);
+    background-color: #DEDEDE;
     padding-top: 4vh;
 }
