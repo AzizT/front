@@ -1,0 +1,81 @@
+body{
+    background-color: gray;
+}
+header{
+    margin: 0;
+    background-color: rgb(250, 244, 235);
+}
+#logo{
+    margin-top: 1vh;
+}
+#titre{
+    text-align: center;
+    padding-top: 2rem;
+    font-family: 'Black Ops One';
+    color: rgb(58, 58, 58);
+}
+h1{
+    font-size: 4vw;;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgb(180, 71, 71);
+}
+button{
+    margin-top: 2vh;
+}
+
+/* *********************************barre de navigation********************************** */
+
+nav a {
+
+    color: blanchedalmond;
+
+    font-family: 'Lobster';
+    letter-spacing: 0.4rem;
+
+    font-size: 1.5rem;
+
+    margin-left: 5vw;
+
+    /* line-height: 0.5vh; */
+
+}
+
+/* je force bootstrap à changer la couleur de la navbar en noir */
+
+.navbar-light {
+
+    background-color:  rgb(58, 58, 58) !important;
+    border-bottom: 2px solid rgba(255, 235, 205, 0.719);
+
+}
+/* je positionne les différents éléments de ma nav */
+
+nav form input{
+    margin-left: 21vw;
+}
+nav form button{
+    position: absolute;
+    bottom: .9rem;
+    right: 4rem;
+}
+
+/* *******************************début de mon main************************************ */
+
+main{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-image: url(../images/bkg-body.jpg);
+}
+
+#colonne_gauche{
+    background-color: rgb(250, 244, 235);
+}
+#colonne_droite{
+    height: 5rem;
+    background-color: rgb(250, 244, 235);
+}
+footer{
+    height: 5rem;
+    background-color: rgb(58, 58, 58);
+    border-top: 2px solid rgba(255, 235, 205, 0.719);
+}
