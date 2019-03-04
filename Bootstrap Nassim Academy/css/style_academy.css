@@ -1,26 +1,34 @@
 body{
+    margin: 0;
     background-color: gray;
+    font-family: 'Lobster';
 }
 header{
-    margin: 0;
-    background-color: rgb(250, 244, 235);
+    background-color: rgb(250, 243, 233);
 }
-#logo{
-    margin-top: 1vh;
+#logo img{
+    width: 95%;
+    margin-top: .1vh;
+    margin-left: 1vw;
 }
 #titre{
     text-align: center;
-    padding-top: 2rem;
-    font-family: 'Black Ops One';
+    padding-top: 1rem;
     color: rgb(58, 58, 58);
 }
 h1{
-    font-size: 4vw;;
+    font-size: 3vw;;
     font-weight: bold;
-    text-shadow: 5px 5px 10px rgb(180, 71, 71);
+    text-shadow: 5px 5px 10px rgb(139, 96, 3);
+}
+hr{
+    width: 50%;
+    border-bottom: 2px solid rgb(139, 96, 3);
 }
 button{
-    margin-top: 2vh;
+    width: 5vw;
+    margin-top: 1.5vh;
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
 }
 
 /* *********************************barre de navigation********************************** */
@@ -28,16 +36,18 @@ button{
 nav a {
 
     color: blanchedalmond;
-
-    font-family: 'Lobster';
-    letter-spacing: 0.4rem;
-
-    font-size: 1.5rem;
-
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
     margin-left: 5vw;
 
-    /* line-height: 0.5vh; */
-
+}
+nav a:hover{
+    color: blanchedalmond;
+    background-color: rgb(161, 123, 40);
+    transition: .5s;
+    transform: scale(1.1);
+    border-radius: 10%;
+    border: 4px solid black;
 }
 
 /* je force bootstrap à changer la couleur de la navbar en noir */
@@ -51,12 +61,12 @@ nav a {
 /* je positionne les différents éléments de ma nav */
 
 nav form input{
-    margin-left: 21vw;
+    margin-left: 25vw;
 }
 nav form button{
     position: absolute;
-    bottom: .9rem;
-    right: 4rem;
+    bottom: .5rem;
+    right: 3rem;
 }
 
 /* *******************************début de mon main************************************ */
@@ -65,17 +75,106 @@ main{
     margin-top: 5vh;
     margin-bottom: 5vh;
     background-image: url(../images/bkg-body.jpg);
+    background-size: 100%;
+    box-shadow: 6px 6px 6px rgb(58, 58, 58);
+    border-radius: 1%;
 }
 
 #colonne_gauche{
+    margin-top: 45vh;
+    margin-bottom: 3vh;
+    background-color: rgb(199, 197, 197);
+    box-shadow: 6px 6px 6px rgb(58, 58, 58);
+    border-radius: 1%;
+}
+#colonne_gauche .classe{
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 6px 6px 6px rgb(58, 58, 58);
+    border-radius: 1%;
+}
+#colonne_gauche .texte{
+    width: 90%;
+    text-align: center;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: rgb(250, 244, 235);
+    box-shadow: 6px 6px 6px rgb(58, 58, 58);
+    border-radius: 1%;
+}
+#colonne_gauche .texte button{
+    box-shadow: 2px 2px 2px rgb(58, 58, 58);
 }
 #colonne_droite{
-    height: 5rem;
+    margin-top: 45vh;
+    margin-bottom: 3vh;
+    background-color: rgb(199, 197, 197);
+    box-shadow: 6px 6px 6px rgb(58, 58, 58);
+    border-radius: 1%;
+}
+#colonne_droite .svt{
+    width: 30%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 6px 6px 6px rgb(58, 58, 58);
+    border-radius: 1%;
+    float: left;
+}
+.svt:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    box-shadow: 6px 6px 10px rgb(58, 58, 58);
+}
+#colonne_droite .texte1{
+    width: 58%;
+    text-align: center;
+    padding: 1rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: rgb(250, 244, 235);
+    box-shadow: -6px 6px 6px rgb(58, 58, 58);
+    border-radius: 1%;
+    float: left;
+}
+#colonne_droite .texte2{
+    width: 58%;
+    text-align: center;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    background-color: rgb(250, 244, 235);
+    box-shadow: 6px 6px 6px rgb(58, 58, 58);
+    border-radius: 1%;
+    float: left;
+}
+#colonne_droite .latin{
+    width: 30%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    box-shadow: -6px 6px 6px rgb(58, 58, 58);
+    border-radius: 1%;
+    float: left;
+}
+.latin:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    box-shadow: -6px 6px 10px rgb(58, 58, 58);
 }
 footer{
-    height: 5rem;
+    height: 3rem;
+    text-align: center;
     background-color: rgb(58, 58, 58);
     border-top: 2px solid rgba(255, 235, 205, 0.719);
+    padding-top: 0.8rem;
+}
+footer a{
+    color: blanchedalmond;
+    text-shadow: 5px 5px 2px black;
+    
 }

@@ -1,5 +1,5 @@
 
-var btn = document.querySelector('button');
+var btn = document.getElementById('appli');
 
 function calcul(){
 

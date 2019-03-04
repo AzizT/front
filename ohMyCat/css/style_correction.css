@@ -58,15 +58,9 @@ h2{
 
 }
 #form{
-<<<<<<< HEAD
     border: 1px solid rgb(211, 210, 210);
     padding-top: 1rem;
     box-shadow: 2px 2px 2px rgb(212, 212, 212);
-=======
-    padding-top: 3vh;
-    border: 1px solid rgb(224, 224, 224);
-    box-shadow: 2px 2px 2px rgb(224, 224, 224);
->>>>>>> 2845f35cb0b960b9655ed15ec00888998dc7ace8
 }
 #logo{
     background-color: #DEDEDE;

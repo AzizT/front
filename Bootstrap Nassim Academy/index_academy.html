@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- link google font -->
-    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet"> 
 
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
 
@@ -30,16 +29,18 @@
 
             <div class="row">
 
-                    <div class="col-md-1 order-md-1" id="logo"><img src="images/logo_6.png" alt="logo de l' Academy"></div>
+                
+
+                    <div class="col-md-1 order-md-1" id="logo"><a href="#"><img src="images/logo_3.png" alt="logo de l' Academy"></a></div>
 
                     <div class="col-md-10 order-md-2" id="titre"><h1>NASSIM ACADEMY</h1><hr></div>
 
                     <div class="col-md-1 order-md-11" id="monCompte">
                         <div class="row">
-                            <button type="submit" class="btn btn-dark btn-lg">S' abonner</button>
+                            <button type="submit" class="btn btn-dark">S' abonner</button>
                         </div>
                         <div class="row">
-                            <button type="submit" class="btn btn-danger btn-lg">Connexion</button>
+                            <button type="submit" class="btn btn-warning">Connexion</button>
                         </div>
                     </div>
 
@@ -50,13 +51,13 @@
 
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                  <a class="nav-link" href="#">MATERNELLE</a>
+                  <a class="nav-link" href="#"><i class="far fa-star-half"></i> Maternelle</a>
 
-                  <a class="nav-link" href="#">PRIMAIRE</a>
+                  <a class="nav-link" href="#"><i class="far fa-star"></i> Primaire</a>
 
-                  <a class="nav-link " href="#">COLLEGE</a>
+                  <a class="nav-link " href="#"><i class="far fa-star"></i><i class="far fa-star-half"></i> College</a>
 
-                  <a class="nav-link " href="#">LYCEE</a>
+                  <a class="nav-link " href="#"><i class="far fa-star"></i><i class="far fa-star"></i> Lycée</a>
 
                   <form class="form-inline mx-5 my-lg-0">
 
@@ -73,12 +74,13 @@
             
 
         </header>
+        
 
         <main>
 
             
 
-            <!-- <div class="container"> -->
+            
 
                 <div class="row">
 
@@ -86,31 +88,52 @@
 
                     <div class="col-md-4 order-md-2" id="colonne_gauche">
 
-                        <div class="colonne_gauche">
-
                             <div class="photo_classe">
                                 <img class="classe" src="images/photo_classe.jpg" title="professeur avec ses élèves dans une classe" alt="élèves qui travaillent">
             
                             </div>
             
-                            <div class="texte_gauche">
+                            <div class="texte">
                                 <p>Bienvenue dans notre nouvelle application.<br>Désormais, tu pourras calculer ta future moyenne générale<br>et connaitre a l' avance les commentaires de tes enseignants.<br>Tu es pret ?<br>Alors clique sur le bouton ci dessous !</p>
-            
-                            </div>
+                                <button type="button" id="appli" class="btn btn-secondary">Calculer</button>
                       
+                            </div>
+
+                            
+                
                     </div>
 
                     <div class="col-md-2 order-md-6"></div>
 
                     <div class="col-md-4 order-md-8" id="colonne_droite">
 
+                                <div class="livre1">
+                                        <img class="svt" src="images/livre_1.JPG" alt="livre de latin">
+                                </div>
 
-                      
-                    </div>
+                                <div class="texte1"><p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>Accusantium reprehenderit labore, iste ab harum molestiae reiciendis culpa adipisci tempora corrupti ad, temporibus distinctio ex laboriosam?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Ad, cumque dignissimos sequi, quibusdam laborum.
+                                        </p>
+                                        
+                                </div>
+
+                                <div class="texte2"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>Accusantium reprehenderit labore, iste ab harum molestiae reiciendis culpa adipisci tempora corrupti ad, temporibus distinctio ex laboriosam?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Ad, cumque dignissimos sequi, quibusdam laborum.
+                                </p>
+            
+                                </div>
+                                
+                                <div class="latin">
+                                        <img class="dixit" src="images/livre_2.JPG" alt="livre de SVT">
+                                </div>
+                    
+
+                        
+
+
                 
-                </div>
+                    </div>
 
-            <!-- </div> -->
+                </div>
 
         </main>
 
@@ -118,13 +141,17 @@
 
             <div class="row">
 
-                <div class="col-md-3 order-md-1" id="qSn"></div>
+                    
 
-                <div class="col-md-3 order-md-4" id="contact"></div>
+                        <div class="col-md-3 order-md-1" id="qSn"><a href src="#">Qui sommes-nous ?</a></div>
 
-                <div class="col-md-3 order-md-7" id="questions"></div>
+                        <div class="col-md-3 order-md-4" id="contact"><a href src="#">Contact</a></div>
 
-                <div class="col-md-3 order-md-10" id="reseauxSoc"></div>
+                        <div class="col-md-3 order-md-7" id="questions"><a href src="#">Questions / Réponses</a></div>
+
+                        <div class="col-md-3 order-md-10" id="reseauxSoc"><a href src="#"><p><i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-google-plus-g"></i> <i class="fab fa-instagram"></i></p></a></div>
+
+                    
 
             </div>
 
@@ -149,6 +176,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
 
     crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/academy.js" ></script>
     
 </body>
 </html>
