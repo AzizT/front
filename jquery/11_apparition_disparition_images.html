@@ -38,6 +38,8 @@
         $(function(){
             console.log('JQ chargé');
 
+            // methode de la fonction callback
+
             $('.btnDisparait').click(function(){
                 // utilisation de la propriété hide pour les faire disparaitre les unes après les autres
                 $('img').first().hide('slow', function hideNextOne(){
@@ -48,11 +50,12 @@
 
             $('.btnApparait').click(function(){
                 // utilisation de la propriété show pour les faire apparaitre les unes après les autres
+                // slow pour avoir une animation/transition plus fluide et naturelle
                 $('img').first().show('slow', function showNextOne(){
                     $(this).next('img').show('slow', showNextOne);
                 })
             })
-            // fin du click sur Apparait
+            // fin du click sur btnApparait
         })
         // fin du scope
        
