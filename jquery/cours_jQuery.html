@@ -43,8 +43,56 @@
     <p>Il faut prendre la version compressée, premier lien ( click droit sur ce lien et choisir dans le menu: " enregistrer la cible du lien sous", et mettre ce fichier dans un dossier js a la racine du site )</p>
     <p><strong>BIEN VERIFIER  QUE LE FICHIER EST DANS LE BON DOSSIER JS</strong></p>
     
-     Le link est le suivant <mark><strong>  &lt;script src="js/jquery-3.3.1.min.js">&lt;/script></strong></mark> 
-    
+     Le link est le suivant <mark><strong>  &lt;script src="js/jquery-3.3.1.min.js">&lt;/script></strong></mark> <br>
+     
+     
+     On utilise une balise script interne ( ou un lien vers notre fichier externe )<br>
+     On crée le scope JQ qui recevra TOUT NOTRE CODE 
+     <pre>
+     &lt;script>
+     $(function(){
+         console.log('JQ est chargé');
+     })
+     &lt;/script>
+    </pre>
+     <p>On teste dans la console du bnavigateur, et le message apparait bien</p>
+     <strong>ne jamais continuer a coder tant que ce test n' est pas fait</strong>
+
+     <hr>
+
+     <h2>selectionner le JQuery</h2>
+     <p>Le coeur de JQ se fait dans la selection d' éléments pour ensuite executer des methodes dessus</p>
+     <p>
+         $(selecteur) accepte en argument tout selecteur CSS, JQ nous renvoie ensuite une collection d' un ou plusieurs éléments DOM enveloppés dans un objet JQ
+     </p>
+     <p>
+         $('div') selectionne touts les divs
+     </p>
+     <p>
+         $('titre') selectionne tous les éléments ayant la classe "titre"
+     </p>
+     <p>
+         $('#boite') selectionne l' unique élément qui a l' ID "boite"
+     </p>
+
+    <p>Cette enveloppe JQ est celle qui donne accés a toutes les fonctionnalités de JQ</p>
+    <ul>
+        <li>Rajouter des fonctionnalités</li>
+        <li>Modifier le contenu HTML</li>
+        <li>Afficher ou masquer des éléments</li>
+        <li>Les animer etc...</li>
+    </ul>
+    <p>Tousles éléments selectionnés en JS pur ( document.getElementById, querySelector) sont des éléments DOM et tous ceux selectionnés avec $('...') sont des éléments DOM dans une enveloppe JQ</p>
+
+    <h3>JQuery dispose de plusieurs methodespour parcourir l' arbre du document ( le DOM )</h3>
+    <ul>
+        <li>chidren() parcourt les enfants directs</li>
+        <li>find() parcourt les descendants</li>
+        <li>next() renvoie au voisin suivant</li>
+        <li>prev() renvoie au voisin précédent</li>
+        <li>parent() renvoie au parent</li>
+        <li>eq() renvoie, parmi une liste d' éléments, celui qui se trouve a l' index fourni</li>
+    </ul>
 
 
     

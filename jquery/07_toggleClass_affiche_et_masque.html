@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toggle class</title>
+
+    <style>
+        .listeFruits{
+            display: none;
+            background-color: firebrick;
+        }
+        .affiche{
+            display: block;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- - créer en html une liste de fruits avec la class: listeFruits
+         - Charger le JQ
+         - Ajouter un button class btn
+         - En JQ, onclick sur le button qui ajoute puis masque la liste-->
+
+    <ul class="listeFruits">
+        <li>Pomme</li>
+        <li>Poire</li>
+        <li>Fraise</li>
+        <li>Banane</li>
+    </ul>
+
+    <button class="btn">Afficher / Masquer</button>
+    
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        
+        $(function(){
+            console.log('DOM chargé');
+
+            // je crée une variable pour relier la liste ( masquée, car en display none, vers la class affiche qui est en display block, qui permet d' afficher)
+            var affiche = function(){
+                $('.listeFruits').toggleClass('affiche');
+            }
+            // puis je relie mon bouton avec cette variable fonction qui permet d' afficher et masquer
+            $('.btn').on('click', affiche)
+        })
+        // fin du scope
+    
+    </script>
+    
+</body>
+</html>

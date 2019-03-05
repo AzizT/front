@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apparitions et disparitions progressives d' images</title>
+
+    <style>
+        img{
+            width: 320px;
+        }
+    </style>
+
+    
+
+    
+</head>
+<body>
+
+    <button class="btnDisparait">Faire disparaitre</button>
+    
+    <button class="btnApparait">Faire apparaitre</button>
+
+    <p>
+        <img src="images/photo_1.jpg" alt="">
+        <img src="images/photo_2.jpg" alt="">
+        <img src="images/photo_3.jpg" alt="">
+        <img src="images/photo_4.jpg" alt="">
+    </p>
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        $(function(){
+            console.log('JQ chargé');
+
+            $('.btnDisparait').click(function(){
+                // utilisation de la propriété hide pour les faire disparaitre les unes après les autres
+                $('img').first().hide('slow', function hideNextOne(){
+                    $(this).next('img').hide('slow', hideNextOne);
+                })
+            })
+            // fin du click sur btnDisparait
+
+            $('.btnApparait').click(function(){
+                // utilisation de la propriété show pour les faire apparaitre les unes après les autres
+                $('img').first().show('slow', function showNextOne(){
+                    $(this).next('img').show('slow', showNextOne);
+                })
+            })
+            // fin du click sur Apparait
+        })
+        // fin du scope
+       
+    
+    
+    </script>
+    
+</body>
+</html>

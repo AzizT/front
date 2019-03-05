@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo 2 ajouter du css avec du JQuery</title>
+
+    <style>
+    section{
+        border: 2px solid crimson;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    </style>
+</head>
+<body>
+    <section>
+        contenu de section
+    </section>
+
+    <p class="resultat"></p>
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            console.log('le Dom est chargé');
+
+            // Ne pas faire ça en production. Ce qui se charge automatiquement doit etre mis en <style>
+            // $('section').css("background-color", "gold");
+
+            $('section').on('click', function(){
+                // pour plusieurs lignes de css, on utilise un array. la proprieté est suivie de ":", et chaque fin de ligne se termine par ","
+                $(this).css({
+                    "background-color": "gold",
+                    "font-size": "2rem",
+                    "padding-left": "1rem",
+                    })
+                    // ici, on crée une variable "couleur", pour laquelle on recupere la valeur de couleur de fond de (this)
+                    var couleur = $(this).css("background-color");
+                    // ensuite on affiche cette couleur dans la console
+                    console.log(couleur);
+                    // maintenant, on selectionne <p> qui a la classe resultat ( bien mettre "." avant resultat dans la parenthese)
+                    // on lui ajoute du texte ( ici, "texte" + concatenation avec la variable couleur, grace a .html)
+                    $('.resultat').html('La couleur de fond de cette section est: gold' + couleur)
+                    // + lui ajouter la couleur de fond
+                                  .css("background-color", couleur);
+                    
+            })
+            // fin du onclick sur <section>
+
+
+        })
+        // fin du scope
+        
+    
+    </script>
+    
+</body>
+</html>
