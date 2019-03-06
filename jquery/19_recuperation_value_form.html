@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recuperation des value dans les formulaires</title>
+
+   <style>
+       legend{
+           font-weight: bold;
+           text-decoration: underline;
+           color: darkred;
+       }
+       fieldset{
+           background-color: blanchedalmond;
+           border: 2px solid crimson;
+           box-shadow: 2px 2px 6px brown;
+           border-radius: 1%;
+           padding: 2rem;
+       }
+       label{
+           font-weight: bold;
+           text-shadow: 1px 1px 10px brown;
+       }
+       input{
+           text-align: center;
+           margin-left: .3rem;
+           box-shadow: 2px 2px 2px grey;
+       }
+       .info{
+           margin-top: 2rem;
+           background-color: blanchedalmond;
+           border: 2px solid crimson;
+           box-shadow: 2px 2px 6px brown;
+           border-radius: 1%;
+           padding: 2rem;
+           font-style: italic;
+           text-shadow: 1px 1px 10px brown;
+       }
+   
+    
+   
+   </style>
+
+    
+
+    
+</head>
+<body>
+
+    <form action="#" id="monForm">
+
+        <fieldset>
+
+            <legend>Infos Pro</legend>
+
+            <label for="prenom">Ton prénom</label>
+            <input type="text" id="prenom">
+
+            <br><br>
+
+            <label for="motPasse">Ton mot de passe</label>
+            <input type="password" id="motPasse">
+
+            <br><br>
+
+            <label for="date">Ta date de rendez-vous</label>
+            <input type="date" id="date">
+
+            <br><br>
+
+            <strong>Genre</strong><br>
+
+            <label for="homme">Homme</label>
+            <input type="radio" id="homme" value="homme" name="genre">
+
+            <label for="femme">Femme</label>
+            <input type="radio" id="femme" value="femme" name="genre">
+
+            <h4><label for="statut">Selectionne ton statut</label></h4>
+            <select name="statut" id="statut">
+                <option value="etudiant(e)">Etudiant</option>
+                <option value="enseignant(e)">Enseignant</option>
+                <option value="retraité(e)">Retraité</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <p>Choix de couleurs</p>
+
+            <p>
+            <input type="checkbox" id="violet" name="couleurs"
+                    checked>
+            <label for="violet">Violet</label>
+            </p>
+
+            <p>
+            <input type="checkbox" id="orange" name="couleurs">
+            <label for="orange">Orange</label>
+            </p>
+
+            <input type="reset" id="annuler" value="annuler">
+
+            <input type="submit" id="envoyer" value="envoyer">
+
+        </fieldset>
+
+    </form>
+
+    <div class="info">
+
+    </div>
+
+    
+
+    
+    
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        $(function(){
+            console.log('JQ chargé');
+
+            // pour lire le prenom entré dans l' input #prenom et l' afficher en console
+            // console.log($('#prenom').val());
+            // tel quel, l' evenement ne pourra etre lu sur la console...il faut d' abord valider le submit
+
+            // créer l' evenement on submit et stopper la redirection ( ne pas afficher une autre page)
+            $('#monForm').on('submit', function(ev){
+                // pour stopper la redirection on va intercepter l' evenement. ATTENTION, pour cela, il faut bien indiquer le parametre ev dans les () de la fonction
+                ev.preventDefault();
+                console.log($('#prenom').val());
+                // on retrouve ainsi cette value après avoir cliqué sur submit
+                console.log($('#motPasse').val());
+                // pour le mdp
+                console.log($('#statut').val());
+                // pour le statut
+                // on va verifier quel état est validé pour le bouton genre
+                console.log($(':radio:checked').val());
+                // va nous renvoyer TRUE ou FALSE selon le cas
+                // $('#prenom').val('Michel');
+                // va ecrire Michel dans la zone prenom
+                // $(':radio').val('homme');
+                // va valider le bouton homme par avance
+
+                // on va créer une balise p
+                // la remplir avec le string 'bonjour' concaténé  avec la valeur de l' input #prenom
+                // ajouter cette balise a body
+
+                // creation de la balise p
+                $('<p>').append('Bonjour '+$('#prenom').val()).appendTo('.info');
+                    // avoir mis le p entre <> permet de le créer en tant qu' enfant de .info
+                    $('<p>').append('Tu es né(e) le '+$('#date').val()).appendTo('.info');
+                    // pour a date de naissance
+                    $('<p>').append('Ton mot de passe est '+$('#motPasse').val()).appendTo('.info');
+                    // pour le mdp
+                    $('<p>').append('Actuellement, tu es '+$('#statut').val()).appendTo('.info');
+            })
+            // fin de l' evenement submit
+
+        })
+        // fin du scope
+        
+    
+    
+
+
+
+    
+    
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse Event</title>
+
+    <style>
+
+        
+        
+    </style>
+
+    
+
+    
+</head>
+<body>
+
+    <img class="cible" src="images/photo_1.jpg" alt="photo de ...">
+    <p class="info"></p>
+
+
+                                                                                            
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        $(function(){
+            console.log('JQ chargé');
+
+            // evenement clic sur l' image
+            $('.cible').mousedown(function(ev){
+                // on va afficher la chaine coucou dans le paragraphe .info
+                // $('.info').html('coucou');
+
+                // étape 2: affiche dans .info, le type d' evenement
+                // préalable, ajouter un parametre ev dans les parentheses de la declaration de la fonction
+
+                // $('.info').html(ev.type);
+                // affiche le type d' evenement, ici un mousedown
+
+                // $('.info').html(ev.which);
+                // affiche le numero du bouton de la souris ( bouton 1 = gauche, bouton 2: molette, bouton 3 = droit)
+
+                // on va terminer par une concatenation du type et du which
+                $('.info').html("Evenement " +ev.type + "<br>" + "bouton pressé " + ev.which);
+            })
+            // fin du mouseDown
+            
+
+            
+        })
+        // fin du scope
+       
+    
+    
+    </script>
+    
+</body>
+</html>

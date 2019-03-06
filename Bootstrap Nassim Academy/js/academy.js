@@ -1,12 +1,14 @@
 
 var btn = document.getElementById('appli');
+var fenetreAppreciation;
+var parametresFenetre = "width=420,height=230,top= 200rem,left= 200rem,resizable,scrollbars=yes,status=1";
+
+function ouvrirAppreciation() {
+    fenetreAppreciation = window.open("http://localhost/front/Bootstrap%20Nassim%20Academy/appreciation/page_appreciation.html", "CNN_WindowName", parametresFenetre);
+  }
+
 
 function calcul(){
-
-// moyenne_generale.onclick=function calcul(){
- 
-
-
 
  var moyenne_maths = Number(prompt("Entre ta moyenne en mathématiques pour ce trimestre"));
  var moyenne_français = Number(prompt("Entre ta moyenne en français pour ce trimestre"));
@@ -14,7 +16,7 @@ function calcul(){
  var moyenne_hg = Number(prompt("Entre ta moyenne en Histoire - Géographie pour ce trimestre"));
  var moyenne_generale =(moyenne_maths + moyenne_français + moyenne_svt + moyenne_hg) / 4;
  if(moyenne_generale < 5){
-    window.open(href="file:///C:/xampp/htdocs/front/Nassim%20Academy/page_appreciation/page_appreciation.html", width = 250, height = 250)("Ta moyenne générale de " +moyenne_generale+ " indique que tu es en grande difficulté. Il te faudra travailler bien plus remonter ton niveau global. L' équipe enseignante est prete a t' aider pour atteindre cet objectif");
+    ouvrirAppreciation("Ta moyenne générale de " +moyenne_generale+ " indique que tu es en grande difficulté. Il te faudra travailler bien plus remonter ton niveau global. L' équipe enseignante est prete a t' aider pour atteindre cet objectif");
  } else if(moyenne_generale >= 5 && moyenne_generale < 10){
      alert("Ta moyenne générale de " +moyenne_generale+ " indique que tu es en difficulté. Tu dois fournir un effeort supplémentaire par rapport au trimestre dernier. L' équipe enseignante est prete a t' aider pour atteindre cet objectif");
  } else if(moyenne_generale >= 10 && moyenne_generale <= 12){

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chainage</title>
+
+   <style>
+   
+    .vert{
+        color: green;
+    }
+    .grand{
+        font-size: 2rem;
+    }
+    .rouge{
+        color: red;
+    }
+    .petit{
+        font-size: .8rem;
+    }
+    div{
+        background-color: cornflowerblue;
+    }
+
+    .pJaune{
+        background-color: gold;
+
+    }
+   
+   </style>
+
+    
+
+    
+</head>
+<body>
+
+    <p id="pierre" class="grand vert">Pierre</p>
+
+    <p id="jean" class="petit rouge">Jean</p>
+
+    <div>Mon div</div>
+
+    <article>Mon article sur JQ</article>
+
+    <p class="pJaune">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, suscipit non cumque aperiam, quas temporibus eligendi illum explicabo vel voluptatibus cum minima doloremque fugit ratione. Perferendis repudiandae ea porro earum.</p>
+
+    
+    
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        $(function(){
+            console.log('JQ chargé');
+
+            // $('#pierre').removeClass('vert').addClass('rouge').removeClass('grand').addClass('petit');
+            // methode plus rapide ci dessous
+
+            // $('#pierre').removeClass('vert grand').addClass('rouge petit');
+            // methode au click et non plus au chargement
+            $('#pierre').click(function(){
+                $(this).removeClass('vert grand').addClass('rouge petit');
+            })
+            // fin du clic sur Pierre
+
+            $('#jean').click(function(){
+                // si jean a la class .rouge, alors on a une alert('Jean est rouge'); sinon; alert('Jean n' est pas rouge');
+                if($(this).hasClass('rouge'))
+                alert('Jean est rouge');
+                else
+                    alert("Jean n' est pas rouge");
+            })
+            // fin du clic sur Jean
+
+
+        })
+        // fin du scope
+        
+    //    la methode hide() permet de cacher un élément
+    // c' est une animation
+    // s' applique sur tousl es éléments ciblés par le selecteur
+    // a la fin du hide() on mettra une console.log('fin du hide');
+
+    $('div').hide(2000, function(){
+        // div va disparaitre au bout de 2 secondes
+        $('article').hide(1000).css("color", "coral").delay(2000).show(500);
+        // 2000 => 2 secondes
+        // Une fois disparu, on declenche une fonction callback qui s' execute quand l' action est terminée
+        //  dans ce callback, on cache <article> au bout d' une seconde, pn lui ajoute un peu de css, puis on instaure un délai de 2 secondes d' attente, puis on lui demande de réapparaite en 0.5 seconde
+        // apres le hide général, on affiche le console.log
+        console.log('Fin du hide');
+    })
+    // fin du hide
+
+
+    // focntion fadeOut
+    $('.pJaune').fadeOut('slow', function(){
+        // ajout d' une fonction callback une fois le fadeOut terminé
+        $(this).fadeIn(2000, function(){
+            // un autre callback quand le fadeIn se termine
+            alert('fin du fadeIn du paragraphe');
+        });
+    })
+    // fin du fadeOut
+
+
+
+    
+    
+    
+    </script>
+    
+</body>
+</html>

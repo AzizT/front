@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Change</title>
+
+   <style>
+   
+    
+   
+   </style>
+
+    
+
+    
+</head>
+<body>
+
+    <!-- faire un formulaire avec un menu déroulant ( balise select ) qui contient plusieurs options d' animaux -->
+
+    
+
+    <form action="">
+        <label for="animaux">Selectionne ton animal fetiche</label><br><br>
+        <select name="animaux" id="animaux">
+            <option value="boa">Boa</option>
+            <option value="baleine">Baleine</option>
+            <option value="koala">Koala</option>
+        </select>
+    </form>
+
+    <p class="info"></p>
+
+    
+    
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        $(function(){
+            console.log('JQ chargé');
+
+            $('select#animaux').change(function(){
+                // .change permet de recuperer la nouvelle valeur, changée dans le select, l' utilisateur ayant choisi une autre option
+                $('.info').html('Ton animal préféré est le ' +$(this).val());
+                // .val ci dessus récupere le value du form dans body, et ajoute le texte ( html ) dans .info
+            })
+
+            
+
+        })
+        // fin du scope
+        
+    
+    
+
+
+
+    
+    
+    
+    </script>
+    
+</body>
+</html>

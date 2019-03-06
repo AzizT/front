@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base JQuery</title>
+
+   <style>
+       
+       *{
+           box-sizing: border-box;
+       }
+       html{
+           font-size: 62.5%;
+           /* base 10px */
+       }
+       body, input, textarea{
+           font: 1.3rem/1.5 arial, helvetica, sans-serif;
+       }
+       #monForm{
+           width: 40%;
+           background-color: blanchedalmond;
+           padding: 2rem;
+           margin: 0 auto;
+       }
+       #monForm fieldset{
+           border: 1px dashed silver;
+           border-radius: 1rem;
+           box-shadow: 0 0 3px rgba(0, 0, 0, .25);
+       }
+       #monForm fieldset legend{
+           background-color: blanchedalmond;
+           padding: 1rem;
+       }
+       #monForm input, #monForm textarea{
+           width: 100%;
+           margin: 5px 0;
+       }
+       #monForm p{
+           margin-bottom: .5rem 0;
+       }
+    
+   
+   </style>
+
+    
+
+    
+</head>
+<body>
+
+    <form action="traitement.php" method="GET" id="monForm">
+
+        <fieldset>
+
+            <legend>Mes infos persos</legend>
+
+            <p><label for="nomComplet">Nom et Prénom</label>
+            <input type="text" id="nomComplet" placeholder="Nom et Prénom"></p>
+
+            <p><label for="email">Entrez votre email</label>
+
+            <input type="email" id="email" required></p>
+
+            <p><label for="phone">Entrez votre numero de telephone</label> <span class="note"> ( Format: 12-34-56-78-90 )</span>
+
+            <input type="tel" id="tel" name="phone"></p>
+                
+            <p>
+                <label for="message">Ecrivez votre message ci dessous</label>
+                <textarea name="" id="message" cols="30" rows="5"></textarea></p>
+
+            <input type="submit" id="envoyer" value="envoyer un message">
+
+        </fieldset>
+
+        <div class="recap">
+
+        </div>
+
+    </form>
+
+    
+
+    
+    
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        $(function(){
+            console.log('JQ chargé');
+
+            $('#monForm').on('submit', function(ev){
+                // pour stopper la redirection on va intercepter l' evenement. ATTENTION, pour cela, il faut bien indiquer le parametre ev dans les () de la fonction
+                ev.preventDefault();
+
+                // creation de la balise p
+                $('<p>').append('Bonjour '+$('#nomComplet').val()).appendTo('.recap');
+                    // avoir mis le p entre <> permet de le créer en tant qu' enfant de .info
+                    $('<p>').append('Ton email est '+$('#email').val()).appendTo('.recap');
+                    // pour a date de naissance
+                    $('<p>').append('Ton numero de téléphone est le '+$('#tel').val()).appendTo('.recap');
+                    // pour le mdp
+            })
+
+        })
+        // fin du scope
+        
+    
+    
+
+
+
+    
+    
+    
+    </script>
+    
+</body>
+</html>

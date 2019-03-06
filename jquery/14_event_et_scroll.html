@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event et Scroll</title>
+
+    <style>
+
+        .maDiv{
+            background-color: burlywood;
+            padding: 1rem;
+            width: 300px;
+            height: 200px;
+            /* overflow: hidden;
+            cache ce qui déborde de la div
+            overflow: scroll;
+            ajoute des barres d' ascenseur horizontales et verticales */
+            overflow: auto;
+            /* le navigateur ajoute des barres si necessaire */
+        }
+        
+    </style>
+
+    
+
+    
+</head>
+<body>
+
+<section>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+        </p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+</section>
+<div class="maDiv">
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat rem illum ipsum, vitae quas vero, iusto perferendis qui, ad doloremque consectetur nostrum consequuntur doloribus! Repellat quidem ad asperiores nulla?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam ad est nulla rerum accusamus facere, reprehenderit aliquam voluptatibus corrupti! Eveniet accusamus odit labore velit deleniti hic voluptatem, ipsa eaque?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam perferendis? Iste omnis, sit perferendis, corporis rerum magni cumque exercitationem vero pariatur voluptate earum voluptatum commodi quos perspiciatis quibusdam. Magni?
+</p>
+</div>
+                                                                                            
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        $(function(){
+            console.log('JQ chargé');
+
+            $(window).scroll(function(){
+                console.log('utilisation de la roulette dans le document');
+            })
+            // on peut récuperer les dimensions de la fenetre
+            var largeur= $(window).width();
+            console.log(largeur);
+
+            var hauteur= $(window).height();
+            console.log(hauteur);
+
+            // fin du test de la recup des dimensions
+
+            $('.maDiv').scroll(function(){
+                console.log('utilisation de la roulette dans .maDiv')
+            })
+
+            
+        })
+        // fin du scope
+       
+    
+    
+    </script>
+    
+</body>
+</html>

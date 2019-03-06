@@ -68,7 +68,10 @@ nav form button{
     bottom: .5rem;
     right: 3rem;
 }
-
+/* ***************css de ma page d' appréciation***************** */
+#note{
+    background-color: rgb(189, 187, 187);
+}
 /* *******************************début de mon main************************************ */
 
 main{
