@@ -1,0 +1,107 @@
+header{
+    background: url(../images/dinosaure.jpg)no-repeat 50% -100px;
+    /* 50%, pour que le redimmensionnement se fasse a partir du centre et non de la gauche
+    le -100 c' est pour positionner les éléments de l' image par rapport a la nav, tel que sur l a maquette
+    C' est des données du background position normalement */
+    background-size: cover;
+    /* pour que l' image prenne 100% de la fenetre */
+    color: white;
+    position: relative;
+    /* pour relier le bandeau qui est en absolute, et le positionner par rapport a son parent et non body */
+}
+.wrapper{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1px;
+    /* par defaut, les marges verticales des enfants débordent du bloc parent
+    On peut resoudre ça en donnant un border ou padding de 1px ( c' est un probleme de FUSION DE MARGES */
+}
+footer{
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+}
+nav{
+    background-color: rgba(0, 0, 0, .5);
+    line-height: 5;
+    /* c' est normal de ne pas donner d' unité */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+}
+.logo{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+header .bandeau{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+main section{
+    padding-top: 5rem;
+    margin: 0 auto;
+}
+section.presentation{
+    width: 70%;
+}
+.titre_n2{
+    text-align: center;
+}
+img.entree_parc{
+    width: 100%;
+}
+
+/* boite a outils */
+
+.text-center{
+    text-align: center;
+}
+.btn{
+    padding: 1rem 2rem;
+    border: none;
+}
+.btn-primary{
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    width: 50%;
+}
+iframe{
+    width: 100%;
+    display: block;
+}
+.partenaires img{
+    width: 50px;
+    margin: auto;
+    display: block;
+}
+.partenaires h3{
+    text-align: center;
+}
+
+footer > .wrapper{
+    padding-top: 10rem;
+}
+footer img{
+    margin: auto;
+    display: block;
+}

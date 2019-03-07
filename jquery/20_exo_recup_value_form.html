@@ -83,6 +83,10 @@
             <p><label for="tel">Entrez votre numero de telephone</label>
 
             <input type="tel" id="tel" placeholder="Tel"></p>
+
+            <p><label for="text">Sujet</label>
+
+                <input type="text" id="sujet" placeholder="Sujet"></p>
                 
             <p>
                 <label for="message">Ecrivez votre message ci dessous</label>
@@ -121,11 +125,19 @@
                 // on va récuperer les infos dans des variables
                 
                 var nomComplet=$('#nomComplet').val();
+                var email=$('#email').val();
+                var tel=$('#tel').val();
+                var sujet=$('#sujet').val();
+                var message=$('#message').val();
                 $(this).replaceWith(
                     // attention, ici ce sont des apostrophes inversées ( alt gr + 7 )
                     `
                      <p class="feedback">
-                        Bonjour <strong> ${nomComplet} <strong>
+                        Bonjour <strong> ${nomComplet} </strong><br>
+                            Votre adresse mail est : <em> ${email} </em><br>
+                            Nous vous recontacterons au <strong> ${tel} </strong><br>
+                            Le sujet évoqué est : ${sujet}<br>
+                            Voici le message que vous nous avez adressé : ${message}
                     </p>
                     `
                 )
