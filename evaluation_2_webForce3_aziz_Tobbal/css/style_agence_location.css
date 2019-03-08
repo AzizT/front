@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+.html{
+    font-size: 50%;
+    /* base 10px; */
+}
+body{
+    font: 1.4rem/1.5 arial, helvetica, sans-serif;
+    margin: 0;
+}
+/* ********layout global / fondations*************** */
+
+header{
+    background: url(../images/background.jpg)no-repeat 50%;
+    height: 650px;
+    background-size: cover;
+    color: white;
+}
+h1, h2{
+    text-align: center;
+    margin-top: 5rem;
+}
+.barre_recherche{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    margin-top: 15rem;
+    background-color: rgba(128, 128, 128, 0.445);
+    padding: .5rem;
+}
+.validation{
+    background-color: lightgreen;
+    color: white;
+}
+main{
+    margin-top: 3rem;
+
+}
+#photo{
+    width: 200px;
+}
+footer{
+    width: 100%;
+
+}
+.col{
+    width: 50%;
+    padding: 1rem;
+}
+.col img{
+    width: 30%;
+    margin-left: 21rem;
+}
+.paiement{
+    background-color: lightgreen;
+    border-radius: 1%;
+    color: white;
+}

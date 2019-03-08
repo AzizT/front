@@ -159,6 +159,23 @@
                     $('<p>').append('Ton mot de passe est '+$('#motPasse').val()).appendTo('.info');
                     // pour le mdp
                     $('<p>').append('Actuellement, tu es '+$('#statut').val()).appendTo('.info');
+
+                // affiche les couleurs cochées par l' utilisateur
+                // Closure pour acceder aux variables locales d' une fonction
+                function couleurs(){
+                    var couleurs = [];
+
+                    return function(){
+                        $("input[type='checkbox']:checked").each(function(){
+                            couleurs.push(' ' +(this).attr('id'));
+                            console.log(couleurs);
+                        })
+                        // fin du each
+                        $('<p>').append('Tu as choisi les couleurs suivantes '+ couleurs).appendTo('.info');
+                    }
+                }
+                var ajoutCouleurs = couleurs();
+                ajoutCouleurs();
             })
             // fin de l' evenement submit
 
