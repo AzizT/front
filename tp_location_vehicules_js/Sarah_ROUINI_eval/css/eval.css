@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box; /* width = contenu + padding + border.  */
+} 
+
+/* Le clearfix  */
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* HEADER */
+
+/* div titre */
+.titre{
+    position: absolute;
+    top: 3em;
+    left: 25%;
+    width: 50%; 
+    color: white;
+    z-index: 3;
+}
+.titre h1{
+    font-size: 3em;
+}
+/* header width 100% & no padding */
+.container-fluid{
+    padding: 0;
+    position: relative;
+}
+/* CAROUSEL */
+#carouselExampleIndicators{
+    z-index: 0;
+}
+/* NAV BAR */
+header .navbar{
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 1;  
+}
+/* lien  */
+header .navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* LISTE */
+header .navbar ul{
+     padding-left: 5%;
+}
+/* SPAN DANS LISTE */
+header .navbar span{
+
+    color: darkgray;
+}
+/* FORMULAIRE */
+form{
+    width: 80%;
+    height: 3em;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    background:  rgba(198, 198, 206,.4);
+}
+form span i{
+    font-size: 3em;
+}
+form span input{
+    border: 0;
+    height: 100%;
+}
+form button{
+    opacity: .5;
+}
+/* toggle affiche */
+.affiche{
+    display: none;
+}
+/* FOOTER */
+/* img footer */
+.img_taille img{
+    width: 50%;
+    height: auto;
+}
