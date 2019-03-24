@@ -1,0 +1,53 @@
+.navbar-dark{
+    background: #000 !important;
+    border-bottom: 1px solid gold;
+}
+.navbar-dark a{
+    color: gold !important;
+    margin-left: 1rem;
+}
+body{
+    background-color:lightgreen;
+}
+h1{
+    text-align: center;
+    margin-top : 3rem;
+    font-family: 'bangers';
+    font-size: 5rem;
+    color: gold;
+    text-shadow: 1px 1px 3px crimson;
+}
+h4{
+    text-align: center;
+    margin-top : 1rem;
+    font-family: 'bangers';
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: gold;
+    text-shadow: 1px 1px 3px crimson;
+}
+.btn{
+    margin-right: 1rem;
+    font-family: 'bangers';
+}
+header{
+    background: url(../image/background.jpg)no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid black;
+}
+.barre_recherche{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgba(179, 45, 5, 0.534);
+    padding: .7rem;
+    border-radius: 2%;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'bangers';
+}
+main{
+    margin-top: 5rem;
+}
