@@ -1,13 +1,19 @@
+*{
+    box-sizing: border-box;
+  }
+body{
+    background-color:black;
+    font-family: 'bangers';
+}
 .navbar-dark{
     background: #000 !important;
     border-bottom: 1px solid gold;
 }
 .navbar-dark a{
+    font-family: 'bangers';
+    font-size: 1.5rem;
     color: gold !important;
     margin-left: 1rem;
-}
-body{
-    background-color:lightgreen;
 }
 h1{
     text-align: center;
@@ -33,7 +39,8 @@ h4{
 header{
     background: url(../image/background.jpg)no-repeat;
     background-size: cover;
-    border-bottom: 2px solid black;
+    border-top: 1px solid gold;
+    border-bottom: 2px solid gold;
 }
 .barre_recherche{
     display: flex;
@@ -49,5 +56,22 @@ header{
     font-family: 'bangers';
 }
 main{
-    margin-top: 5rem;
+    margin-top: 2rem;
+}
+.circuit{
+    border: 1px solid gold;
+    padding: 1rem;
+    color: gold;
+    text-align: center;
+    background-color: rgb(44, 1, 1);
+}
+.circuit p{
+    margin-top: 1rem;
+}
+.villes_circuit{
+    width: 100%;
+    height: 75%;
+}
+.text_slider{
+    font-size: 2rem;
 }
