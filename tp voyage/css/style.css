@@ -56,14 +56,17 @@ header{
     font-family: 'bangers';
 }
 main{
-    margin-top: 2rem;
+    
+    background: url(../image/bg11.jpg) 50%;
 }
 .circuit{
+    margin-top: 2rem;
     border: 1px solid gold;
     padding: 1rem;
     color: gold;
     text-align: center;
-    background-color: rgb(44, 1, 1);
+    /* background-color: rgb(44, 1, 1); */
+    background-color: black;
 }
 .circuit p{
     margin-top: 1rem;

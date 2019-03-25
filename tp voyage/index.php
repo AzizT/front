@@ -142,7 +142,7 @@
 
     <div class="row">
 
-        <div class="col-md-4">
+        <!-- Momentanement je neutralise cette disposition, pour des tests sur le bg<div class="col-md-4">
 
         </div>
 
@@ -151,6 +151,46 @@
         </div>
 
         <div class="col-md-4">
+
+        </div> -->
+
+        <div class="col-md-8 circuit" >
+
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="image/bus_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="image/bus_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="image/bus_3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="image/bus_4.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+
+          <p class="text_slider">Decouvrez nos autocars. Tout confort, grand  luxe !</p>
+          
+        </div>
+
+        <div class="col-md-3 offset-md-1 circuit">
+
+          <img class="villes_circuit" src="image/abidjan3.jpg" alt="">
+
+         <p>Dakar - Abidjan, pour pas cher, 85€ !</p>
+         <button type="submit" class="btn btn-warning">Réserver maintenant !</button>
 
         </div>
     
