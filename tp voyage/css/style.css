@@ -2,7 +2,9 @@
     box-sizing: border-box;
   }
 body{
-    background-color:black;
+    background: url(../image/bg17.jpg)no-repeat;
+    background-size: cover;
+    /* background-color:black; */
     font-family: 'bangers';
 }
 .navbar-dark{
@@ -12,7 +14,7 @@ body{
 .navbar-dark a{
     font-family: 'bangers';
     font-size: 1.5rem;
-    color: gold !important;
+    /* color: gold !important; */
     margin-left: 1rem;
 }
 h1{
@@ -37,10 +39,9 @@ h4{
     font-family: 'bangers';
 }
 header{
-    background: url(../image/background.jpg)no-repeat;
-    background-size: cover;
+/*     
     border-top: 1px solid gold;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid gold; */
 }
 .barre_recherche{
     display: flex;
@@ -57,7 +58,7 @@ header{
 }
 main{
     
-    background: url(../image/bg11.jpg) 50%;
+    /* background: url(../image/bg10.jpg) 50%; */
 }
 .circuit{
     margin-top: 2rem;
@@ -66,7 +67,7 @@ main{
     color: gold;
     text-align: center;
     /* background-color: rgb(44, 1, 1); */
-    background-color: black;
+    background-color: rgb(63, 8, 8);
 }
 .circuit p{
     margin-top: 1rem;
