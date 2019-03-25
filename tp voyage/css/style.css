@@ -2,13 +2,14 @@
     box-sizing: border-box;
   }
 body{
-    background: url(../image/bg17.jpg)no-repeat;
+    background: url(../image/bg17.jpg)no-repeat 50% 4rem;
     background-size: cover;
     /* background-color:black; */
     font-family: 'bangers';
 }
 .navbar-dark{
     background: #000 !important;
+    border-top: 1px solid gold;
     border-bottom: 1px solid gold;
 }
 .navbar-dark a{
@@ -67,7 +68,9 @@ main{
     color: gold;
     text-align: center;
     /* background-color: rgb(44, 1, 1); */
-    background-color: rgb(63, 8, 8);
+    background-color: rgba(179, 45, 5, 0.534);
+    border-radius: 1%;
+    box-shadow: 2px 2px 2px black;
 }
 .circuit p{
     margin-top: 1rem;
@@ -78,4 +81,8 @@ main{
 }
 .text_slider{
     font-size: 2rem;
+    text-shadow: 2px 2px 2px black;
+}
+.text_ville{
+    text-shadow: 2px 2px 2px black;
 }

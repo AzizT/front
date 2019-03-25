@@ -35,7 +35,7 @@
         </div> -->
 
             <nav class="navbar navbar-expand-lg col-md-12 navbar-dark bg-dark">
-                <a class="navbar-brand" href="#"><button type="button" class="btn btn-outline-warning">MENU</button></a>
+                <a class="navbar-brand" href="#"><button type="button" class="btn btn-warning">MENU</button></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -135,8 +135,8 @@
 
                     <img class="villes_circuit" src="image/abidjan3.jpg" alt="">
 
-                    <p>Dakar - Abidjan, pour pas cher, 85€ !</p>
-                    <button type="submit" class="btn btn-outline-warning">Réserver maintenant !</button>
+                    <p class="text_ville">Dakar - Abidjan, pour pas cher, 85€ !</p>
+                    <button type="submit" class="btn btn-warning">Réserver maintenant !</button>
 
                 </div>
 
@@ -161,16 +161,16 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="image/bus_1.jpg" class="d-block w-100" alt="...">
+                                <img src="image/bus_1.jpg" class="d-block w-100" alt="Autocar Dolphin">
                             </div>
                             <div class="carousel-item">
-                                <img src="image/bus_2.jpg" class="d-block w-100" alt="...">
+                                <img src="image/bus_2.jpg" class="d-block w-100" alt="Autocar Tawfiq">
                             </div>
                             <div class="carousel-item">
-                                <img src="image/bus_3.jpg" class="d-block w-100" alt="...">
+                                <img src="image/bus_3.jpg" class="d-block w-100" alt="Autocar Simba">
                             </div>
                             <div class="carousel-item">
-                                <img src="image/bus_4.jpg" class="d-block w-100" alt="...">
+                                <img src="image/bus_4.jpg" class="d-block w-100" alt="Autocar Spider">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
