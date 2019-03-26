@@ -86,3 +86,6 @@ main{
 .text_ville{
     text-shadow: 2px 2px 2px black;
 }
+.bouton_bas{
+    margin-bottom: 2.5rem;
+}
