@@ -14,8 +14,8 @@ body{
 }
 .navbar-dark a{
     font-family: 'bangers';
-    font-size: 1.5rem;
-    /* color: gold !important; */
+    /* font-size: 1.5rem; */
+    color: gold !important;
     margin-left: 1rem;
 }
 h1{

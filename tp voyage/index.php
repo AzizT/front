@@ -51,7 +51,8 @@
                     </div>
                 </div>
                 <button type="submit" class="btn btn-outline-warning">Connexion</button>
-                <button type="submit" class="btn btn-outline-warning">Inscription</button>
+                <button type="submit" class="btn btn-outline-warning"><a href="
+               inscription.php" target="_blank">Inscription</a></button>
             </nav>
 
         </div>
