@@ -52,7 +52,7 @@
                 </div>
                 <button type="submit" class="btn btn-outline-warning">Connexion</button>
                 <button type="submit" class="btn btn-outline-warning"><a href="
-               inscription.php" target="_blank">Inscription</a></button>
+               inscription.php" onclick="window.open(this.href, 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;" class=" text-warning">Inscription</a></button>
             </nav>
 
         </div>
