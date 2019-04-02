@@ -4,7 +4,6 @@
 body{
     background: url(../image/bg17.jpg)no-repeat 50% 4rem;
     background-size: cover;
-    /* background-color:black; */
     font-family: 'bangers';
 }
 .navbar-dark{
@@ -39,11 +38,6 @@ h4{
     margin-right: 1rem;
     font-family: 'bangers';
 }
-header{
-/*     
-    border-top: 1px solid gold;
-    border-bottom: 2px solid gold; */
-}
 .barre_recherche{
     display: flex;
     justify-content: space-around;
@@ -56,10 +50,6 @@ header{
     border-radius: 2%;
     box-shadow: 2px 2px 2px black;
     font-family: 'bangers';
-}
-main{
-    
-    /* background: url(../image/bg10.jpg) 50%; */
 }
 .circuit{
     margin-top: 2rem;
@@ -88,4 +78,11 @@ main{
 }
 .bouton_bas{
     margin-bottom: 2.5rem;
+}
+#emailHelp{
+    /* color: black !important; */
+    text-shadow: 2px 2px 1px black;
+    margin-top: 0.5rem;
+    letter-spacing: 2px;
+    font-size: 1rem;
 }
