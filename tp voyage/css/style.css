@@ -1,28 +1,25 @@
+*{
+    box-sizing: border-box;
+  }
 body{
     background: url(../image/bg17.jpg)no-repeat 50% 4rem;
     background-size: cover;
     font-family: 'bangers';
 }
-.navigation{
-    background: #000 !important;
-    height: 4.1rem;
-    border-top: 1px solid gold;
-    padding-top: 0.8rem;
-}
-.navigation .btn{
-    margin-left: 2rem;
-}
 .navbar-dark{
     background: #000 !important;
     border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
 }
 .navbar-dark a{
     font-family: 'bangers';
-    /* margin-left: 1rem; */
+    /* font-size: 1.5rem; */
+    /* color: gold !important; */
+    margin-left: 1rem;
 }
 h1{
     text-align: center;
-    margin-top : 8rem;
+    margin-top : 3rem;
     font-family: 'bangers';
     font-size: 5rem;
     color: gold;
@@ -38,7 +35,7 @@ h4{
     text-shadow: 1px 1px 3px crimson;
 }
 .btn{
-    /* margin-right: 1rem; */
+    margin-right: 1rem;
     font-family: 'bangers';
 }
 .barre_recherche{

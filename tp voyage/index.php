@@ -14,10 +14,8 @@
     <!-- link pour fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <!-- mon css -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- googlefont -->
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 
 </head>
@@ -25,21 +23,18 @@
 <body>
     <header class="container-fluid">
 
-        <div class="row navigation">
-            
-            <div class="col-md-2">
-            
-                <button type="submit" class="btn btn-outline-warning btn_login">Connexion</button>
+        <div class="row">
 
-                <button type="submit" class="btn btn-outline-warning btn_subscribe"><a href="
-               inscription.php" onclick="window.open(this.href, 'Popup', 'scrollbars=1,resizable=1,height=600,width=600'); return false;" class=" text-warning ">Inscription</a></button>
+            <!-- <div class="col">
 
-            </div>
+            <nav>
 
 
+            </nav>
 
-            <nav class="navbar navbar-lg col-md-10 offset-md-2 navbar-dark bg-dark fixed-top">
+        </div> -->
 
+            <nav class="navbar navbar-expand-lg col-md-12 navbar-dark bg-dark">
                 <a class="navbar-brand" href="#"><button type="button" class="btn btn-warning">MENU</button></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,20 +42,19 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
 
-                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning col-md-1">Reserver</button></a>
-                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning col-md-1">Destinations et Escales</button></a>
-                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning col-md-1">Les + de TONTON & Fils</button></a>
-                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning col-md-1">Aide et Contact</button></a>
-                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning col-md-1">Offres d' emplois</button></a>
-                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning col-md-1">Mes billets</button></a>
+                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning">Reserver</button></a>
+                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning">Destinations et Escales</button></a>
+                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning">Les + de TONTON & Fils</button></a>
+                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning">Aide et Contact</button></a>
+                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning">Offres d' emplois</button></a>
+                        <a class="nav-item nav-link" href="#"><button type="button" class="btn btn-outline-warning">Mes billets</button></a>
                     </div>
                 </div>
-
-                
-
+                <button type="submit" class="btn btn-outline-warning">Connexion</button>
+                <button type="submit" class="btn btn-outline-warning"><a href="
+               inscription.php" onclick="window.open(this.href, 'Popup', 'scrollbars=1,resizable=1,height=600,width=600'); return false;" class=" text-warning">Inscription</a></button>
             </nav>
 
-            
         </div>
 
 
