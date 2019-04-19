@@ -1,15 +1,15 @@
-*{
-    box-sizing: border-box;
-  }
 body{
     background: url(../image/bg17.jpg)no-repeat 50% 4rem;
     background-size: cover;
     font-family: 'bangers';
 }
-.navbar-dark{
+.navigation{
     background: #000 !important;
     border-top: 1px solid gold;
-    border-bottom: 1px solid gold;
+    box-shadow: 5px 5px 20px black;
+}
+.navbar-dark{
+    background: #000 !important;
 }
 .navbar-dark a{
     font-family: 'bangers';
@@ -17,9 +17,20 @@ body{
     /* color: gold !important; */
     margin-left: 1rem;
 }
+.boutons{
+    position: relative;
+    left: 20%;
+    margin-top: 1.5vh;
+}
+.login{
+    margin-left: 50rem;
+}
+.navbar-toggler-icon{
+    margin-right: 6.4rem;
+}
 h1{
     text-align: center;
-    margin-top : 3rem;
+    margin-top : 10rem;
     font-family: 'bangers';
     font-size: 5rem;
     color: gold;
