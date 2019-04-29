@@ -1,12 +1,16 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="fr">
 
 <head>
 	<meta charset="utf-8" />
-	<title>FZ's Tracks & Lyrics</title>
+    <title>FZ's Tracks & Lyrics</title>
+    
+    css pour le graphisme de la page
     <link href="css/style.css" rel="stylesheet" media="all" type="text/css">
+
+    css pour le lecteur js
     <link rel="stylesheet" href="css/index.css">
-    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
 <body id="accueil">
@@ -32,7 +36,7 @@
 
         -- ligne pour une pop up -->
 
-    <br/>
+    <!-- <br/>
     Sharleena&nbsp;&nbsp;&nbsp;<audio controls="controls"><source src="audio/sharleena.mp3" type="audio/mp3" /></audio>&nbsp;&nbsp;&nbsp;<a href="Page%20Sharleena.html" onclick="window.open(this.href, 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;">Sharleena Lyrics</a>
     <br/>
     Uncle Remus&nbsp;&nbsp;&nbsp;<audio controls="controls"><source src="audio/uncleRemus.mp3" type="audio/mp3" /></audio>&nbsp;&nbsp;&nbsp;<a href="Page%20Uncle%20Remus.html" onclick="window.open(this.href, 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;">Uncle Remus Lyrics</a>
@@ -49,5 +53,272 @@
         var as = audiojs.createAll();
       });></script>
  
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zappa's Albums</title>
+
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- link googlefonts -->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+    <!-- mon css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="accueil">
+
+    <header id="haut">
+
+        <nav class="navbar navbar-lg navbar-dark bg-dark col-md-1">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../accueil.html">Accueil MW Radio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index_zappa.html">Zappa's Albums</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+<div class="container-fluid">
+
+    <h1>Discographie</h1>
+
+    <h2>Rangée chronologiquement<br>
+    Cliquez sur l' album pour<br>
+    accéder aux titres</h2>
+    
+    <!-- première rangée d' albums -->
+
+    <div class="row mt-4">
+
+        <div class="col-md-2 mt-4">
+
+        <div class="tile-wrap">
+            <a href="freak_out_tracks.html" target="_blank">
+                <img src="img_lp/1freak out.jpg" alt="" class="tile-image" />
+                <div class="tile-text">
+                    <h2 class="tile-title mx-auto">Freak Out</h2>
+                    <p class="tile-description text-center">1966<br>Rock - Free<br>Groupe originel des Mothers Of Invention</p>
+                </div>
+            </a>
+        </div>
+    
+        </div>
+
+        <div class="col-md-2 ">
+        
+            <div class="tile-wrap">
+                <a href="#" target="_blank">
+                    <img src="img_lp/2AbsolutelyFree.jpg" alt="" class="tile-image" />
+                    <div class="tile-text">
+                        <h2 class="tile-title mx-auto">Absolutely Free</h2>
+                        <p class="tile-description text-center">1967<br>Rock - Free<br>Album de la bidouille, avec un budget minimaliste</p>
+                    </div>
+                </a>
+            </div>
+        
+        </div>
+
+        <div class="col-md-2 mt-4">
+        
+            <div class="tile-wrap">
+                <a href="#" target="_blank">
+                    <img src="img_lp/3lumpy gravy.jpg" alt="" class="tile-image" />
+                    <div class="tile-text">
+                        <h2 class="tile-title mx-auto">Lumpy Gravy</h2>
+                        <p class="tile-description text-center">1966<br>Rock - Psyché - Free<br>Groupe originel des Mothers Of Invention</p>
+                    </div>
+                </a>
+            </div>
+        
+        </div>
+
+        <div class="col-md-2">
+        
+            <div class="tile-wrap">
+                <a href="#" target="_blank">
+                    <img src="img_lp/4were-only-in-it-for-the-money.jpg" alt="" class="tile-image" />
+                    <div class="tile-text">
+                        <h2 class="tile-title mx-auto">We're Only In It For The Money</h2>
+                        <p class="tile-description text-center">1966<br>Rock - Psyché - Free<br>Groupe originel des Mothers Of Invention</p>
+                    </div>
+                </a>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <!-- deuxieme rangée d' albums -->
+
+    <div class="row mt-4">
+
+        <div class="col-md-2 mt-4">
+
+        <div class="tile-wrap">
+            <a href="#" target="_blank">
+                <img src="img_lp/5ruben and the jets.jpg" alt="" class="tile-image" />
+                <div class="tile-text">
+                    <h2 class="tile-title mx-auto">Cruising With Ruben & The Jets</h2>
+                    <p class="tile-description text-center">1966<br>Rock - Psyché - Free<br>Groupe originel des Mothers Of Invention</p>
+                </div>
+            </a>
+        </div>
+    
+        </div>
+
+        <div class="col-md-2">
+        
+            <div class="tile-wrap">
+                <a href="#" target="_blank">
+                    <img src="img_lp/6unclemeat.jpg" alt="" class="tile-image" />
+                    <div class="tile-text">
+                        <h2 class="tile-title mx-auto">Uncle Meat</h2>
+                        <p class="tile-description text-center">1966<br>Rock - Psyché - Free<br>Groupe originel des Mothers Of Invention</p>
+                    </div>
+                </a>
+            </div>
+        
+        </div>
+
+        <div class="col-md-2 mt-4">
+        
+            <div class="tile-wrap">
+                <a href="#" target="_blank">
+                    <img src="img_lp/7hot rats.jpg" alt="" class="tile-image" />
+                    <div class="tile-text">
+                        <h2 class="tile-title mx-auto">Hot Rats</h2>
+                        <p class="tile-description text-center">1966<br>Rock - Psyché - Free<br>Groupe originel des Mothers Of Invention</p>
+                    </div>
+                </a>
+            </div>
+        
+        </div>
+
+        <div class="col-md-2">
+        
+            <div class="tile-wrap">
+                <a href="#" target="_blank">
+                    <img src="img_lp/8burnt weeny sandwich.jpg" alt="" class="tile-image" />
+                    <div class="tile-text">
+                        <h2 class="tile-title mx-auto">Burnt Weeny Sandwich</h2>
+                        <p class="tile-description text-center">1966<br>Rock - Psyché - Free<br>Groupe originel des Mothers Of Invention</p>
+                    </div>
+                </a>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <!-- troisieme rangée d' albums -->
+
+    <div class="row mt-4">
+
+        <div class="col-md-2 mt-4">
+
+        <div class="tile-wrap">
+            <a href="#" target="_blank">
+                <img src="img_lp/9WeaselsRippedMyFlesh.jpg" alt="" class="tile-image" />
+                <div class="tile-text">
+                    <h2 class="tile-title mx-auto">Weasels Ripped My Flesh</h2>
+                    <p class="tile-description text-center">1966<br>Rock - Psyché - Free<br>Groupe originel des Mothers Of Invention</p>
+                </div>
+            </a>
+        </div>
+    
+        </div>
+
+        <div class="col-md-2">
+        
+            <div class="tile-wrap">
+                <a href="#" target="_blank">
+                    <img src="img_lp/10chungas-revenge.jpg" alt="" class="tile-image" />
+                    <div class="tile-text">
+                        <h2 class="tile-title mx-auto">Chunga's Revenge</h2>
+                        <p class="tile-description text-center">1966<br>Rock - Psyché - Free<br>Groupe originel des Mothers Of Invention</p>
+                    </div>
+                </a>
+            </div>
+        
+        </div>
+
+        <div class="col-md-2 mt-4">
+        
+            <div class="tile-wrap">
+                <a href="#" target="_blank">
+                    <img src="" alt="" class="tile-image" />
+                    <div class="tile-text">
+                        <h2 class="tile-title mx-auto"></h2>
+                        <p class="tile-description text-center"></p>
+                    </div>
+                </a>
+            </div>
+        
+        </div>
+
+        <div class="col-md-2">
+        
+            <div class="tile-wrap">
+                <a href="#" target="_blank">
+                    <img src="" alt="" class="tile-image" />
+                    <div class="tile-text">
+                        <h2 class="tile-title mx-auto"></h2>
+                        <p class="tile-description text-center"></p>
+                    </div>
+                </a>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <section>
+        <a href="#haut"><button class="ancre" type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
+    
+        <!-- aria accès de contenus web plus faciles pour les handicapés=> https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
+    </section>
+
+        
+</div>
+    
+    
+
+    <!-- Bibliotheque Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
