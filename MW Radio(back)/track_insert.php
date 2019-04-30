@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +11,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-
 <body>
 
-    <?php
+<?php
     require_once("include/init.php");
 
     if ($_POST) {
 
-        $insert_bdd = $bdd->prepare("INSERT INTO tracks (title, mp3) VALUES(:title, :mp3)");
+    $insert_bdd = $bdd->prepare("INSERT INTO tracks (title, mp3) VALUES(:title, :mp3)");
 
 
 
@@ -29,21 +27,11 @@
         $insert_bdd->bindValue(":mp3", $_POST['mp3'], PDO::PARAM_STR);
 
         $insert_bdd->execute();
-        
-        $resultat = $bdd->query("SELECT title FROM tracks WHERE (musicien1 = 'Ike Willis' )OR (musicien2 = 'Ike Willis' )OR (musicien3 = 'Ike Willis' )OR (musicien4 = 'Ike Willis' )OR (musicien5 = 'Ike Willis' )OR (musicien6 = 'Ike Willis' )OR (musicien7 = 'Ike Willis' )OR (musicien8 = 'Ike Willis' )OR (musicien9 = 'Ike Willis' )OR (musicien10 = 'Ike Willis') OR (musicien11 = 'Ike Willis') OR (musicien12 = 'Ike Willis') OR (musicien13 = 'Ike Willis') OR (musicien14 = 'Ike Willis') OR (musicien15  = 'Ike Willis') ");
 
-        while($musicien = $resultat->fetch(PDO::FETCH_ASSOC))
-        {
-            echo "<pre>";
-        print_r($musicien);
-        echo "</pre>";
-        }
-
-        
     }
-    ?>
+?>
 
-    <form class="mt-4 mb-4 ml-4" method="post" action="">
+<form class="mt-4 mb-4 ml-4" method="post" action="">
 
         <!-- le titre -->
         <div class="form-group col-md-2">
@@ -56,7 +44,7 @@
             <label for="album">Titre de l' album</label>
             <input type="text" class="form-control" id="album" name="album">
         </div>-->
-
+        
         <!-- année de sortie 
         <div class="form-group col-md-2">
             <label for="annee">Année du morceau</label><br>
@@ -83,8 +71,8 @@
 
         <!-- upload du mp3 -->
         <div class="form-group col-md-2">
-            <label for="mp3">Upload du mp3</label>
-            <input type="file" class="form-control" id="mp3" aria-describedby="" name="mp3">
+                <label for="mp3">Upload du mp3</label>
+                <input type="file" class="form-control" id="mp3" aria-describedby="" name="mp3">
         </div>
 
         <!-- genre principal 
@@ -191,14 +179,13 @@
             <input type="text" class="form-control" name="musicien15" id="musicien15">
         </div>-->
 
-
+        
 
 
         <!-- le bouton submit -->
         <button type="submit" class="btn btn-primary">Sign in</button>
 
     </form>
-
+    
 </body>
-
 </html>
