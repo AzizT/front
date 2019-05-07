@@ -27,6 +27,18 @@ body, html{
     text-align: center;
     text-shadow: 2px 2px 5px #9f68af !important;
 }
+.genre{
+  font: bold 2rem 'satisfy' ;
+  color: purple ;
+  text-align: center;
+  text-shadow: 2px 2px 5px #9f68af !important;
+}
+.personnel{
+  font: bold 1.3rem 'satisfy' ;
+  color: purple ;
+  text-align: right;
+  text-shadow: 2px 2px 5px #9f68af !important;
+}
 .container-fluid .indication{
   font: 2rem 'satisfy' ;
   margin-left: 1.8vw;
@@ -68,8 +80,8 @@ footer i{
   background: white !important;
   margin-top: 0;
   margin-left: 10vw;
-  padding-top: 0;
-  border: 2px solid #9f68af;
+  /* padding-top: 0; */
+  /* border: 2px solid #9f68af; */
   box-shadow: 2px 2px 10px #9f68af;
 }
 .navbar a, .navbar ul li a{
@@ -112,19 +124,13 @@ adapté le css, notamment avec de la transparence */
   transition: .7s;
 }
 /* la même image, appelée pour le track random */
-.tile-image-random {
-  display: block;
+.image-random {
+  /* display: block; */
+  border: solid 4px purple;
   width: 250px;
   height: 250px;
-  transition: .7s;
 }
 .tile-wrap:hover .tile-image {
-  transform: scale(1.15);
-  -webkit-filter: grayscale(.7);
-  filter: grayscale(.7);
-}
-/* effets image track random */
-.tile-wrap:hover .tile-image-random {
   transform: scale(1.15);
   -webkit-filter: grayscale(.7);
   filter: grayscale(.7);
@@ -144,27 +150,7 @@ adapté le css, notamment avec de la transparence */
   transform: translateY(110%);
   box-shadow: 0 -4px 33px rgba(0,0,0,.7);
 }
-/* text track random */
-.tile-text-random {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.4em;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.1rem !important;
-  background: rgba(255, 255, 255, 0.685);
-  color: purple;
-  transition: transform .5s;
-  transform: translateY(110%);
-  box-shadow: 0 -4px 33px rgba(0,0,0,.7);
-}
 .tile-wrap:hover .tile-text {
-  transform: translateY(0);
-}
-/* effets text track random */
-.tile-wrap:hover .tile-text-random {
   transform: translateY(0);
 }
 .tile-title {
@@ -176,21 +162,7 @@ adapté le css, notamment avec de la transparence */
   transform: translateY(100%);
   transition: transform .5s .15s ease-out;
 }
-/* titre track random */
-.tile-title-random {
-  font-size: 2rem !important;
-  text-align: center;
-  font-family: 'satisfy';
-  font-weight: bold;
-  padding-top: 1rem;
-  transform: translateY(100%);
-  transition: transform .5s .15s ease-out;
-}
 .tile-wrap:hover .tile-title {
-  transform: none;
-}
-/* effets titre track random */
-.tile-wrap:hover .tile-title-random {
   transform: none;
 }
 .tile-description {
@@ -199,18 +171,7 @@ adapté le css, notamment avec de la transparence */
   transform: translateY(100%);
   transition: transform .5s .3s ease-out;
 }
-/* description track random */
-.tile-description-random {
-  font-family: 'roboto slab';
-  font-size: 1.1rem !important;
-  transform: translateY(100%);
-  transition: transform .5s .3s ease-out;
-}
 .tile-wrap:hover .tile-description {
-  transform: none;
-}
-/* effets description track random */
-.tile-wrap:hover .tile-description-random {
   transform: none;
 }
 
@@ -232,7 +193,7 @@ adapté le css, notamment avec de la transparence */
 
  .title_tracks{
    font-family: 'satisfy';
-   font-size: 1.8rem;
+   font-size: 1.5rem;
    color: purple;
    text-shadow: 2px 2px 2px black !important;
  }

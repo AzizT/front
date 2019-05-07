@@ -9,14 +9,14 @@ require_once("../include/header.php");
 
     <h1>2010' Albums</h1>
 
-    <h2 class="indication">Rangés chronologiquement.<br>
+    <!-- <h2 class="indication">Rangés chronologiquement.<br>
     Cliquez sur l' album pour<br>
-    accéder aux titres.</h2>
+    accéder aux titres.</h2> -->
 
     <div class="container">
 
         <div class="tile-wrap">
-            <a href="?title=The Lighthouse&album=The Lighthouse&annee=2010&interprete=Applause&photo=img_lp/theLighthouse.jpg&mp3=&genre1=Rock Downtempo">
+            <a href="?title=The Lighthouse&album=The Lighthouse&annee=2010&interprete=Applause&photo=img_lp/theLighthouse.jpg&mp3=&genre1=Rock Downtempo&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/theLighthouse.jpg" alt="album The Lighthouse d' Applause (titre Rock Minimaliste)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Applause</h2>
@@ -25,7 +25,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Mi Deh Yah&album=Mi Deh Yah&annee=2010&interprete=Clinton Fearon&photo=img_lp/miDehYah.jpg&mp3=&genre1=Reggae">
+            <a href="?title=Mi Deh Yah&album=Mi Deh Yah&annee=2010&interprete=Clinton Fearon&photo=img_lp/miDehYah.jpg&mp3=&genre1=Reggae&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/miDehYah.jpg" alt="album Mi Deh Yah de Clinton Fearon (Reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Clinton Fearon</h2>
@@ -34,7 +34,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=You Can Dance&album=Ivory Tower&annee=2010&interprete=Chilly Gonzales&photo=img_lp/youCanDance.jpg&mp3=&genre1=Pop Dance">
+            <a href="?title=You Can Dance&album=Ivory Tower&annee=2010&interprete=Chilly Gonzales&photo=img_lp/youCanDance.jpg&mp3=&genre1=Pop Dance&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/youCanDance.jpg" alt="album Ivory Tower de Chilly Gonzales (Pop Dance)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Chilly Gonzales</h2>
@@ -43,7 +43,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Shout&album=Solidarity Breaks&annee=2010&interprete=Bernhoft&photo=img_lp/shout.jpg&mp3=&genre1=Electro Pop">
+            <a href="?title=Shout&album=Solidarity Breaks&annee=2010&interprete=Bernhoft&photo=img_lp/shout.jpg&mp3=&genre1=Electro Pop&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/shout.jpg" alt="album Solidarity Breaks de Bernhoft (titre Electro Pop)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bernhoft</h2>
@@ -52,7 +52,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=The Keeper&album=Black Sands&annee=2010&interprete=Bonobo&photo=img_lp/theKeeper.jpg&mp3=&genre1=Electro - Trip Hop">
+            <a href="?title=The Keeper&album=Black Sands&annee=2010&interprete=Bonobo&photo=img_lp/theKeeper.jpg&mp3=&genre1=Electro - Trip Hop&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/theKeeper.jpg" alt="album Black Sands de Bonobo (Electro, Trip Hop)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bonobo</h2>
@@ -61,7 +61,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Rolling In The Deep&album=Rolling In The Deep&annee=2011&interprete=Adele (Jamie XX Shuffle Mix)&photo=img_lp/rollingInDeep.jpg&mp3=&genre1=Electro">
+            <a href="?title=Rolling In The Deep&album=Rolling In The Deep&annee=2011&interprete=Adele (Jamie XX Shuffle Mix)&photo=img_lp/rollingInDeep.jpg&mp3=&genre1=Electro&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/rollingInDeep.jpg" alt="album Rolling In The Deep Remix de Jamie XX Shuffle (Electro)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Adele</h2>
@@ -70,7 +70,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Black Sand&album=Where It All Began&annee=2011&interprete=Applause&photo=img_lp/blackSand.jpg&mp3=&genre1=Rock">
+            <a href="?title=Black Sand&album=Where It All Began&annee=2011&interprete=Applause&photo=img_lp/blackSand.jpg&mp3=&genre1=Rock&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/blackSand.jpg" alt="album Where it all began d' Applause (titre Rock)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Applause</h2>
@@ -79,7 +79,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Mars Is No Fun (acoustique)&album=Ilo Veyou&annee=2011&interprete=Camille&photo=img_lp/marsIsNoFun.jpg&mp3=&genre1=Pop">
+            <a href="?title=Mars Is No Fun (acoustique)&album=Ilo Veyou&annee=2011&interprete=Camille&photo=img_lp/marsIsNoFun.jpg&mp3=&genre1=Pop&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/marsIsNoFun.jpg" alt="album Ilo Veyou de Camille (titre Pop)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Camille</h2>
@@ -88,7 +88,16 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=212 - Liquorice&album=1991&annee=2012&interprete=Azealia Banks&photo=img_lp/212.jpg&mp3=&genre1=Hip Hop - Electro">
+            <a href="?title=What's In Your Head&album=The Face&annee=2012&interprete=Disclosure&photo=img_lp/whatsInYourHead.jpg&mp3=&genre1=House&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
+                <img src="img_lp/whatsInYourHead.jpg" alt="album The Face de Disclosure (titre House)" class="tile-image" />
+                <div class="tile-text">
+                    <h2 class="tile-title">Disclosure</h2>
+                    <p class="tile-description">What's In Your Head<br>2012<br>The Face<br>House</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile-wrap">
+            <a href="?title=212 - Liquorice&album=1991&annee=2012&interprete=Azealia Banks&photo=img_lp/212.jpg&mp3=&genre1=Hip Hop - Electro&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/212.jpg" alt="album 1991 d' Azealia Banks (titre Hip Hop, Electro" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Azealia Banks</h2>
@@ -97,7 +106,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Ruin&album=Sun&annee=2012&interprete=Cat Power&photo=img_lp/ruin.jpg&mp3=&genre1=Rock">
+            <a href="?title=Ruin&album=Sun&annee=2012&interprete=Cat Power&photo=img_lp/ruin.jpg&mp3=&genre1=Rock&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/ruin.jpg" alt="album Sun de Cat Power (titre Rock)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Cat Power</h2>
@@ -106,7 +115,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Shlosre&album=Almah&annee=2013&interprete=Avishai Cohen&photo=img_lp/shlosre.jpg&mp3=&genre1=Jazz">
+            <a href="?title=Shlosre&album=Almah&annee=2013&interprete=Avishai Cohen&photo=img_lp/shlosre.jpg&mp3=&genre1=Jazz&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/shlosre.jpg" alt="album Alamah d' Avishai Cohen (Jazz)"
                     class="tile-image" />
                 <div class="tile-text">
@@ -116,7 +125,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Odissi&album=Indiamore&annee=2013&interprete=Chassol&photo=img_lp/odissi.jpg&mp3=&genre1=Electro - Jazzy">
+            <a href="?title=Odissi&album=Indiamore&annee=2013&interprete=Chassol&photo=img_lp/odissi.jpg&mp3=&genre1=Electro - Jazzy&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/odissi.jpg" alt="album Indiamore de Chassol (titre Electro Jazzy)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Chassol</h2>
@@ -125,7 +134,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=I Can't Wait&album=Infinite&annee=2013&interprete=Canblaster&photo=img_lp/iCantWait.jpg&mp3=&genre1=House">
+            <a href="?title=I Can't Wait&album=Infinite&annee=2013&interprete=Canblaster&photo=img_lp/iCantWait.jpg&mp3=&genre1=House&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/iCantWait.jpg" alt="album Infinite de Canblaster (House)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Canblaster</h2>
@@ -134,7 +143,16 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Surrender&album=PUMP&annee=2014&interprete=Ali Love&photo=img_lp/surrender.jpg&mp3=&genre1=Electro - Dance">
+            <a href="?title=Latch - White Noise - Voices - You & Me Help Me Loose My Mind&album=Settle&annee=2013&interprete=Disclosure&photo=img_lp/settle.jpg&mp3=&genre1=Electro UK Garage&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
+                <img src="img_lp/settle.jpg" alt="album Settle de Disclosure ( 5 titres Electro UK Garage)" class="tile-image" />
+                <div class="tile-text">
+                    <h2 class="tile-title">Disclosure</h2>
+                    <p class="tile-description">Latch - White Noise...<br>2013<br>Settle<br>Electro UK Garage</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile-wrap">
+            <a href="?title=Surrender&album=PUMP&annee=2014&interprete=Ali Love&photo=img_lp/surrender.jpg&mp3=&genre1=Electro - Dance&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/surrender.jpg" alt="album PUMP d' Ali Love (titre Electro, Dance)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Ali Love</h2>
@@ -143,7 +161,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Paradise&album=Paradise&annee=2015&interprete=Alina Baraz (Jarreau Vandal Mix)&photo=img_lp/paradise.jpg&mp3=&genre1=House - Drum & Bass">
+            <a href="?title=Paradise&album=Paradise&annee=2015&interprete=Alina Baraz (Jarreau Vandal Mix)&photo=img_lp/paradise.jpg&mp3=&genre1=House - Drum & Bass&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/paradise.jpg" alt="Paradise d' Alina Baraz (remix Jarreau Vandal: House, Drum and Bass)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Alina Baraz</h2>
@@ -152,7 +170,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Am I Wrong&album=Malibu&annee=2016&interprete=Anderson .Paac&photo=img_lp/am_i_wrong.jpg&mp3=&genre1=Hip Hop - R&B">
+            <a href="?title=Am I Wrong&album=Malibu&annee=2016&interprete=Anderson .Paac&photo=img_lp/am_i_wrong.jpg&mp3=&genre1=Hip Hop - R&B&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/am_i_wrong.jpg" alt="album Malibu d' Anderson .Paac (titre Hip Hop , R&B)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Anderson .Paac</h2>
@@ -161,7 +179,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Aku&album=Super Bravo&annee=2016&interprete=Balladur&photo=img_lp/aku.jpg&mp3=&genre1=Electro pop">
+            <a href="?title=Aku&album=Super Bravo&annee=2016&interprete=Balladur&photo=img_lp/aku.jpg&mp3=&genre1=Electro pop&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/aku.jpg" alt="album Super Bravo de Balladur (Electro Pop)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Balladur</h2>
@@ -170,7 +188,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <!-- <div class="tile-wrap">
-            <a href="?title=&album=&annee=&interprete=&photo=&mp3=&genre1=">
+            <a href="?title=&album=&annee=&interprete=&photo=&mp3=&genre1=&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/" alt="album" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title"></h2>
@@ -189,6 +207,8 @@ require_once("../include/header.php");
     <h1><?php echo $interprete; ?></h1>
 
     <p class="year"><?php echo $annee; ?></p>
+
+    <p class="genre"><?php echo $genre1; ?></p>
     
     <!-- la section qui va accueillir le lecteur mp3 -->
     <section class="col-md-6 offset-3 lecteur_mp3">
@@ -220,22 +240,25 @@ require_once("../include/header.php");
     <!-- ******************************************fin du lecteur mp3***************************** -->
 
     <!-- la  section, qui va accueillir l' image de l' album random -->
-    <section class="container">
+    <section class="container col-md-12">
 
-    
+            <div class="col-md-5">
+            
+            <p class="personnel"><?php echo $musician1; ?></p>
+            <p class="personnel"><?php echo $musician2; ?></p>
+            <p class="personnel"><?php echo $musician3; ?></p>
+            <p class="personnel"><?php echo $musician4; ?></p>
+            <p class="personnel"><?php echo $musician5; ?></p>
+            <p class="personnel"><?php echo $musician6; ?></p>
+            
+            </div>
 
-        
+            <div class="col-md-5 mt-3">
 
-        <div class="tile-wrap">
-            <a href="#">
-                <img src="<?php echo $photo; ?>" alt="" class="tile-image-random" />
-                <div class="tile-text-random">
-                    <h2 class="tile-title-random"><?php echo $interprete; ?></h2>
-                    <p class="tile-description-random"><?php echo $title; ?><br><?php echo $annee; ?><br><?php echo $album; ?><br><?php echo $genre1; ?></p>
-                </div>
-            </a>
-        </div>
-    
+            <img src="<?php echo $photo; ?>" alt="" class="image-random" />
+
+            </div>
+                
     </section>
 
     

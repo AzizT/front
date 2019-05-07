@@ -9,14 +9,14 @@ require_once("../include/header.php");
 
     <h1>70' Albums</h1>
 
-    <h2 class="indication">Rangés chronologiquement.<br>
+    <!-- <h2 class="indication">Rangés chronologiquement.<br>
     Cliquez sur l' album pour<br>
-    accéder aux titres.</h2>
+    accéder aux titres.</h2> -->
 
     <div class="container">
     
         <div class="tile-wrap">
-            <a href="?title=Doni Doni&album=&annee=1971&interprete=Bembaya Jazz National&photo=img_lp/doniDoni.jpg&mp3=&genre1=World">
+            <a href="?title=Doni Doni&album=&annee=1971&interprete=Bembaya Jazz National&photo=img_lp/doniDoni.jpg&mp3=&genre1=World&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/doniDoni.jpg" alt="album du Bembaya Jazz National (World)"
                     class="tile-image" />
                 <div class="tile-text">
@@ -26,7 +26,16 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Natty Dread&album=Natty Dread&annee=1974&interprete=Bob Marley&photo=img_lp/nattyDread.jpg&mp3=&genre1=Reggae">
+            <a href="?title=Little Ghetto Boy - The Ghetto&album=Live&annee=1972&interprete=Donnie Hathaway&photo=img_lp/littleGhettoBoy.jpeg&mp3=&genre1=Soul&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
+                <img src="img_lp/littleGhettoBoy.jpeg" alt="album Live de Donnie Hathaway (Soul)" class="tile-image" />
+                <div class="tile-text">
+                    <h2 class="tile-title">Donnie Hathaway</h2>
+                    <p class="tile-description">Little Ghetto Boy<br>The Ghetto<br>1972<br>Soul</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile-wrap">
+            <a href="?title=Natty Dread&album=Natty Dread&annee=1974&interprete=Bob Marley&photo=img_lp/nattyDread.jpg&mp3=&genre1=Reggae&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/nattyDread.jpg" alt="album Natty Dread de Bob Marley (reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Marley</h2>
@@ -35,7 +44,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Celestial Blues&album=Experience And Judgement&annee=1974&interprete=Andy Bell&photo=img_lp/celestialBlues.jpg&mp3=&genre1=Jazz">
+            <a href="?title=Celestial Blues&album=Experience And Judgement&annee=1974&interprete=Andy Bell&photo=img_lp/celestialBlues.jpg&mp3=&genre1=Jazz&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/celestialBlues.jpg" alt="album Experience and Judgment d' Andy Bell (Jazz)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Andy Bell</h2>
@@ -44,7 +53,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Jah Me No Born Yah&album=non référencé&annee=1974&interprete=Cornell Campbell&photo=img_lp/jahMeNoBornYah.jpg&mp3=&genre1=Reggae">
+            <a href="?title=Jah Me No Born Yah&album=non référencé&annee=1974&interprete=Cornell Campbell&photo=img_lp/jahMeNoBornYah.jpg&mp3=&genre1=Reggae&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/jahMeNoBornYah.jpg" alt="album compilation radio nova 1974 pour Jah me no born yah de Cornell Campbell (reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Cornell Campbell</h2>
@@ -53,7 +62,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Johnny Was&album=Rastaman Vibration&annee=1976&interprete=Bob Marley&photo=img_lp/johnnyWas.jpg&mp3=&genre1=Reggae">
+            <a href="?title=Johnny Was&album=Rastaman Vibration&annee=1976&interprete=Bob Marley&photo=img_lp/johnnyWas.jpg&mp3=&genre1=Reggae&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/johnnyWas.jpg" alt="album Rastaman Vibration de Bob Marley (reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Marley</h2>
@@ -62,7 +71,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Hurricane&album=Desire&annee=1976&interprete=Bob Dylan&photo=img_lp/hurricane.jpg&mp3=&genre1=Folk & Rock">
+            <a href="?title=Hurricane&album=Desire&annee=1976&interprete=Bob Dylan&photo=img_lp/hurricane.jpg&mp3=&genre1=Folk & Rock&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/hurricane.jpg" alt="album Desire de Bob Dylan (folk, rock)"
                     class="tile-image" />
                 <div class="tile-text">
@@ -72,7 +81,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=I'd Rather Be With You&album=Stretchin It Out&annee=1976&interprete=Bootsy Collins&photo=img_lp/i_dRatherBeWithYou.jpg&mp3=&genre1=Funk">
+            <a href="?title=I'd Rather Be With You&album=Stretchin It Out&annee=1976&interprete=Bootsy Collins&photo=img_lp/i_dRatherBeWithYou.jpg&mp3=&genre1=Funk&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/i_dRatherBeWithYou.jpg" alt="album Stretchin It Out de Bootsy Collins (Funk)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bootsy Collins</h2>
@@ -81,7 +90,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Natural Mystic&album=Exodus&annee=1977&interprete=Bob Marley&photo=img_lp/naturalMystic.jpg&mp3=&genre1=Reggae">
+            <a href="?title=Natural Mystic&album=Exodus&annee=1977&interprete=Bob Marley&photo=img_lp/naturalMystic.jpg&mp3=&genre1=Reggae&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/naturalMystic.jpg" alt="album Exodus de Bob Marley (Reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Marley</h2>
@@ -90,7 +99,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=La Rosée Si Feuilles Songes&album=Na Voir Demain&annee=1977&interprete=Alain Peters&photo=img_lp/roseeSiFeuille.jpg&mp3=&genre1=Sega - Maloya">
+            <a href="?title=La Rosée Si Feuilles Songes&album=Na Voir Demain&annee=1977&interprete=Alain Peters&photo=img_lp/roseeSiFeuille.jpg&mp3=&genre1=Sega - Maloya&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/roseeSiFeuille.jpg" alt="album Na voir demain d' Alain Peters (Sega, Maloya)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Alain Peters (Cameleon)</h2>
@@ -99,7 +108,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Misty Morning&album=Kaya&annee=1977&interprete=Bob Marley&photo=img_lp/mistyMorning.jpg&mp3=&genre1=Reggae">
+            <a href="?title=Misty Morning&album=Kaya&annee=1977&interprete=Bob Marley&photo=img_lp/mistyMorning.jpg&mp3=&genre1=Reggae&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/mistyMorning.jpg" alt="album Kaya de Bob Marley (Reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Marley</h2>
@@ -108,7 +117,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Bustin' Loose&album=Bustin' Loose&annee=1978&interprete=Chuck Brown & The Soul Searchers&photo=img_lp/bustinLoose.jpg&mp3=&genre1=GoGo - Funk">
+            <a href="?title=Bustin' Loose&album=Bustin' Loose&annee=1978&interprete=Chuck Brown & The Soul Searchers&photo=img_lp/bustinLoose.jpg&mp3=&genre1=GoGo - Funk&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/bustinLoose.jpg" alt="album Bustin Loose de Chuck Brown ( GoGo, Funk)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Chuck Brown</h2>
@@ -117,7 +126,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Emile&album=Spooks In Space&annee=1979&interprete=Aural Exciters&photo=img_lp/emile.jpg&mp3=&genre1=Electro - Psyché">
+            <a href="?title=Emile&album=Spooks In Space&annee=1979&interprete=Aural Exciters&photo=img_lp/emile.jpg&mp3=&genre1=Electro - Psyché&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/emile.jpg" alt="album Spooks in space des Aural Exciters (Electro, Psyché)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Aural Exciters</h2>
@@ -126,7 +135,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Gotta Serve Somebody - Slow train Coming&album=Slow Train Coming&annee=1979&interprete=Bob Dylan&photo=img_lp/gottaServeSomebody.jpg&mp3=&genre1=Blus Rock - Gospel - Rock Chrétien">
+            <a href="?title=Gotta Serve Somebody - Slow train Coming&album=Slow Train Coming&annee=1979&interprete=Bob Dylan&photo=img_lp/gottaServeSomebody.jpg&mp3=&genre1=Blues Rock - Gospel - Rock Chrétien&musician1=Bob Dylan - Lead vocals, guitar&musician2=Mark Knopfler - Lead guitar&musician3=Tim Drummond – Bass guitar&musician4=Barry Beckett – Keyboards, percussion&musician5=Pick Withers – Drums&musician6=and others...">
                 <img src="img_lp/gottaServeSomebody.jpg" alt="album Slow Train Coming de Bob Dylan (Blues Rock, Gospel, Rock Chrétien)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Dylan</h2>
@@ -135,7 +144,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=One Drop&album=Survival&annee=1979&interprete=Bob Marley&photo=img_lp/oneDrop.jpg&mp3=&genre1=Reggae">
+            <a href="?title=One Drop&album=Survival&annee=1979&interprete=Bob Marley&photo=img_lp/oneDrop.jpg&mp3=&genre1=Reggae&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/oneDrop.jpg" alt="album Survival de Bob Marley (Reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Marley</h2>
@@ -144,8 +153,8 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Devil Woman&album=Me Myself an Eye&annee=1979&interprete=Charles Mingus&photo=img_lp/devilWoman.jpg&mp3=&genre1=Jazz">
-                <img src="img_lp/devilWoman.jpg" alt="album posthume Me Myself an Eye de Charles Mingus (Jazz)" class="tile-image" />
+            <a href="?title=Devil Woman&album=Me Myself an Eye&annee=1979&interprete=Charles Mingus&photo=img_lp/devilWoman.jpg&mp3=&genre1=Jazz Post Bop&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
+                <img src="img_lp/devilWoman.jpg" alt="album posthume Me Myself an Eye de Charles Mingus (Jazz Post Bop)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Charles Mingus</h2>
                     <p class="tile-description">Devil Woman<br>1979 (Posthume)<br>Me Myself an Eye<bR>Jazz</p>
@@ -153,7 +162,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <!-- <div class="tile-wrap">
-            <a href="?title=&album=&annee=&interprete=&photo=&mp3=&genre1=">
+            <a href="?title=&album=&annee=&interprete=&photo=&mp3=&genre1=&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/" alt="album" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title"></h2>
@@ -172,6 +181,8 @@ require_once("../include/header.php");
     <h1><?php echo $interprete; ?></h1>
 
     <p class="year"><?php echo $annee; ?></p>
+
+    <p class="genre"><?php echo $genre1; ?></p>
     
     <!-- la section qui va accueillir le lecteur mp3 -->
     <section class="col-md-6 offset-3 lecteur_mp3">
@@ -202,23 +213,26 @@ require_once("../include/header.php");
     </section>
     <!-- ******************************************fin du lecteur mp3***************************** -->
 
-    <!-- la  section, qui va accueillir l' image de l' album random -->
-    <section class="container">
+    <!-- la  section, qui va accueillir le personnel et l' image de l' album random -->
+    <section class="container col-md-12">
 
-    
+            <div class="col-md-5">
+            
+            <p class="personnel"><?php echo $musician1; ?></p>
+            <p class="personnel"><?php echo $musician2; ?></p>
+            <p class="personnel"><?php echo $musician3; ?></p>
+            <p class="personnel"><?php echo $musician4; ?></p>
+            <p class="personnel"><?php echo $musician5; ?></p>
+            <p class="personnel"><?php echo $musician6; ?></p>
+            
+            </div>
 
-        
+            <div class="col-md-5 mt-3">
 
-        <div class="tile-wrap">
-            <a href="#">
-                <img src="<?php echo $photo; ?>" alt="" class="tile-image-random" />
-                <div class="tile-text-random">
-                    <h2 class="tile-title-random"><?php echo $interprete; ?></h2>
-                    <p class="tile-description-random"><?php echo $title; ?><br><?php echo $annee; ?><br><?php echo $album; ?><br><?php echo $genre1; ?></p>
-                </div>
-            </a>
-        </div>
-    
+            <img src="<?php echo $photo; ?>" alt="" class="image-random" />
+
+            </div>
+                
     </section>
 
     

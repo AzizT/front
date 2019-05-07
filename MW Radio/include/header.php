@@ -7,6 +7,12 @@ $interprete = '';
 $photo = '';
 $mp3 = '';
 $genre1 = '';
+$musician1='';
+$musician2='';
+$musician3='';
+$musician4='';
+$musician5='';
+$musician6='';
 
 if (!empty($_GET)) {
     $title = $_GET['title'];
@@ -16,6 +22,12 @@ if (!empty($_GET)) {
     $photo = $_GET['photo'];
     $mp3 = $_GET['mp3'];
     $genre1 = $_GET['genre1'];
+    $musician1= $_GET['musician1'];
+    $musician2= $_GET['musician2'];
+    $musician3= $_GET['musician3'];
+    $musician4= $_GET['musician4'];
+    $musician5= $_GET['musician5'];
+    $musician6= $_GET['musician6'];
 }
 ?>
 <!DOCTYPE html>
@@ -45,7 +57,7 @@ if (!empty($_GET)) {
     <header id="haut">
 
         <nav class="navbar navbar-lg navbar-light bg-light col-md-1">
-            <a class="navbar-brand" href="../accueil.php">Menu</a>
+            <!-- <a class="navbar-brand" href="../accueil.php">Menu</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
