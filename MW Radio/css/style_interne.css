@@ -763,3 +763,29 @@ a
    vertical-align:middle;
 }
  /* *******************************fin du lecteur JS ****************************************** */
+
+ /* ***********************************Le CSS pour l' inscription **********************************************/
+
+ #accueil h1{
+  font: bold 3rem 'satisfy' ;
+  color: purple ;
+  margin-top: 5vh;
+  text-align: center;
+  text-shadow: 2px 2px 5px #9f68af !important;
+}
+#accueil form{
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
+#accueil form label{
+  font: bold 1.4rem 'satisfy';
+  color: purple ;
+  text-shadow: 2px 2px 5px #9f68af !important;
+}
+#accueil button{
+  background-color: purple;
+  border: 2px solid purple;
+  box-shadow: 2px 2px 5px black !important;
+}
+
+ /* *********************************fin de l' inscription******************************************* */

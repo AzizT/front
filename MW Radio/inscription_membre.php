@@ -10,8 +10,18 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- link googlefonts -->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+    <!-- mon css navigation interne-->
+    <link rel="stylesheet" href="css/style_interne.css">
+
 </head>
-<body>
+<body id="accueil">
 
 <?php
     require_once("include/init.php");
@@ -74,56 +84,86 @@
     // require_once("include/header.php");
     ?>
 
-<h1 class="display-4 text-center">Inscription</h1>
+<h1>Inscription</h1>
 
 <?= $error ?>
 
-<form class="mt-4 mb-4 ml-4" method="post" action="">
+<form class="text-center" method="post" action="">
 
         <!-- le nom -->
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-2 mx-auto">
             <label for="nom">Votre nom</label>
-            <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom">
+            <input type="text" class="form-control" id="nom" name="nom" placeholder="...">
         </div>
         
         <!-- le prenom -->
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-2 mx-auto">
             <label for="prenom">Votre prenom</label>
-            <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Votre prenom">
+            <input type="text" class="form-control" id="prenom" name="prenom" placeholder="...">
         </div>
 
         <!-- le pseudo -->
 
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-2 mx-auto">
             <label for="pseudo">Votre pseudo</label>
-            <input type="text" class="form-control" id="pseudo" name="pseudo" placeholder="Votre pseudo">
+            <input type="text" class="form-control" id="pseudo" name="pseudo" placeholder="...">
         </div>
         
         <!-- le mail -->
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-2 mx-auto">
             <label for="email">Votre adresse mail</label>
-            <input type="text" class="form-control" id="email" name="email" placeholder="Adresse mail">
+            <input type="text" class="form-control" id="email" name="email" placeholder="...">
             <!-- pour le type, mettre un text au lieu de email, pour pouvoir faire une vérification php sur le navigateur -->
         </div>
 
         <!-- mdp -->
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-2 mx-auto">
             <label for="mdp">Votre mot de passe</label>
-            <input type="text" class="form-control" id="mdp" name="mdp" placeholder="Votre mdp">
+            <input type="text" class="form-control" id="mdp" name="mdp" placeholder="...">
         </div>
 
         <?= $error1 ?>
 
         <!-- confirmation mdp -->
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-2 mx-auto">
             <label for="confirm_mdp">Confirmez votre mot de passe</label>
-            <input type="text" class="form-control" id="confirm_mdp" name="confirm_mdp" placeholder="Confirmation">
+            <input type="text" class="form-control" id="confirm_mdp" name="confirm_mdp" placeholder="...">
         </div>
 
         <!-- le bouton submit -->
-        <button type="submit" class="btn btn-primary">Validez votre inscription</button>
+        <button type="submit" class="btn btn-dark btn-sm">Validez votre inscription</button>
 
     </form>
+
+    <footer class="fixed-bottom text-center">
+
+        <div class="row">
+
+            <div class="col-md-1 logo_footer">
+            <a href="accueil.php"><img src="images/disk.png" alt="logo MW Radio"/></a>
+            </div>
+
+            <nav class="col-md-10 liens_footer">
+
+                
+
+                <div class="row">
+                    
+                    <div class="col-md-3"><a href="#"><i class="fab fa-facebook-f"></i></a> - <a href="#"><i class="fab fa-instagram"></i></a> - <a href="#"><i class="fab fa-youtube"></i></a> - <a href="#"><i class="fab fa-twitter"></i></a></div>
+                    <div class="col-md-3"><a href="#">Plan du Site</a></div>
+                    <div class="col-md-3"><a href="#">Contact</a></div>
+                    <div class="col-md-3"><a href="#">Qui Sommes Nous</a></div>
+                </div>
+
+                <div class="row">
+                    <p class="col-md-12">"Information is not knowledge. Knowledge is not wisdom. Wisdom is not truth. Truth is not beauty. Beauty is not love. Love is not music. Music is THE BEST." - FZ.</p>
+                </div>
+
+            </nav>
+            
+        </div>
+
+    </footer>
     
 </body>
 </html>

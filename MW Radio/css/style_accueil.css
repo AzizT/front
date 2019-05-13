@@ -90,8 +90,8 @@ ul#menu {
 
 #menu  li {
     border: #9f68af solid 1px;
-	width: 120px;  /* mis cette valeur pour qu' onglets et sous-onglets aient la même longueur. A 100, onglet trop petit, texte déborde. A 144, onglet plus petit que sous onglet a cause des border spacing du haut. C' est un choix */
-    line-height : 20px; /* on définit une hauteur pour chaque élément */
+	width: 5vw;  /* choisi cette valeur après plusieurs tests */
+    line-height : 2vh; /* on définit une hauteur pour chaque élément */
 	background-color: #0b0011;/* BG onglet au repos*/
 	
 }
@@ -110,6 +110,25 @@ ul#menu {
 #menu li a:hover {
     color: #d592e8;
 }
+
+/* **********************début des parametres pour la barre de recherche************************************ */
+
+.recherche{
+    line-height : 2vh;
+    width: 8vw;
+    margin-left: 5vw;
+    /* background-color: #e5b8f3; */
+    border: #9f68af solid 2px;
+}
+.soumettre{
+    line-height : 2.2vh;
+    width: 2vw;
+    background-color: #e5b8f3;
+    border: #9f68af solid 2px;
+    border-radius: 20%;
+}
+
+/* **************************************fin de la barre de recherche******************************************* */
 
 #piedPage{
     margin: 0px auto;

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
     <!-- le css, particulier pour la page d' accueil. La navigation interne possede un autre css -->
     <link href="css/style_accueil.css" rel="stylesheet"/>
 </head>
@@ -24,62 +27,37 @@
 
         <li>
 
-                <a href="#">Tracks</a>
-            
-                <ul>
-                    
-                    <li><a href="50_60_tracks/Index_50_60.php">50' 60'</a></li>
-                    <li><a href="70_tracks/Index_70.php">70'</a></li>
-                    <li><a href="80_tracks/Index_80.php">80'</a></li>
-                    <li><a href="90_tracks/Index_90.php">90'</a></li>
-                    <li><a href="00_tracks/Index_00.php">00'</a></li>
-                    <li><a href="10_tracks/Index_10.php">10'</a></li>
-
-                </ul>
+                <a href="50_60_tracks/Index_50_60.php">50' 60' Tracks</a>
 
         </li>
         
         <li>
 
-                <a href="#">Reggae Dub Tracks</a>
-            
-                <ul>
-                    
-                    <li><a href="marley_tracks/Index_marley.html">Bob Marley</a></li>
-                    
-                </ul>
+                <a href="70_tracks/Index_70.php">70' Tracks</a>
 
         </li>
         
         <li>
 
-                <a href="#">Electro Tracks</a>
-            
-                <ul>
-                    
-                    <li><a href="#">Masters at Work</a></li>
-                    <li><a href="#">Disclosure</a></li>
-                    <li><a href="#">Sebastian</a></li>
-
-                </ul>
+                <a href="80_tracks/Index_80.php">80' Tracks</a>
 
         </li>
 
         <li>
 
-                <a href="#">Hip Hop Tracks</a>
+                <a href="90_tracks/Index_90.php">90' Tracks</a>
 
         </li>
         
         <li>
 
-                <a href="#">Jazz Tracks</a>
+                <a href="00_tracks/Index_00.php">00' Tracks</a>
 
         </li>
         
         <li>
 
-                <a href="#">World Tracks</a>
+                <a href="10_tracks/Index_10.php">10' Tracks</a>
 
         </li>
 
@@ -102,22 +80,30 @@
 
         <li>
 
-                <a href="#">plus</a>
-
+                <a href="inscription_membre.php">Inscription</a>
                 <ul>
-
-                        <li><a href="#">forum</a></li>
-                        <li><a href="#">nous contacter</a></li>
-                        <li><a href="#">team</a></li>
-                        <li><a href="#">recherche</a></li>
-
+                        <li>
+                                <a href="track_insert.php">insertion</a>
+                        </li>
                 </ul>
 
         </li>
 
+        <div class="barre_recherche">
+
+        <!-- ma barre de recherche et son submit + une pop up pour aider l' utilisateur -->
+                <input class="recherche" type="search" placeholder="Search" title="Vouz recherchez un album, un musicien, une année ?" aria-label="Search">
+
+                <button class="soumettre" type="submit"><i class="fas fa-search"></i></button>
+        
+        </div>
+        
+    </ul>
+
+
         
 
-    </ul>
+
     </nav>
         
         <img src="images/image_accueil.jpg" alt="image accueil mw radio" class="responsive" />
