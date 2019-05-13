@@ -126,7 +126,8 @@ adapté le css, notamment avec de la transparence */
 /* la même image, appelée pour le track random */
 .image-random {
   /* display: block; */
-  border: solid 4px purple;
+  border: solid 2px rgb(173, 98, 173);
+  box-shadow: 5px 5px 20px black;
   width: 250px;
   height: 250px;
 }

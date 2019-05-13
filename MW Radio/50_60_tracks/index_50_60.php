@@ -15,16 +15,17 @@ require_once("../include/header.php");
 
     <div class="container">
         <div class="tile-wrap">
-            <a href="?title=Babaratini&album=Il Re Del Mambo&annee=1953&interprete=Beny More&photo=img_lp/babaratini.jpg&mp3=&genre1=mambo&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
-                <img src="img_lp/babaratini.jpg" alt="album Il Re del Mambode Perez Prado (mambo)" class="tile-image" />
+            <a href="?title=Babaratiri&album=Il Re Del Mambo&annee=1953&interprete=Beny More&photo=img_lp/babaratiri.jpg&mp3=&genre1=mambo&musician1=Beny Moré - Vocals&musician2=Eduardo Cabrera - Piano&musician3=Alberto Limonta - Bass&musician4=Clemente 'Chicho' Piquero - Bongo&musician5=Rolando Laserie - Drums&musician6= and many others...">
+            <!-- https://www.youtube.com/watch?v=d4jN82OQQ04 -->
+                <img src="img_lp/babaratiri.jpg" alt="album Il Re del Mambode Perez Prado (mambo)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Beny Moré & Perez Prado</h2>
-                    <p class="tile-description">Babaratini<br>1953<br>Il Re Del mambo<br>Mambo</p>
+                    <p class="tile-description">Babaratiri<br>1953<br>Il Re Del mambo<br>Mambo</p>
                 </div>
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Powell's prance&album=At Basin Street&annee=1956&interprete=Clifford Brown and Max Roach&photo=img_lp/powellsPrance.jpg&mp3=&genre1=Jazz Bop&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
+            <a href="?title=Powell's Prance&album=At Basin Street&annee=1956&interprete=Clifford Brown and Max Roach&photo=img_lp/powellsPrance.jpg&mp3=&genre1=Jazz Bop&musician1=Clifford Brown - Trumpet&musician2=Sonny Rollins - Tenor sax&musician3=Richie Powell - Piano&musician4=George Morrow - Bass&musician5=Max Roach - Drums&musician6=">
                 <img src="img_lp/powellsPrance.jpg" alt="album At Basin street de Clifford Brown et Max Roach (Jazz)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">C. Brown & M. Roach</h2>
@@ -33,7 +34,8 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Stormy Monday Blues&album=Here's The Man&annee=1962&interprete=Bobby Blue Bland&photo=img_lp/stormyMondayBlues.jpg&mp3=&genre1=Soul Blues&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
+            <a href="?title=Stormy Monday Blues&album=Here's The Man&annee=1962&interprete=Bobby Blue Bland&photo=img_lp/stormyMondayBlues.jpg&mp3=&genre1=Soul Blues&musician1=Bobby Blue Bland - Vocals&musician2=Wayne Benett - Guitar&musician3=Simmons - Bass&musician4=Teddy Reynolds - Piano&musician5=John 'Jabo' Starks - Drums&musician6=and others...">
+            <!-- https://www.jazzmessengers.com/en/74782/bobby-bland/heres-the-man -->
                 <img src="img_lp/stormyMondayBlues.jpg" alt="album Here's the man de Bobby Blue Bland (Soul Blues)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bobby Blue Bland</h2>
@@ -42,20 +44,38 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Swing Low Sweet Cadillac&album=Live At The Memory Lane LA.&annee=1967&interprete=Dizzy Gillespie&photo=img_lp/swingLowSweetCadillac.jpg&mp3=&genre1=Jazz Bop&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
-                <img src="img_lp/swingLowSweetCadillac.jpg" alt="album Live At The Memory Lane LA. (Jazz Bop)" class="tile-image" />
+            <a href="?title=Ysabel's Table Dance&album=Tijuana Moods&annee=1962&interprete=Charles Mingus&photo=img_lp/ysabelTableDance.jpg&mp3=&genre1=Jazz&musician1=Charles Mingus - Bass&musician2=Clarence Shaw - Trumpet&musician3=Jimmy Knepper - Trombone&musician4=Dannie Richmond - Drums&musician5=Ysabel Morel - Castanets, vocals&musician6=and others...">
+                <img src="img_lp/ysabelTableDance.jpg" alt="album Tijuana Mood de Charles Mingus (Jazz intro Flamenco)" class="tile-image" />
                 <div class="tile-text">
-                    <h2 class="tile-title">Dizzy Gillespie</h2>
-                    <p class="tile-description">Swing Low...<br>1967<br>Live At The...<br>Jazz Bop</p>
+                    <h2 class="tile-title">Charles Mingus</h2>
+                    <p class="tile-description">Ysabel's Table Dance<br>1962<br>Tijuana Moods<br>Jazz intro Flamenco</p>
                 </div>
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Bra Joe From Kilimandjaro&album=African Piano&annee=1969&interprete=Dollar Brand&photo=img_lp/braJoe.jpg&mp3=&genre1=Jazz Free&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
+            <a href="?title=Swing Low Sweet Cadillac&album=Swing Low Sweet Cadillac&annee=1967&interprete=Dizzy Gillespie&photo=img_lp/swingLowSweetCadillac.jpg&mp3=&genre1=Jazz Bop&musician1=Dizzy Gillespie - Trumpet, vocals&musician2=James Moody - Saxophone, vocals&musician3=Mike Longo - Piano&musician4=Frank Schifano - Bass&musician5=Otis Candy Finch Jr. - Drums&musician6=">
+                <img src="img_lp/swingLowSweetCadillac.jpg" alt="album Swing Low Sweet Cadillac de Dizzy Gillespie (Live Jazz Bop)" class="tile-image" />
+                <div class="tile-text">
+                    <h2 class="tile-title">Dizzy Gillespie</h2>
+                    <p class="tile-description">Swing Low...<br>1967<br>Swing Low...<br>Jazz Bop</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile-wrap">
+            <a href="?title=Bra Joe From Kilimandjaro&album=African Piano&annee=1969&interprete=Dollar Brand&photo=img_lp/braJoe.jpg&mp3=&genre1=Jazz Free&musician1=Dollar Brand - Piano&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/braJoe.jpg" alt="album African Piano de Dollar Brand (titre Jazz Free)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Dollar Brand</h2>
                     <p class="tile-description">Bra Joe From...<br>1969<br>African Piano<br>Jazz Free</p>
+                </div>
+            </a>
+        </div>
+        <div class="tile-wrap">
+            <a href="?title=Born Under A Bad Sign&album=Fear Itself&annee=1969&interprete=Ellen McIlwaine&photo=img_lp/bornUnder.jpg&mp3=&genre1=Blues - Rock - Psyché&musician1=Ellen McIlwaine - Guitar, vocals&musician2=&musician3=&musician4=&musician5=&musician6=">
+                <img src="img_lp/bornUnder.jpg" alt="album Fear Itself d' Ellen McIlwaine (titre Blues Psyché)" class="tile-image" />
+                <div class="tile-text">
+                    <h2 class="tile-title">Ellen McIlwaine</h2>
+                    <p class="tile-description">Born Under A Bad Sign<br>1969<br>Fear Itself<br>Blues - Rock - Psyché</p>
                 </div>
             </a>
         </div>
