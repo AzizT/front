@@ -338,6 +338,18 @@ require_once("../include/header.php");
                 
     </section>
 
+    <!-- *******************************************fin de la section infos + image *********************************** -->
+
+    <!-- **********************************************début de la zone commentaire************************************ -->
+    <section class="container-fluid">
+    <div class="form-group text-center">
+    <label for="comment">Laissez un commentaire</label>
+        <textarea class="form-control col-md-6 mx-auto comment" id="comment" rows="1" placeholder="..."></textarea>
+    </div>
+    </section>
+    <!-- **********************************************fin de la ozne commentaire*************************************** -->
+    
+
     
 
     <!-- **************************************************************************fin de l' album aléatoire*************************************************************************** -->

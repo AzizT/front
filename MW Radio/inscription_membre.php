@@ -131,7 +131,7 @@
         </div>
 
         <!-- le bouton submit -->
-        <button type="submit" class="btn btn-dark btn-sm">Validez votre inscription</button>
+        <button type="submit" class="btn btn-dark btn-sm submit">Validez votre inscription</button>
 
     </form>
 

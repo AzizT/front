@@ -452,7 +452,7 @@ require_once("../include/header.php");
     </section>
     <!-- ******************************************fin du lecteur mp3***************************** -->
 
-    <!-- la  section, qui va accueillir l' image de l' album random -->
+    <!-- la  section, qui va accueillir les infos et l' image de l' album random -->
     <section class="container col-md-12">
 
             <div class="col-md-5">
@@ -473,6 +473,17 @@ require_once("../include/header.php");
             </div>
                 
     </section>
+
+    <!-- *******************************************fin de la section infos + image *********************************** -->
+
+    <!-- **********************************************début de la zone commentaire************************************ -->
+    <section class="container-fluid">
+    <div class="form-group text-center">
+    <label for="comment">Laissez un commentaire</label>
+        <textarea class="form-control col-md-6 mx-auto comment" id="comment" rows="1" placeholder="..."></textarea>
+    </div>
+    </section>
+    <!-- **********************************************fin de la ozne commentaire*************************************** -->
     
 
     <!-- **************************************************************************fin de l' album aléatoire*************************************************************************** -->

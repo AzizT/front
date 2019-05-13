@@ -107,7 +107,7 @@ adapté le css, notamment avec de la transparence */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
 }
 .tile-wrap {
   display: inline-block;
@@ -178,6 +178,19 @@ adapté le css, notamment avec de la transparence */
 
   /* **************************************fin image hover********************************************** */
 
+  /* **************************************gestion de la zone de commentaire**************************** */
+  .container-fluid{
+    font: 2rem 'satisfy' ;
+    color: purple;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 15vh;
+  }
+  .container-fluid .comment{
+    box-shadow: 2px 2px 5px black !important;
+    border: solid 2px rgb(173, 98, 173);
+  }
+  /* ***********************************fin de la zone de commentaire**************************** */
+
 /* ********************************ancre haut de page*********************************************** */
   .ancre{
      position: fixed;
@@ -186,7 +199,7 @@ adapté le css, notamment avec de la transparence */
      cursor: pointer;
      border: none;
      background-color:transparent;
-     font-size: 350%;
+     font-size: 150%;
      color: purple;
      text-shadow: 2px 2px 2px black !important;
  }
@@ -782,7 +795,7 @@ a
   color: purple ;
   text-shadow: 2px 2px 5px #9f68af !important;
 }
-#accueil button{
+#accueil .submit{
   background-color: purple;
   border: 2px solid purple;
   box-shadow: 2px 2px 5px black !important;
