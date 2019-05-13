@@ -107,7 +107,7 @@ adapté le css, notamment avec de la transparence */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 .tile-wrap {
   display: inline-block;
@@ -179,13 +179,13 @@ adapté le css, notamment avec de la transparence */
   /* **************************************fin image hover********************************************** */
 
   /* **************************************gestion de la zone de commentaire**************************** */
-  .container-fluid{
+  .commentaire{
     font: 2rem 'satisfy' ;
     color: purple;
     text-shadow: 2px 2px 2px black;
     margin-bottom: 15vh;
   }
-  .container-fluid .comment{
+  .commentaire .comment{
     box-shadow: 2px 2px 5px black !important;
     border: solid 2px rgb(173, 98, 173);
   }
@@ -199,7 +199,7 @@ adapté le css, notamment avec de la transparence */
      cursor: pointer;
      border: none;
      background-color:transparent;
-     font-size: 150%;
+     font-size: 350%;
      color: purple;
      text-shadow: 2px 2px 2px black !important;
  }
