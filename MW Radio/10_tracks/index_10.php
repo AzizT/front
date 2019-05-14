@@ -144,7 +144,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Latch - White Noise - Voices - You & Me Help Me Loose My Mind&album=Settle&annee=2013&interprete=Disclosure&photo=img_lp/settle.jpg&mp3=&genre1=Electro UK Garage&musician1=Order Of Appearance&musician2=Sam Smith - Vocals (Latch)&musician3=AlunaGeorge - Vocals (White Noise...)&musician4=Sasha Keable - Vocals (Voices)&musician5=Eliza Doolittle - Vocals (You and Me)&musician6=London Grammar - Vocals (Help Me...)">
+            <a href="?title=Latch - White Noise - Voices - You and Me - Help Me Loose My Mind&album=Settle&annee=2013&interprete=Disclosure&photo=img_lp/settle.jpg&mp3=&genre1=Electro UK Garage&musician1=Order Of Appearance&musician2=Sam Smith - Vocals (Latch)&musician3=AlunaGeorge - Vocals (White Noise...)&musician4=Sasha Keable - Vocals (Voices)&musician5=Eliza Doolittle - Vocals (You and Me)&musician6=London Grammar - Vocals (Help Me...)">
                 <img src="img_lp/settle.jpg" alt="album Settle de Disclosure ( 5 titres Electro UK Garage)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Disclosure</h2>

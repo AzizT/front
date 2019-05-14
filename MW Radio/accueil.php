@@ -89,14 +89,14 @@
 
         </li>
 
-        <div class="barre_recherche">
+        
 
         <!-- ma barre de recherche et son submit + une pop up pour aider l' utilisateur -->
                 <input class="recherche" type="search" placeholder="Search" title="Vouz recherchez un album, un musicien, une année ?" aria-label="Search">
 
                 <button class="soumettre" type="submit"><i class="fas fa-search"></i></button>
         
-        </div>
+       
         
     </ul>
 

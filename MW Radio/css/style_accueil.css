@@ -116,8 +116,7 @@ ul#menu {
 .recherche{
     line-height : 2vh;
     width: 8vw;
-    margin-left: 5vw;
-    /* background-color: #e5b8f3; */
+    /* margin-left: 5vw; */
     border: #9f68af solid 2px;
 }
 .soumettre{
