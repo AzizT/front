@@ -18,26 +18,143 @@
     <?php
     require_once("include/init.php");
 
+    extract($_POST);
+
+    extract($_GET);
+    
+    
+    // ***********************enregitrement d' un mp3******************************
+
     if ($_POST) {
 
-        $insert_bdd = $bdd->prepare("INSERT INTO tracks (title, mp3) VALUES(:title, :mp3)");
+        $mp3_bdd = '';
+
+        if (isset($_GET['action']) && $_GET['action'] == 'modification') {
+
+                $mp3_bdd = $mp3_actuel; // si on souhaite conserver le même mp3 en cas de modification, on affecte la valeur du champs mp3 'hidden', c'est à dire l'URL du mp3 selectionnée en BDD
+
+            }
+
+        if (!empty($_FILES['mp3']['name'])) // on vérifie que l'indice 'name' dans la superglobale $_FILES n'est pas vide, cela veut dire que l'on a bien uploader un mp3
+
+            {
+
+                $nom_mp3 = $reference . '-' . $_FILES['mp3']['name']; // on redéfinit le nom du mp3 en concaténant la référence saisi dans le formulaire avec le nom du mp3
+
+                echo $nom_mp3 . '<br>';
 
 
 
-        $insert_bdd->bindValue(":title", $_POST['title'], PDO::PARAM_STR);
+                $mp3_bdd = URL . "mp3/$nom_mp3"; // on définit l'URL du mp3, c'est ce que l'on conservera en BDD
 
-        $insert_bdd->bindValue(":mp3", $_POST['mp3'], PDO::PARAM_STR);
+                echo $mp3_bdd . '<br>';
 
-        $insert_bdd->execute();
-        
-        $resultat = $bdd->query("SELECT title FROM tracks WHERE (musicien1 = 'Ike Willis' )OR (musicien2 = 'Ike Willis' )OR (musicien3 = 'Ike Willis' )OR (musicien4 = 'Ike Willis' )OR (musicien5 = 'Ike Willis' )OR (musicien6 = 'Ike Willis' )OR (musicien7 = 'Ike Willis' )OR (musicien8 = 'Ike Willis' )OR (musicien9 = 'Ike Willis' )OR (musicien10 = 'Ike Willis') OR (musicien11 = 'Ike Willis') OR (musicien12 = 'Ike Willis') OR (musicien13 = 'Ike Willis') OR (musicien14 = 'Ike Willis') OR (musicien15  = 'Ike Willis') ");
 
-        while($musicien = $resultat->fetch(PDO::FETCH_ASSOC))
+
+                $mp3_dossier = RACINE_SITE . "mp3/$nom_mp3"; // on définit le chemin physique du mp3 sur le disque dur du serveur, c'est ce qui nous permettra de copier le mp3 dans le dossier mp3
+
+                echo $mp3_dossier . '<br>';
+
+
+
+                copy($_FILES['mp3']['tmp_name'], $mp3_dossier); // copy() est une fonction prédéfinie qui permet de copier le mp3 dans le dossier mp3. arguments: copy(nom_temporaire_mp3, chemin de destination)
+
+
+            }
+
+            // **********************fin de l' enregistrement du mp3*********************
+
+            // ****************************enregistrement de la photo**********************
+
+            $photo_bdd = '';
+
+        if (isset($_GET['action']) && $_GET['action'] == 'modification') {
+
+                $photo_bdd = $photo_actuelle; // si on souhaite conserver la même photo en cas de modification, on affecte la valeur du champs photo 'hidden', c'est à dire l'URLde la photo selectionnée en BDD
+
+            }
+
+        if (!empty($_FILES['photo']['name'])) // on vérifie que l'indice 'name' dans la superglobale $_FILES n'est pas vide, cela veut dire que l'on a bien uploader une photo
+
+            {
+
+                $nom_photo = $reference . '-' . $_FILES['photo']['name']; // on redéfinit le nom de la photo en concaténant la référence saisi dans le formulaire avec le nom de la photo
+
+                echo $nom_photo . '<br>';
+
+
+
+                $photo_bdd = URL . "photo/$nom_photo"; // on définit l'URL de la photo, c'est ce que l'on conservera en BDD
+
+                echo $photo_bdd . '<br>';
+
+
+
+                $photo_dossier = RACINE_SITE . "photo/$nom_photo"; // on définit le chemin physique de la photo sur le disque dur du serveur, c'est ce qui nous permettra de copier la photo dans le dossier photo
+
+                echo $photo_dossier . '<br>';
+
+
+
+                copy($_FILES['photo']['tmp_name'], $photo_dossier); // copy() est une fonction prédéfinie qui permet de copier la photo dans le dossier photo. arguments: copy(nom_temporaire_photo, chemin de destination)
+
+
+            }
+
+            // *********************fin de l' enregistrement de la photo*******************
+
+            // Requete d'insertion permettant d'inserer le titre, la photo et le mp3 dans les différentes tables (requête préparée) + a l' interieur (else) la requete d' update ( modification de photo et mp3).
+
+
+
+        if(isset($_GET['action']) && $_GET['action'] == 'ajout')
         {
-            echo "<pre>";
-        print_r($musicien);
-        echo "</pre>";
+    $bdd_insert = $bdd->prepare("INSERT into mp3(fichier) VALUES(:fichier)");
+
+            $_GET['action'] = 'affichage';
+
+            $validate .= "<div class='alert alert-success col-md-6 offset-md-3 text-center'>Le mp3 n° <strong>$reference</strong> a bien été ajouté !!</div>";
+
+        }else{
+            $bdd_insert = $bdd->prepare("UPDATE mp3 SET fichier = :fichier WHERE id_mp3 = $id_mp3");
+
+            $_GET['action'] = 'affichage';
+
+            $validate .= "<div class='alert alert-success col-md-6 offset-md-3 text-center'>Le mp3 n° <strong>$id_mp3</strong> a bien été modifié !!</div>";
         }
+    foreach ($_POST as $key => $value) {
+
+            if ($key != 'mp3_actuel') {
+
+                    $bdd_insert->bindValue(":$key", $value, PDO::PARAM_STR);
+                }
+        }
+
+    $bdd_insert->bindValue(":fichier", $mp3_bdd, PDO::PARAM_STR);
+
+    $bdd_insert->execute();
+
+
+
+
+        // $insert_bdd = $bdd->prepare("INSERT INTO tracks (title, mp3) VALUES(:title, :mp3)");
+
+
+
+        // $insert_bdd->bindValue(":title", $_POST['title'], PDO::PARAM_STR);
+
+        // $insert_bdd->bindValue(":mp3", $_POST['mp3'], PDO::PARAM_STR);
+
+        // $insert_bdd->execute();
+        
+        // $resultat = $bdd->query("SELECT title FROM tracks WHERE (musicien1 = 'Ike Willis' )OR (musicien2 = 'Ike Willis' )OR (musicien3 = 'Ike Willis' )OR (musicien4 = 'Ike Willis' )OR (musicien5 = 'Ike Willis' )OR (musicien6 = 'Ike Willis' )OR (musicien7 = 'Ike Willis' )OR (musicien8 = 'Ike Willis' )OR (musicien9 = 'Ike Willis' )OR (musicien10 = 'Ike Willis') OR (musicien11 = 'Ike Willis') OR (musicien12 = 'Ike Willis') OR (musicien13 = 'Ike Willis') OR (musicien14 = 'Ike Willis') OR (musicien15  = 'Ike Willis') ");
+
+        // while($musicien = $resultat->fetch(PDO::FETCH_ASSOC))
+        // {
+        //     echo "<pre>";
+        // print_r($musicien);
+        // echo "</pre>";
+        // }
 
         
     }
@@ -51,35 +168,7 @@
             <input type="text" class="form-control" id="title" name="title">
         </div>
 
-        <!-- l' album' 
-        <div class="form-group col-md-2">
-            <label for="album">Titre de l' album</label>
-            <input type="text" class="form-control" id="album" name="album">
-        </div>-->
-
-        <!-- année de sortie 
-        <div class="form-group col-md-2">
-            <label for="annee">Année du morceau</label><br>
-            <input type="date" id="annee" name="annee" value="">
-        </div>-->
-
-        <!-- le groupe ou interprete 
-        <div class="form-group col-md-2">
-            <label for="interprete">Interprète principal</label>
-            <input type="text" class="form-control" id="interprete" name="interprete">
-        </div>-->
-
-        <!-- l' auteur 
-        <div class="form-group col-md-2">
-            <label for="auteur">Auteur (parolier)</label>
-            <input type="text" class="form-control" id="auteur" name="auteur">
-        </div>-->
-
-        <!-- le compositeur 
-        <div class="form-group col-md-2">
-            <label for="compositeur">Compositeur (musique)</label>
-            <input type="text" class="form-control" id="compositeur" name="compositeur">
-        </div>-->
+        
 
         <!-- upload du mp3 -->
         <div class="form-group col-md-2">
@@ -87,115 +176,22 @@
             <input type="file" class="form-control" id="mp3" aria-describedby="" name="mp3">
         </div>
 
-        <!-- genre principal 
+        <!-- upload de la photo -->
         <div class="form-group col-md-2">
-            <label for="genre1">Genre principal du morceau</label>
-            <input type="text" class="form-control" id="genre1" name="genre1">
-        </div>-->
 
-        <!-- genre secondaire 
-        <div class="form-group col-md-2">
-            <label for="genre2">Genre secondaire du morceau (non obligatoire)</label>
-            <input type="text" class="form-control" id="genre2" name="genre2">
-        </div>-->
+                <label for="photo">Photo</label>
 
-        <!-- j' ouvre 15 inputs pour l' insertion de 15 musiciens au maximum, selon les cas de figure ( 12 musiciens pour le concert Make a Jazz Noise Here de Zappa ) mais si il n y en a qu' un seul ( morceau de Dollar Brand par exemple, seul au piano), on ne remplit que le premier champs-->
+                <input type="file" class="form-control" id="photo" aria-describedby="" placeholder="" name="photo">
 
-        <!-- Musicien 1 
-        <div class="form-group col-md-2">
-            <label for="musicien1">Musicien 1</label>
-            <input type="text" class="form-control" name="musicien1" id="musicien1">
-        </div>-->
+        </div>
 
-        <!-- Musicien 2 
-        <div class="form-group col-md-2">
-            <label for="musicien2">Musicien 2</label>
-            <input type="text" class="form-control" name="musicien2" id="musicien2">
-        </div>-->
-
-        <!-- Musicien 3 
-        <div class="form-group col-md-2">
-            <label for="musicien3">Musicien 3</label>
-            <input type="text" class="form-control" name="musicien3" id="musicien3">
-        </div>-->
-
-        <!-- Musicien 4 
-        <div class="form-group col-md-2">
-            <label for="musicien4">Musicien 4</label>
-            <input type="text" class="form-control" name="musicien4" id="musicien4">
-        </div>-->
-
-        <!-- Musicien 5 
-        <div class="form-group col-md-2">
-            <label for="musicien5">Musicien 5</label>
-            <input type="text" class="form-control" name="musicien5" id="musicien5">
-        </div>-->
-
-        <!-- Musicien 6 
-        <div class="form-group col-md-2">
-            <label for="musicien6">Musicien 6</label>
-            <input type="text" class="form-control" name="musicien6" id="musicien6">
-        </div>-->
-
-        <!-- Musicien 7 
-        <div class="form-group col-md-2">
-            <label for="musicien7">Musicien 7</label>
-            <input type="text" class="form-control" name="musicien7" id="musicien7">
-        </div>-->
-
-        <!-- Musicien 8 
-        <div class="form-group col-md-2">
-            <label for="musicien8">Musicien 8</label>
-            <input type="text" class="form-control" name="musicien8" id="musicien8">
-        </div>-->
-
-        <!-- Musicien 9 
-        <div class="form-group col-md-2">
-            <label for="musicien9">Musicien 9</label>
-            <input type="text" class="form-control" name="musicien9" id="musicien9">
-        </div>-->
-
-        <!-- Musicien 10 
-        <div class="form-group col-md-2">
-            <label for="musicien10">Musicien 10</label>
-            <input type="text" class="form-control" name="musicien10" id="musicien10">
-        </div>-->
-
-        <!-- Musicien 11 
-        <div class="form-group col-md-2">
-            <label for="musicien11">Musicien 11</label>
-            <input type="text" class="form-control" name="musicien11" id="musicien11">
-        </div>-->
-
-        <!-- Musicien 12 
-        <div class="form-group col-md-2">
-            <label for="musicien12">Musicien 12</label>
-            <input type="text" class="form-control" name="musicien12" id="musicien12">
-        </div>-->
-
-        <!-- Musicien 13 
-        <div class="form-group col-md-2">
-            <label for="musicien13">Musicien 13</label>
-            <input type="text" class="form-control" name="musicien13" id="musicien13">
-        </div>-->
-
-        <!-- Musicien 14 
-        <div class="form-group col-md-2">
-            <label for="musicien14">Musicien 14</label>
-            <input type="text" class="form-control" name="musicien14" id="musicien14">
-        </div>-->
-
-        <!-- Musicien 15 
-        <div class="form-group col-md-2">
-            <label for="musicien15">Musicien 15</label>
-            <input type="text" class="form-control" name="musicien15" id="musicien15">
-        </div>-->
+        
 
 
 
 
         <!-- le bouton submit -->
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
 
     </form>
 
