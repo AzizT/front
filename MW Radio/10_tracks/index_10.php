@@ -226,7 +226,7 @@ require_once("../include/header.php");
                 <div class="">
                     <div id="sm2-container"></div>
                     <div class="song ui360 exclude button-exclude inline-exclude"><a
-                            href="http://techhouse.org/~dmorris/music/mp3/bluebird.mp3"><span class="titre_album"><?php echo $album; ?></span></a></div>
+                            href=<?php echo $mp3 ?>><span class="titre_album"><?php echo $album; ?></span></a></div>
                 </div>
 
             <!-- troisieme colonne pour link vers les lyrics -->
