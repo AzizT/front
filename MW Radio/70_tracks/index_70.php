@@ -16,7 +16,7 @@ require_once("../include/header.php");
     <div class="container">
     
         <div class="tile-wrap">
-            <a href="?title=Doni Doni&album=Live Palais du Peuple&annee=1971&interprete=Bembaya Jazz National&photo=img_lp/doniDoni.jpg&mp3=&genre1=World&musician1=Sékou Diabaté - Guitar&musician2=Sékouba Bambino - Vocals&musician3=Aboubacar Demba Camara - Vocals&musician4=&musician5=&musician6=">
+            <a href="?title=Doni Doni&album=Live Palais du Peuple&annee=1971&interprete=Bembaya Jazz National&photo=img_lp/doniDoni.jpg&mp3=mp3/&genre1=World&musician1=Sékou Diabaté - Guitar&musician2=Sékouba Bambino - Vocals&musician3=Aboubacar Demba Camara - Vocals&musician4=&musician5=&musician6=">
                 <img src="img_lp/doniDoni.jpg" alt="album 10 ans de succes Live Palais du Peuple du Bembaya Jazz National (World)"
                     class="tile-image" />
                 <div class="tile-text">
@@ -26,7 +26,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Little Ghetto Boy - The Ghetto&album=Live&annee=1972&interprete=Donnie Hathaway&photo=img_lp/littleGhettoBoy.jpeg&mp3=&genre1=Soul&musician1=Donny Hathaway –<br>Vocals, electric piano, piano&musician2=Phil Upchurch,<br>Cornell Dupree – Lead guitar &musician3=Mike Howard – Guitar, backing vocals&musician4=Willie Weeks – Bass, backing vocals&musician5=Fred White – Drums, backing vocals&musician6=Earl DeRouen – Conga, backing vocals">
+            <a href="?title=Little Ghetto Boy - The Ghetto&album=Live&annee=1972&interprete=Donnie Hathaway&photo=img_lp/littleGhettoBoy.jpeg&mp3=mp3/&genre1=Soul&musician1=Donny Hathaway –<br>Vocals, electric piano, piano&musician2=Phil Upchurch,<br>Cornell Dupree – Lead guitar &musician3=Mike Howard – Guitar, backing vocals&musician4=Willie Weeks – Bass, backing vocals&musician5=Fred White – Drums, backing vocals&musician6=Earl DeRouen – Conga, backing vocals">
                 <img src="img_lp/littleGhettoBoy.jpeg" alt="album Live de Donnie Hathaway (Soul)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Donnie Hathaway</h2>
@@ -35,7 +35,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Natty Dread&album=Natty Dread&annee=1974&interprete=Bob Marley&photo=img_lp/nattyDread.jpg&mp3=&genre1=Reggae&musician1=Bob Marley - Guitar, vocals&musician2=I Threes - Back Vocals&musician3=Aston Barrett - Bass&musician4=Al Anderson - Guitar&musician5=Carlton Barrett - Drums&musician6=and others...">
+            <a href="?title=Natty Dread&album=Natty Dread&annee=1974&interprete=Bob Marley&photo=img_lp/nattyDread.jpg&mp3=mp3/&genre1=Reggae&musician1=Bob Marley - Guitar, vocals&musician2=I Threes - Back Vocals&musician3=Aston Barrett - Bass&musician4=Al Anderson - Guitar&musician5=Carlton Barrett - Drums&musician6=and others...">
                 <img src="img_lp/nattyDread.jpg" alt="album Natty Dread de Bob Marley (reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Marley</h2>
@@ -44,7 +44,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Celestial Blues&album=Experience And Judgement&annee=1974&interprete=Andy Bey&photo=img_lp/celestialBlues.jpg&mp3=&genre1=Jazz&musician1=Andy Bey - Vocals&musician2=Wilbur Bascomb - Electric bass &musician3=Selwart Clarke - Violin, viola&musician4=Bill Fischer -<br>Percussion, electric piano&musician5=Buddy Williams - Drums&musician6=">
+            <a href="?title=Celestial Blues&album=Experience And Judgement&annee=1974&interprete=Andy Bey&photo=img_lp/celestialBlues.jpg&mp3=mp3/&genre1=Jazz&musician1=Andy Bey - Vocals&musician2=Wilbur Bascomb - Electric bass &musician3=Selwart Clarke - Violin, viola&musician4=Bill Fischer -<br>Percussion, electric piano&musician5=Buddy Williams - Drums&musician6=">
                 <img src="img_lp/celestialBlues.jpg" alt="album Experience and Judgment d' Andy Bey (Jazz)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Andy Bey</h2>
@@ -62,7 +62,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Johnny Was&album=Rastaman Vibration&annee=1976&interprete=Bob Marley&photo=img_lp/johnnyWas.jpg&mp3=&genre1=Reggae&musician1=Bob Marley – Vocals&musician2=I Threes - Back Vocals&musician3=Aston Barrett - Bass&musician4=Earl 'Chinna' Smith –<br>guitar, percussion&musician5=Tyrone Downie – keyboards&musician6=Carlton Barrett - Drums">
+            <a href="?title=Johnny Was&album=Rastaman Vibration&annee=1976&interprete=Bob Marley&photo=img_lp/johnnyWas.jpg&mp3=mp3/&genre1=Reggae&musician1=Bob Marley – Vocals&musician2=I Threes - Back Vocals&musician3=Aston Barrett - Bass&musician4=Earl 'Chinna' Smith –<br>guitar, percussion&musician5=Tyrone Downie – keyboards&musician6=Carlton Barrett - Drums">
                 <img src="img_lp/johnnyWas.jpg" alt="album Rastaman Vibration de Bob Marley (reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Marley</h2>
@@ -71,7 +71,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Hurricane&album=Desire&annee=1976&interprete=Bob Dylan&photo=img_lp/hurricane.jpg&mp3=&genre1=Folk & Rock&musician1=Bob Dylan – Vocals,<br>rhythm guitar, harmonica&musician2=Scarlet Rivera – Violin&musician3=Rob Stoner – Bass, back vocals&musician4=Howard Wyeth – Drums, piano&musician5=Luther Rix – Congas&musician6=and others...">
+            <a href="?title=Hurricane&album=Desire&annee=1976&interprete=Bob Dylan&photo=img_lp/hurricane.jpg&mp3=mp3/&genre1=Folk & Rock&musician1=Bob Dylan – Vocals,<br>rhythm guitar, harmonica&musician2=Scarlet Rivera – Violin&musician3=Rob Stoner – Bass, back vocals&musician4=Howard Wyeth – Drums, piano&musician5=Luther Rix – Congas&musician6=and others...">
                 <img src="img_lp/hurricane.jpg" alt="album Desire de Bob Dylan (folk, rock)"
                     class="tile-image" />
                 <div class="tile-text">
@@ -81,7 +81,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=I'd Rather Be With You&album=Stretchin It Out&annee=1976&interprete=Bootsy Collins&photo=img_lp/i_dRatherBeWithYou.jpg&mp3=&genre1=Funk&musician1=Bootsy Collins – Bass,<br>vocals, guitar&musician2=Phelps Collins – Guitar&musician3=Bernie Worrell – Keyboards, melodica&musician4=Maceo Parker – Saxophone&musician5=Cordell Mosson – Drums&musician6=and many others...">
+            <a href="?title=I'd Rather Be With You&album=Stretchin It Out&annee=1976&interprete=Bootsy Collins&photo=img_lp/i_dRatherBeWithYou.jpg&mp3=mp3/&genre1=Funk&musician1=Bootsy Collins – Bass,<br>vocals, guitar&musician2=Phelps Collins – Guitar&musician3=Bernie Worrell – Keyboards, melodica&musician4=Maceo Parker – Saxophone&musician5=Cordell Mosson – Drums&musician6=and many others...">
             <!-- https://en.wikipedia.org/wiki/Stretchin%27_Out_in_Bootsy%27s_Rubber_Band#Personnel -->
                 <img src="img_lp/i_dRatherBeWithYou.jpg" alt="album Stretchin It Out de Bootsy Collins (Funk)" class="tile-image" />
                 <div class="tile-text">
@@ -91,7 +91,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Natural Mystic&album=Exodus&annee=1977&interprete=Bob Marley&photo=img_lp/naturalMystic.jpg&mp3=&genre1=Reggae&musician1=Bob Marley - Lead vocals, guitar&musician2=Junior Marvin- Electric guitar&musician3=Aston Barrett - Bass&musician4=Carlton Barrett - Drums&musician5=Alvin 'Seeco' Patterson - Percussions&musician6=Tyrone Downie - Synthe, electric piano<br>I Threes - Back vocals">
+            <a href="?title=Natural Mystic&album=Exodus&annee=1977&interprete=Bob Marley&photo=img_lp/naturalMystic.jpg&mp3=mp3/&genre1=Reggae&musician1=Bob Marley - Lead vocals, guitar&musician2=Junior Marvin- Electric guitar&musician3=Aston Barrett - Bass&musician4=Carlton Barrett - Drums&musician5=Alvin 'Seeco' Patterson - Percussions&musician6=Tyrone Downie - Synthe, electric piano<br>I Threes - Back vocals">
                 <img src="img_lp/naturalMystic.jpg" alt="album Exodus de Bob Marley (Reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Marley</h2>
@@ -109,7 +109,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Misty Morning&album=Kaya&annee=1977&interprete=Bob Marley&photo=img_lp/mistyMorning.jpg&mp3=&genre1=Reggae&musician1=Bob Marley - Lead vocals, guitar&musician2=Junior Marvin- Guitar&musician3=Aston Barrett - Bass&musician4=Carlton Barrett - Drums&musician5=Alvin 'Seeco' Patterson - Percussions&musician6=Tyrone Downie - Synthe, electric piano<br>I Threes - Back vocals">
+            <a href="?title=Misty Morning&album=Kaya&annee=1977&interprete=Bob Marley&photo=img_lp/mistyMorning.jpg&mp3=mp3/&genre1=Reggae&musician1=Bob Marley - Lead vocals, guitar&musician2=Junior Marvin- Guitar&musician3=Aston Barrett - Bass&musician4=Carlton Barrett - Drums&musician5=Alvin 'Seeco' Patterson - Percussions&musician6=Tyrone Downie - Synthe, electric piano<br>I Threes - Back vocals">
                 <img src="img_lp/mistyMorning.jpg" alt="album Kaya de Bob Marley (Reggae)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Marley</h2>
@@ -118,7 +118,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Bustin' Loose&album=Bustin' Loose&annee=1978&interprete=Chuck Brown & The Soul Searchers&photo=img_lp/bustinLoose.jpg&mp3=&genre1=GoGo - Funk&musician1=Chuck Brown – Vocals, electric guitar&musician2=Jerry Wilder – Bass&musician3=Gregory Gerran – Congas, percussion&musician4=Skip Fennell – Keyboards&musician5=Ricardo D. Wellman – Drums&musician6=and others...">
+            <a href="?title=Bustin' Loose&album=Bustin' Loose&annee=1978&interprete=Chuck Brown & The Soul Searchers&photo=img_lp/bustinLoose.jpg&mp3=mp3/&genre1=GoGo - Funk&musician1=Chuck Brown – Vocals, electric guitar&musician2=Jerry Wilder – Bass&musician3=Gregory Gerran – Congas, percussion&musician4=Skip Fennell – Keyboards&musician5=Ricardo D. Wellman – Drums&musician6=and others...">
                 <img src="img_lp/bustinLoose.jpg" alt="album Bustin Loose de Chuck Brown ( GoGo, Funk)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Chuck Brown</h2>
@@ -127,7 +127,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Emile&album=Spooks In Space&annee=1979&interprete=Aural Exciters&photo=img_lp/emile.jpg&mp3=&genre1=Electro - Psyché&musician1=Ken Mazur, Pat Place - Guitar&musician2=Will Lee - Bass&musician3=Sugar-Coated, Lizzi,<br>The Mulato Madness Singers - Vocals&musician4=Al Wentz - Synthe&musician5=Jimmy Young - Drums&musician6=and many others...">
+            <a href="?title=Emile&album=Spooks In Space&annee=1979&interprete=Aural Exciters&photo=img_lp/emile.jpg&mp3=mp3/&genre1=Electro - Psyché&musician1=Ken Mazur, Pat Place - Guitar&musician2=Will Lee - Bass&musician3=Sugar-Coated, Lizzi,<br>The Mulato Madness Singers - Vocals&musician4=Al Wentz - Synthe&musician5=Jimmy Young - Drums&musician6=and many others...">
             <!-- https://www.discogs.com/Aural-Exciters-Spooks-In-Space/release/5275877 -->
                 <img src="img_lp/emile.jpg" alt="album Spooks in space des Aural Exciters (Electro, Psyché)" class="tile-image" />
                 <div class="tile-text">
@@ -137,7 +137,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Gotta Serve Somebody - Slow train Coming&album=Slow Train Coming&annee=1979&interprete=Bob Dylan&photo=img_lp/gottaServeSomebody.jpg&mp3=&genre1=Blues Rock - Gospel - Rock Chrétien&musician1=Bob Dylan - Lead vocals, guitar&musician2=Mark Knopfler - Lead guitar&musician3=Tim Drummond – Bass guitar&musician4=Barry Beckett – Keyboards, percussion&musician5=Pick Withers – Drums&musician6=and others...">
+            <a href="?title=Gotta Serve Somebody - Slow train Coming&album=Slow Train Coming&annee=1979&interprete=Bob Dylan&photo=img_lp/gottaServeSomebody.jpg&mp3=mp3/&genre1=Blues Rock - Gospel - Rock Chrétien&musician1=Bob Dylan - Lead vocals, guitar&musician2=Mark Knopfler - Lead guitar&musician3=Tim Drummond – Bass guitar&musician4=Barry Beckett – Keyboards, percussion&musician5=Pick Withers – Drums&musician6=and others...">
                 <img src="img_lp/gottaServeSomebody.jpg" alt="album Slow Train Coming de Bob Dylan (Blues Rock, Gospel, Rock Chrétien)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bob Dylan</h2>
@@ -146,7 +146,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=One Drop&album=Survival&annee=1979&interprete=Bob Marley&photo=img_lp/oneDrop.jpg&mp3=&genre1=Reggae&musician1=Bob Marley - Lead vocals, guitar&musician2=Junior Marvin- Guitar&musician3=Aston Barrett - Bass&musician4=Carlton Barrett - Drums&musician5=Alvin 'Seeco' Patterson - Percussions&musician6=Tyrone Downie - Synthe, electric piano<br>I Threes - Back vocals<br>and many others...">
+            <a href="?title=One Drop&album=Survival&annee=1979&interprete=Bob Marley&photo=img_lp/oneDrop.jpg&mp3=mp3/&genre1=Reggae&musician1=Bob Marley - Lead vocals, guitar&musician2=Junior Marvin- Guitar&musician3=Aston Barrett - Bass&musician4=Carlton Barrett - Drums&musician5=Alvin 'Seeco' Patterson - Percussions&musician6=Tyrone Downie - Synthe, electric piano<br>I Threes - Back vocals<br>and many others...">
             <!-- https://en.wikipedia.org/wiki/Survival_(Bob_Marley_%26_The_Wailers_album)#Musicians -->
                 <img src="img_lp/oneDrop.jpg" alt="album Survival de Bob Marley (Reggae)" class="tile-image" />
                 <div class="tile-text">
@@ -156,7 +156,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Devil Woman&album=Me Myself an Eye&annee=1979&interprete=Charles Mingus&photo=img_lp/devilWoman.jpg&mp3=&genre1=Jazz Post Bop&musician1=Bob Neloms - Piano&musician2=Eddie Gomez - Bass&musician3=Michael Brecker - Tenor Sax&musician4=Randy Brecker - Trumpet&musician5=Larry Coryell - Guitar&musician6=Dannie Richmond - Drums<br>and many others...">
+            <a href="?title=Devil Woman&album=Me Myself an Eye&annee=1979&interprete=Charles Mingus&photo=img_lp/devilWoman.jpg&mp3=mp3/&genre1=Jazz Post Bop&musician1=Bob Neloms - Piano&musician2=Eddie Gomez - Bass&musician3=Michael Brecker - Tenor Sax&musician4=Randy Brecker - Trumpet&musician5=Larry Coryell - Guitar&musician6=Dannie Richmond - Drums<br>and many others...">
             <!-- https://www.discogs.com/Charles-Mingus-Me-Myself-An-Eye/release/2398264 -->
                 <img src="img_lp/devilWoman.jpg" alt="album posthume Me Myself an Eye de Charles Mingus (Jazz Post Bop)" class="tile-image" />
                 <div class="tile-text">
@@ -166,7 +166,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <!-- <div class="tile-wrap">
-            <a href="?title=&album=&annee=&interprete=&photo=&mp3=&genre1=&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
+            <a href="?title=&album=&annee=&interprete=&photo=&mp3=mp3/&genre1=&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/" alt="album" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title"></h2>

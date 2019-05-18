@@ -39,7 +39,7 @@
 
             {
 
-                $nom_mp3 = $reference . '-' . $_FILES['mp3']['name']; // on redéfinit le nom du mp3 en concaténant la référence saisi dans le formulaire avec le nom du mp3
+                $nom_mp3 ='-' . $_FILES['mp3']['name']; // on redéfinit le nom du mp3 en concaténant la référence saisi dans le formulaire avec le nom du mp3
 
                 echo $nom_mp3 . '<br>';
 
@@ -113,15 +113,14 @@
 
             $_GET['action'] = 'affichage';
 
-            $validate .= "<div class='alert alert-success col-md-6 offset-md-3 text-center'>Le mp3 n° <strong>$reference</strong> a bien été ajouté !!</div>";
-
-        }else{
-            $bdd_insert = $bdd->prepare("UPDATE mp3 SET fichier = :fichier WHERE id_mp3 = $id_mp3");
-
-            $_GET['action'] = 'affichage';
-
-            $validate .= "<div class='alert alert-success col-md-6 offset-md-3 text-center'>Le mp3 n° <strong>$id_mp3</strong> a bien été modifié !!</div>";
         }
+        // else{
+        //     $bdd_insert = $bdd->prepare("UPDATE mp3 SET fichier = :fichier WHERE id_mp3 = $id_mp3");
+
+        //     $_GET['action'] = 'affichage';
+
+        //     $validate .= "<div class='alert alert-success col-md-6 offset-md-3 text-center'>Le mp3 n° <strong>$id_mp3</strong> a bien été modifié !!</div>";
+        // }
     foreach ($_POST as $key => $value) {
 
             if ($key != 'mp3_actuel') {
@@ -159,8 +158,34 @@
         
     }
     ?>
+    <?php if (isset($_GET['action']) && ($_GET['action'] == 'ajout')) : ?>
 
-    <form class="mt-4 mb-4 ml-4" method="post" action="">
+
+
+<!-- <h1 class="col-md-6 offset-md-4 text-center"> <?= $action ?> d'un produit</h1> -->
+
+<?php
+
+if (isset($_GET['id_mp3'])) {
+
+        $resultat = $bdd->prepare("SELECT * FROM produit WHERE  id_produit = :id_produit");
+
+        $resultat->bindValue(':id_mp3', $id_mp3, PDO::PARAM_INT);
+
+        $resultat->execute();
+
+        $mp3_actuel = $resultat->fetch(PDO::FETCH_ASSOC);
+
+    }
+
+$mp3 = (isset($mp3_actuel['fichier'])) ? $mp3_actuel['fichier'] : '';
+
+
+
+?>
+<?php endif; ?> 
+
+    <form class="mt-4 mb-4 ml-4" method="post" action="" enctype="multipart/form-data">
 
         <!-- le titre -->
         <div class="form-group col-md-2">
@@ -193,7 +218,7 @@
         <!-- le bouton submit -->
         <button type="submit" class="btn btn-primary">Enregistrer</button>
 
-    </form>
+    </form >
 
 </body>
 

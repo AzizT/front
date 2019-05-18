@@ -18,7 +18,7 @@ require_once("../include/header.php");
     <div class="container">
 
         <div class="tile-wrap">
-            <a href="?title=Coming In From The Cold&album=Uprising&annee=1980&interprete=Bob Marley&photo=img_lp/comingInFromTheCold.jpg&mp3=&genre1=Reggae&musician1=Bob Marley - Lead vocals, guitars&musician2=Junior Marvin - Guitar&musician3=Aston Barrett - Bass&musician4=Carlton Barrett - Drums&musician5=Alvin Patterson - Percussions&musician6=Tyrone Downie - Synthe, electric piano<br>I Threes - Back vocals">
+            <a href="?title=Coming In From The Cold&album=Uprising&annee=1980&interprete=Bob Marley&photo=img_lp/comingInFromTheCold.jpg&mp3=mp3/&genre1=Reggae&musician1=Bob Marley - Lead vocals, guitars&musician2=Junior Marvin - Guitar&musician3=Aston Barrett - Bass&musician4=Carlton Barrett - Drums&musician5=Alvin Patterson - Percussions&musician6=Tyrone Downie - Synthe, electric piano<br>I Threes - Back vocals">
                 <img src="img_lp/comingInFromTheCold.jpg" alt="album Uprising de Bob Marley (reggae)"
                     class="tile-image" />
                 <div class="tile-text">
@@ -28,7 +28,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Don't Stop Till You Get Enough&album=Hustle ! Reggae Disco&annee=1980&interprete=Derrick Laro & Trinity&photo=img_lp/dontStopTillYou.jpg&mp3=&genre1=Reggae&musician1=Derrick Laro - Vocals&musician2=Trinity - Vocals&musician3=Reggae Cover&musician4=&musician5=&musician6=">
+            <a href="?title=Don't Stop Till You Get Enough&album=Hustle ! Reggae Disco&annee=1980&interprete=Derrick Laro & Trinity&photo=img_lp/dontStopTillYou.jpg&mp3=mp3/&genre1=Reggae&musician1=Derrick Laro - Vocals&musician2=Trinity - Vocals&musician3=Reggae Cover&musician4=&musician5=&musician6=">
                 <img src="img_lp/dontStopTillYou.jpg" alt="album Hustle ! Reggae Disco contenant ce titre de Derrick Laro & Trinity (version reggae du titre de Michael Jackson" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Derrick Laro</h2>
@@ -37,7 +37,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Gimme Some Lovin - Peter Gunn Theme&album=Soudtrack du film Blues Brothers&annee=1980&interprete=Blues Brothers&photo=img_lp/gimmeSomeLovin.jpg&mp3=&genre1=Rythme and Blues&musician1=Jake and Elwood Blues -<br>Vocals&musician2=Steve Cropper and<br>Matt Murphy - Guitar&musician3=Duck Dunn - Bass&musician4=Murphy Dunne - Piano&musician5=Lou Marini and<br>Tom Malone - Sax&musician6=Alan Rubin - Trumpet<br>Willie Hall - Drums">
+            <a href="?title=Gimme Some Lovin - Peter Gunn Theme&album=Soudtrack du film Blues Brothers&annee=1980&interprete=Blues Brothers&photo=img_lp/gimmeSomeLovin.jpg&mp3=mp3/&genre1=Rythme and Blues&musician1=Jake and Elwood Blues -<br>Vocals&musician2=Steve Cropper and<br>Matt Murphy - Guitar&musician3=Duck Dunn - Bass&musician4=Murphy Dunne - Piano&musician5=Lou Marini and<br>Tom Malone - Sax&musician6=Alan Rubin - Trumpet<br>Willie Hall - Drums">
                 <img src="img_lp/gimmeSomeLovin.jpg" alt="album Blues Brothers du film du même nom (Rhythme and Blues)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Blues Brothers</h2>
@@ -46,7 +46,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Um Canto de Afoxé&album=Cores Nomes&annee=1982&interprete=Caetano Veloso&photo=img_lp/umCantoDeAfoxe.jpg&mp3=&genre1=Bossa Nova&musician1=Caetano Veloso - Vocals&musician2=Cobra Coral - Vocals&musician3=Moreno Veloso - Vocals&musician4=&musician5=&musician6=">
+            <a href="?title=Um Canto de Afoxé&album=Cores Nomes&annee=1982&interprete=Caetano Veloso&photo=img_lp/umCantoDeAfoxe.jpg&mp3=mp3/&genre1=Bossa Nova&musician1=Caetano Veloso - Vocals&musician2=Cobra Coral - Vocals&musician3=Moreno Veloso - Vocals&musician4=&musician5=&musician6=">
                 <img src="img_lp/umCantoDeAfoxe.jpg" alt="album Cores Nomes de Caetano Velose (Bossa Nova)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Caetano Veloso</h2>
@@ -55,7 +55,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Beverly Hills Blues - Another Night In Tunisia&album=Spontaneous Inventions&annee=1986&interprete=Bobby Mcferrin&photo=img_lp/beverlyHillsBlues.jpg&mp3=&genre1=Jazz - Scat&musician1=Bobby McFerrin - Vocals&musician2=Robin Williams - Vocals&musician3=Tha Manhattan Transfert -<br>Vocals&musician4=Jon Hendricks - Vocals&musician5=&musician6=">
+            <a href="?title=Beverly Hills Blues - Another Night In Tunisia&album=Spontaneous Inventions&annee=1986&interprete=Bobby Mcferrin&photo=img_lp/beverlyHillsBlues.jpg&mp3=mp3/&genre1=Jazz - Scat&musician1=Bobby McFerrin - Vocals&musician2=Robin Williams - Vocals&musician3=Tha Manhattan Transfert -<br>Vocals&musician4=Jon Hendricks - Vocals&musician5=&musician6=">
                 <img src="img_lp/beverlyHillsBlues.jpg" alt="album Spontaneous Inventions de Bobby Mcferrin (Jazz, scat)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Bobby Mcferrin</h2>
@@ -64,7 +64,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Girls&album=Licenced To Ill&annee=1987&interprete=Beastie Boys&photo=img_lp/girls.jpg&mp3=&genre1=Hip Hop&musician1=Ad-Rock - Lead Vocals&musician2=Mike D and MCA -<br>Back Vocals&musician3=&musician4=&musician5=&musician6=">
+            <a href="?title=Girls&album=Licenced To Ill&annee=1987&interprete=Beastie Boys&photo=img_lp/girls.jpg&mp3=mp3/&genre1=Hip Hop&musician1=Ad-Rock - Lead Vocals&musician2=Mike D and MCA -<br>Back Vocals&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/girls.jpg" alt="album Licenced to Ill des Beastie Boys (Hip Hop)" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Beastie Boys</h2>
@@ -73,7 +73,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <div class="tile-wrap">
-            <a href="?title=Santa Barbara&album=Celina Con Franck Y Adalberto&annee=1987&interprete=Celina Gonzales&photo=img_lp/santaBarbara.jpg&mp3=&genre1=Afro Cubain&musician1=Celina Gonzales - Vocals&musician2=Adalberto Alvarez - Piano&musician3=Héctor Anderson, Carlos Baloy<br>and Ciso Guanche (Adalberto Group)&musician4=&musician5=&musician6=">
+            <a href="?title=Santa Barbara&album=Celina Con Franck Y Adalberto&annee=1987&interprete=Celina Gonzales&photo=img_lp/santaBarbara.jpg&mp3=mp3/&genre1=Afro Cubain&musician1=Celina Gonzales - Vocals&musician2=Adalberto Alvarez - Piano&musician3=Héctor Anderson, Carlos Baloy<br>and Ciso Guanche (Adalberto Group)&musician4=&musician5=&musician6=">
                 <img src="img_lp/santaBarbara.jpg" alt="album Celina Con Franck Y Adalberto de Celina Gonzales" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title">Celina Gonzales</h2>
@@ -82,7 +82,7 @@ require_once("../include/header.php");
             </a>
         </div>
         <!-- <div class="tile-wrap">
-            <a href="?title=&album=&annee=&interprete=&photo=&mp3=&genre1=&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
+            <a href="?title=&album=&annee=&interprete=&photo=&mp3=mp3/&genre1=&musician1=&musician2=&musician3=&musician4=&musician5=&musician6=">
                 <img src="img_lp/" alt="album" class="tile-image" />
                 <div class="tile-text">
                     <h2 class="tile-title"></h2>
