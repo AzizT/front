@@ -2,10 +2,10 @@
 require_once("../include/header.php");
 require_once("../include/init.php");
 
-if(isset($_GET['id_tracks'])):
+if(isset($_GET['annee'])):
 
-    $resultat = $bdd->prepare("SELECT * FROM tracks WHERE id_tracks = :id_tracks");
-    $resultat->bindValue(':id_tracks', $_GET['id_tracks'], PDO::PARAM_STR);
+    $resultat = $bdd->prepare("SELECT * FROM tracks WHERE annee = :annee");
+    $resultat->bindValue(':annee', $_GET['annee'], PDO::PARAM_STR);
     $resultat->execute();
     
     $tracks = $resultat->fetch(PDO::FETCH_ASSOC);
