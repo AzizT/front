@@ -15,6 +15,8 @@ On ecrit en italique avec des astérisques ou des tirets du bas _underscore_
 En gras avec deux **astérisques** ou des tierts du bas _underscore_
 Pour avoir un effet encadré avec du background gris clair, mettre 4 espaces ou tab
 Le texte barré utilise deux ~~tildes~~ alt gr +2
+
+loremipsum machin truc
 ----------------------------------------
 pour faire une ligne continue.
 
